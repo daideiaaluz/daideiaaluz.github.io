@@ -1,0 +1,45 @@
+.map-container{
+    width: 725px;
+    height: 720px;
+}
+
+.imagemap {
+	width: 35%;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.desc-map {
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+
+.img_estado{
+    float: left;
+    padding: 0px;
+    width: 120px;
+    height: 120px;
+}
+
+.titulo{
+    float: left;
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+}
+
+.cidades{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.map-button{
+    position: relative;
+    width: 720px;
+    height: 30px;
+}

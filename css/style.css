@@ -1,0 +1,308 @@
+/*
+ * Basic CSS starts
+ */
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px; width:13px; padding:0}
+
+body{
+	font-family: Helvetica, sans-serif;
+	font-weight: 400;
+	color: #545454;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+h3,h4,h5,h6{
+	font-family: Helvetica, sans-serif;
+	font-weight: 600;
+}
+
+h1{
+	font-family: Helvetica, sans-serif;
+	font-weight: 600;
+	padding-left: 80px;
+	color: #fff;
+}
+
+h2{
+    font-family: Helvetica, sans-serif;
+	font-weight: 600;
+	padding-bottom: 20px;
+    text-align: center;
+}
+
+p{
+	margin:0;
+	padding:0;
+	color: #787878;
+}
+
+a{
+	text-decoration: none;
+	color: #daa520;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #a93c01;
+}
+
+a:hover,a:active,a:focus {
+	outline: 0;
+}
+
+hr{
+
+}
+
+:focus {
+	outline:none;
+}
+
+::-moz-focus-inner {
+	border:0;
+}
+
+/*
+ * Basic CSS ends
+ */
+
+header .navbar {
+	margin: 0;
+	background: #daa520;
+	border-radius: 0;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	box-shadow: 0 1px 15px rgba(0,0,0,0.2);
+}
+header .navbar-default .navbar-nav>li>a {
+	margin: 15px 3px;
+	padding-top: 6px;
+	color: #fff;
+	padding-bottom: 6px;
+	border-radius: 2px;
+}
+
+header .navbar-default .navbar-nav>li>a:hover,
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li.open>a:hover,
+header .navbar-default .navbar-nav>li.open>a:focus {
+	background: #fff;
+}
+
+header .navbar-nav .dropdown-menu {
+	top: 57px;
+	border-radius: 3px;
+}
+header .navbar-nav .dropdown-menu:after,
+header .navbar-nav .dropdown-menu:before {
+	bottom: 100%;
+	right: 20px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+header .navbar-nav .dropdown-menu:after {
+	border-color: rgba(240, 253, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 7px;
+}
+
+header .navbar-nav .dropdown-menu:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #daa520;
+	border-width: 8px;
+	margin-right: -1px;
+}
+header .navbar-brand {
+	padding: 0;
+	height: auto;
+}
+header .navbar-brand img {
+	position: relative;
+	top: 5px;
+	max-width: 165px;
+}
+
+/*
+ * Banner
+ */
+
+.banner {
+	background: #f0f0f0;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+.banner h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 28px;
+	line-height: 35px;
+	color: #eee;
+	text-transform: capitalize;
+}
+
+/*
+ * Content
+ */
+.content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*
+ * default heading
+ */
+
+.default-heading  {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.default-heading h2{
+	margin-top: 0;
+	font-size: 30px;
+	color: #676767;
+	font-weight: 400;
+}
+
+/*
+ * subscribe
+ */
+
+.subscribe {
+	margin-top: 60px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.subscribe .sub-content {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.subscribe .sub-content h3 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.subscribe .sub-content .form-control {
+	box-shadow: none !important;
+	border: 1px solid #ccc;
+	height: 50px;
+	font-size: 18px;
+}
+
+.subscribe .sub-content form .btn {
+	padding: 0 20px;
+	height: 50px;
+	line-height: 49px;
+	font-size: 18px;
+}
+
+/*
+ * footer
+ */
+
+footer {
+	margin-top: 80px;
+	padding: 50px 0;
+	background: #daa520;
+	text-align: center;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+footer.ffoot {margin-top: 0;}
+footer p {
+	font-size: 13px;
+	line-height: 25px;
+	color: #fff;
+}
+footer p a {
+	font-size: 13px;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.055em;
+	color: #fff;
+}
+footer p a:hover { color: #a93c01; }
+footer .social a {
+	display: inline-block;
+	margin: 0 2px;
+	margin-top: 5px;
+	padding: 2px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	background: #fff;
+	font-size: 14px;
+	border-radius: 50%;
+}
+
+footer .social a  i {
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+	border-radius: 50%;
+	border: 1px dashed #daa520;
+}
+
+footer .copy-right {
+	margin-top: 5px;
+}
+
+/*
+ * Responsive CSS
+ */
+
+/*
+ * Mobile phones
+ */
+@media (max-width: 480px){
+
+}
+
+/*
+ * Tablets
+ */
+@media (max-width: 767px){
+	header .navbar-brand img { max-width: 140px; top: 3px; }
+	header .navbar-nav .dropdown-menu:after,
+	header .navbar-nav .dropdown-menu:before { display: none;}
+	header .navbar-nav .dropdown-menu li a { color: #fff !important;}
+	header .navbar-default .navbar-toggle .icon-bar {background: #fff;	}
+	header .navbar-collapse { border: 0; box-shadow: none; }
+	header .navbar-default .navbar-toggle,
+	header .navbar-default .navbar-toggle:hover,
+	header .navbar-default .navbar-toggle:focus	{
+		background: transparent;
+		border-color: #fff;
+	}
+
+	.default-heading {text-align: center;}
+}
+
+/*
+ * Desktop
+ */
+@media (max-width: 991px){
+
+}

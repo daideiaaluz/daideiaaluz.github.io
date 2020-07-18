@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Da Ideia à Luz</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Javascript files -->
+	    <script src="js/includeContent.js"></script>
+	    <script src="js/reloadContent.js"></script>
+
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<!-- W3 CSS -->
+		<link href="css/w3.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style-imagemap.css">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+				<!-- navigation -->
+				<nav class="navbar-top" role="navigation">
+					<div class="container">
+						teste
+					</div>
+				</nav>
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo.png" alt="Logo" /></a>
+							<a href=""><h1>Da Ideia à Luz</h1></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a onclick="reloadContent('include-content', 'include/sobre.html');" href="#about">Sobre</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Produções<span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Trabalhos Acadêmicos</a></li>
+										<li><a href="#">Espetáculos</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profissionais<span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Perfis</a></li>
+									</ul>
+								</li>
+								<li><a onclick="reloadContent('include-content', 'include/contato.html');" href="#contact">Contato</a></li>
+								<li>
+									<div style="padding:16px">
+										<form action="">
+											<input type="text" placeholder="Search.." name="search">
+											<button type="submit"><i class="fa fa-search"></i></button>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+
+			<!-- banner -->
+			<div class="banner">
+				<div class="w3-content w3-display-container">
+					<div class="w3-display-container mySlides">
+						<img src="img/img01.jpg" style="width:100%;height:450px">
+						<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white" style="opacity:50%">
+							Lorem Ipsum is <a href="#">clique aqui</a> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="img/img02.jpg" style="width:100%;height:450px">
+						<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white" style="opacity:50%">
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</div>
+					</div>
+					<div class="w3-display-container mySlides">
+						<img src="img/img03.jpg" style="width:100%;height:450px">
+						<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white" style="opacity:50%">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						</div>
+					</div>
+					<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+						<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+						<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+						<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+						<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+						<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+					</div>
+				</div>
+			</div>
+			<!-- banner end -->
+
+			<!-- content -->
+			<div class="content" id="include-content">
+				<!-- imagemap -->
+				<div class="imagemap" id="imagemap">
+					<div class="desc-map">
+						<h2>Iluminadores no Brasil</h2>
+						<p>Descrição: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div>
+					<div id="include-content-map" style="padding-top:35px">
+			            <!-- load map content -->
+
+						<!-- Image Map Generated by http://www.image-map.net/ -->
+						<img src="img/map/brazil-960_720.webp" usemap="#image-map">
+
+						<map name="image-map">
+						    <area onclick="reloadContent('include-content-map', 'include/minas_gerais.html');" target="" alt="Minas Gerais" title="Minas Gerais" href="#" coords="422,464,431,443,453,438,480,438,487,420,489,403,497,389,504,371,511,381,538,360,552,364,553,372,570,370,596,388,620,402,610,418,613,432,596,442,597,461,582,478,576,489,562,506,511,518,497,509,497,497,490,489,487,475,484,466,452,471,451,462" shape="poly">
+							<area onclick="reloadContent('include-content-map', 'include/sao_paulo.html');" target="" alt="São Paulo" title="São Paulo" href="#" coords="391,513,401,505,415,478,431,465,451,467,455,475,481,470,489,493,497,500,500,521,526,518,528,531,506,539,474,562,461,555,450,555,446,536,441,520,427,520,412,514" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/rio_de_janeiro.html');" target="" alt="Rio de Janeiro" title="Rio de Janeiro" href="#" coords="538,524,536,519,529,514,555,506,571,504,582,490,586,496,596,498,595,510,578,521,575,528,559,527,538,524" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/sergipe.html');" target="" alt="Sergipe" title="Sergipe" href="#" coords="662,319,658,305,668,299,667,286,681,288,691,298,677,307,671,321" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/alagoas.html');" target="" alt="Alagoas" title="Alagoas" href="#" coords="695,300,680,289,662,280,668,274,685,280,702,274,715,274" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/pernambuco.html');" target="" alt="Pernambuco" title="Pernambuco" href="#" coords="717,273,700,273,687,279,669,270,662,274,656,270,642,264,620,274,608,262,618,254,619,242,635,240,645,248,654,248,663,249,677,239,677,253,684,259,695,252,711,245,722,246" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/paraiba.html');" target="" alt="Paraíba" title="Paraíba" href="#" coords="723,245,709,246,692,251,685,258,680,252,685,243,679,236,664,246,653,242,656,224,680,215,676,230,692,233,695,222,721,227" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/rio_grande_do_norte.html');" target="" alt="Rio Grande do Norte" title="Rio Grande do Norte" href="#" coords="719,226,696,221,692,231,679,230,685,215,658,219,676,193,694,202,709,206,717,212" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/goias.html');" target="" alt="Goiás" title="Goiás" href="#" coords="503,370,517,368,508,355,484,353,471,353,460,347,442,346,439,334,426,352,423,373,415,378,408,390,402,392,385,414,385,432,391,441,424,455,432,443,453,437,481,433,487,418,484,402,484,395,465,395,464,383,484,381,490,393,496,385,494,376" shape="poly">
+						    <area onclick="reloadContent('include-content-map', 'include/distrito_federal.html');" target="" alt="Distrito Federal" title="Distrito Federal" href="#" coords="469,383,470,394,487,393,484,384" shape="poly">
+						</map>
+			        </div>
+
+					<script>includeHTML();</script>
+				</div>
+				<!-- imagemap end -->
+
+				<!-- subscribe -->
+				<!-- <div class="subscribe" id="subscribe">
+					<div class="container">
+						<div class="sub-content">
+							<h3>Inscreva-se no Newsletter</h3>
+							<form role="form">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Email...">
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button">Inscrever</button>
+										</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div> -->
+				<!-- subscribe end -->
+			</div>
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+				<div class="container">
+					<p><a href="#">Home</a> | <a href="#contact">Contact</a></p>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+					<!-- copy right -->
+					<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+					<p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz!</a> | All rights reserved. </p>
+				</div>
+			</footer>
+
+		</div>
+
+
+		<!-- Javascript files -->
+		<!-- Slide Show -->
+		<script src="js/slideshow.js"></script>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>
+</html>
