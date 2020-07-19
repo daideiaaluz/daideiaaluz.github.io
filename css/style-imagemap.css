@@ -1,21 +1,28 @@
-.map-container{
-    width: 725px;
-    height: 720px;
+.imagemap {
+    background-color:rgba(15, 15, 115, 0.08);
+    padding: 5px;
 }
 
-.imagemap {
-	width: 35%;
-    margin-left: auto;
-	margin-right: auto;
+.imagemap-content {
+    background-color:rgba(15, 15, 115, 0.08);
+    border-right: 1px solid #fff;
+    padding: 5px;
 }
 
 .desc-map {
-
+    text-align: center;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 120px 1fr;
+}
+
+.grid-content {
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 
 .img_estado{
@@ -33,9 +40,7 @@
 }
 
 .cidades{
-    position: relative;
-    width: 100%;
-    height: 200px;
+
 }
 
 .map-button{

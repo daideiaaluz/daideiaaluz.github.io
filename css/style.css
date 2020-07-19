@@ -7,6 +7,8 @@
 .w3-badge {height:13px; width:13px; padding:0}
 
 body{
+	/* background-image: url("../img/background/a67.png");
+	background-repeat: repeat; */
 	font-family: Helvetica, sans-serif;
 	font-weight: 400;
 	color: #545454;
@@ -174,10 +176,10 @@ header .social a i {
  */
 
 .banner {
-	background: #f0f0f0;
+	/* background-color:rgba(255, 255, 255, 1); */
+	/* border-bottom: 1px solid #ccc; */
 	padding-top: 0px;
 	padding-bottom: 0px;
-	border-bottom: 1px solid #ccc;
 }
 
 .banner h2 {
@@ -192,66 +194,18 @@ header .social a i {
 /*
  * Content
  */
-.content {
+.container-content {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin: 0 auto;
-	text-align: center;
 }
-
-/*
- * default heading
- */
-
-.default-heading  {
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-.default-heading h2{
-	margin-top: 0;
-	font-size: 30px;
-	color: #676767;
-	font-weight: 400;
-}
-
-/*
- * subscribe
- */
-
-.subscribe {
-	margin-top: 60px;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	background: #f8f8f8;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-}
-
-.subscribe .sub-content {
-	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.subscribe .sub-content h3 {
-	margin-top: 0;
-	margin-bottom: 30px;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-.subscribe .sub-content .form-control {
-	box-shadow: none !important;
-	border: 1px solid #ccc;
-	height: 50px;
-	font-size: 18px;
-}
-
-.subscribe .sub-content form .btn {
-	padding: 0 20px;
-	height: 50px;
-	line-height: 49px;
-	font-size: 18px;
+.content {
+    background-color:rgba(255, 255, 255, 1);
+    padding: 20px;
+	width: 65%;
+    margin-left: auto;
+	margin-right: auto;
+    border: 1px solid #ccc;
 }
 
 /*
