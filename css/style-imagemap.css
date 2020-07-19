@@ -1,10 +1,10 @@
 .imagemap {
-    background-color:rgba(15, 15, 115, 0.08);
+    background-color: rgba(15, 15, 115, 0.08);
     padding: 5px;
 }
 
 .imagemap-content {
-    background-color:rgba(15, 15, 115, 0.08);
+    background-color: rgba(15, 15, 115, 0.08);
     border-right: 1px solid #fff;
     padding: 5px;
 }
@@ -15,7 +15,14 @@
 
 .grid {
     display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-inside {
+    background-color: rgba(1, 5, 115, 0.1);
+    display: grid;
     grid-template-columns: 120px 1fr;
+    border-bottom: 1px solid #fff;
 }
 
 .grid-content {
@@ -25,26 +32,39 @@
     text-align: center;
 }
 
-.img_estado{
-    float: left;
-    padding: 0px;
-    width: 120px;
-    height: 120px;
+.img_estado {
+
 }
 
-.titulo{
-    float: left;
-    padding: 10px;
-    width: 100%;
-    height: 120px;
+.titulo {
+    margin-top: 30px;
 }
 
 .cidades{
 
 }
 
-.map-button{
-    position: relative;
-    width: 720px;
-    height: 30px;
+.collapsible {
+  background-color: rgba(1, 5, 115, 0.1);
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(0, 3, 69, 0.5);
+}
+
+.collapse-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
