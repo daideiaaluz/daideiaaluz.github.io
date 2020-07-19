@@ -3,10 +3,10 @@ function reloadContent(div, link) {
     z.setAttribute("w3-include-html", link);
 
     // Prevent automatic roll
-    z.addEventListener("click", function(event){
+    document.getElementById("anchor").addEventListener("click", function(event){
         event.preventDefault()
     });
-    z.removeEventListener("click", function(event){
+    document.getElementById("anchor").removeEventListener("click", function(event){
         event.preventDefault()
     });
 
