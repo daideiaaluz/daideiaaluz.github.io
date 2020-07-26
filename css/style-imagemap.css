@@ -56,15 +56,24 @@
     font-size: 15px;
     border-bottom: 1px solid #fff;
 }
-
 .active, .collapsible:hover {
     background-color: rgba(87, 90, 156, 0.5);
+}
+.collapsible:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
 }
 
 .collapse-content {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.2s ease-out;
 }
 .collapse-content p{
     text-align: left;
