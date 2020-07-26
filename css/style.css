@@ -7,8 +7,7 @@
 .w3-badge {height:13px; width:13px; padding:0}
 
 body{
-	/* background-image: url("../img/background/a67.png");
-	background-repeat: repeat; */
+	background-color: #eee;
 	font-family: Helvetica, sans-serif;
 	font-weight: 400;
 	color: #545454;
@@ -19,11 +18,6 @@ button {
 	width: 25px;
 }
 
-/* img {
-    max-width: 100%;
-    max-height: 100%;
-} */
-
 h2,h3,h4,h5,h6{
 	font-family: Helvetica, sans-serif;
 	font-weight: 600;
@@ -31,9 +25,8 @@ h2,h3,h4,h5,h6{
 h1{
 	font-family: Helvetica, sans-serif;
 	font-weight: 600;
-	padding-left: 65px;
 	color: #fff;
-	text-shadow: 2px 5px rgba(0,0,0,0.2);
+	margin: auto;
 }
 
 p{
@@ -44,7 +37,7 @@ p{
 
 a{
 	text-decoration: none;
-	color: #daa520;
+	color: #9BB1C5;
 }
 
 a:hover{
@@ -54,10 +47,6 @@ a:hover{
 
 a:hover,a:active,a:focus {
 	outline: 0;
-}
-
-hr{
-
 }
 
 :focus {
@@ -74,7 +63,7 @@ hr{
 
 header .navbar {
 	margin: 0;
-	background: #daa520;
+	background: #9BB1C5;
 	border: 0px;
 	border-radius: 0%;
 	border-bottom: 2px solid rgba(0,0,0,0.2);
@@ -89,8 +78,21 @@ header .navbar-default .navbar-nav>li>a {
 }
 
 header .navbar-top {
-	height: 23px;
-	background: #f0c354;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	height: 180px;
+	background: #eee;
+}
+
+header .navbar-logo {
+	width: 40%;
+	/* margin: 5px; */
+	/* border-bottom: 2px solid rgba(0,0,0,0.2); */
+}
+header .navbar-support {
+	width: 60%;
+	/* margin: 5px; */
+	/* border-bottom: 2px solid rgba(0,0,0,0.2); */
 }
 
 header .navbar-default .navbar-nav>li>a:hover,
@@ -107,7 +109,7 @@ header .navbar-nav .dropdown-menu {
 header .navbar-nav .dropdown-menu:after,
 header .navbar-nav .dropdown-menu:before {
 	bottom: 100%;
-	right: 20px;
+	right: 120px;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -124,48 +126,108 @@ header .navbar-nav .dropdown-menu:after {
 
 header .navbar-nav .dropdown-menu:before {
 	border-color: rgba(194, 225, 245, 0);
-	border-bottom-color: #daa520;
+	border-bottom-color: #ccc;
 	border-width: 8px;
 	margin-right: -1px;
 }
 header .navbar-brand {
-	padding: 0;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	/* top: 20px; */
 	height: auto;
 }
 header .navbar-brand img {
 	position: relative;
-	top: 5px;
+	/* top: 20px; */
 	max-width: 165px;
 }
-
-header .social a {
-	text-align: center;
-	display: inline-block;
-	margin: 0 3px;
-	margin-top: 0px;
-	padding: 1px;
-	width: 22px;
-	height: 22px;
-	line-height: 22px;
-	background: #fff;
-	font-size: 14px;
-	border-radius: 50%;
-}
-
-header .social a i {
-	display: block;
-	width: 100%;
-	height: 100%;
-	line-height: 20px;
-	border-radius: 50%;
-	border: 1px dashed #daa520;
+header .navbar-text {
+	position: relative;
+	text-shadow: 2px 3px rgba(0,0,0,0.2);
 }
 
 .top-container {
+	margin: 23px;
 	margin-right: auto;
-	margin-left: 76%;
+	margin-left: auto;
 	padding-left: 15px;
-	padding-right: 15px
+	padding-right: 15px;
+}
+
+@media (min-width:768px) {
+	.top-container {
+		width: 750px
+	}
+}
+
+@media (min-width:992px) {
+	.top-container {
+		width: 970px
+	}
+}
+
+@media (min-width:1200px) {
+	.top-container {
+		width: 1170px
+	}
+}
+
+/*
+ * Social bar
+ */
+
+.icon-bar {
+	z-index: 1;
+	position: fixed;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.icon-bar a {
+	display: block;
+	text-align: center;
+	padding: 16px;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 20px;
+}
+
+.icon-bar a:hover {
+	background-color: #000;
+}
+
+.facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.instagram {
+	background: #833AB4;
+	color: white;
+}
+
+.twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.google {
+	background: #dd4b39;
+	color: white;
+}
+
+.linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.youtube {
+	background: #bb0000;
+	color: white;
 }
 
 /*
@@ -212,7 +274,7 @@ header .social a i {
 footer {
 	margin-top: 40px;
 	padding: 50px 0;
-	background: #daa520;
+	background: #9BB1C5;
 	text-align: center;
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
@@ -230,27 +292,6 @@ footer p a {
 	color: #fff;
 }
 footer p a:hover { color: #a93c01; }
-footer .social a {
-	display: inline-block;
-	margin: 0 2px;
-	margin-top: 5px;
-	padding: 2px;
-	width: 35px;
-	height: 35px;
-	line-height: 35px;
-	background: #fff;
-	font-size: 14px;
-	border-radius: 50%;
-}
-
-footer .social a  i {
-	display: block;
-	width: 100%;
-	height: 100%;
-	line-height: 30px;
-	border-radius: 50%;
-	border: 1px dashed #daa520;
-}
 
 footer .copy-right {
 	margin-top: 5px;

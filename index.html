@@ -9,6 +9,7 @@
 		<!-- Javascript files -->
 	    <script src="js/includeContent.js"></script>
 	    <script src="js/reloadContent.js"></script>
+		<script src="js/collapse.js"></script>
 
 		<!-- Styles -->
 		<!-- Bootstrap CSS -->
@@ -20,7 +21,8 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style-contact.css">
 		<link rel="stylesheet" type="text/css" href="css/style-imagemap.css">
-		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/profiles.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="#">
@@ -28,19 +30,31 @@
 
 	<body>
 
+		<div class="icon-bar">
+			<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+			<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+			<a target="_blank" rel="noopener noreferrer" href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			<a target="_blank" rel="noopener noreferrer" href="#" class="google"><i class="fa fa-google"></i></a>
+			<a target="_blank" rel="noopener noreferrer" href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+			<a target="_blank" rel="noopener noreferrer" href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+		</div>
+
 		<div class="wrapper">
 
 			<!-- header -->
 			<header>
+				<!-- navigation -->
 				<nav class="navbar-top">
 					<div class="top-container">
-						<div class="social">
-							<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/"><i class="fa fa-facebook"></i></a>
-							<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/"><i class="fa fa-instagram"></i></a>
+						<div class="navbar-logo">
+							<a class="navbar-brand" href=""><img class="img-responsive" src="img/logo.png" alt="Logo" /></a>
+							<a class="navbar-text" href=""><h1>Da Ideia à Luz</h1></a>
+						</div>
+						<div class="navbar-support">
+							<!-- mostrar universidades e financiadores -->
 						</div>
 					</div>
 				</nav>
-				<!-- navigation -->
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
@@ -51,30 +65,31 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href=""><img class="img-responsive" src="img/logo.png" alt="Logo" /></a>
-							<a href=""><h1>Da Ideia à Luz</h1></a>
+
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
+							<ul class="nav navbar-nav navbar-left">
 								<li><a onclick="reloadContent('include-content', 'include/sobre.html');" href="#">Sobre</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Produções<span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="#">Acadêmicas</a></li>
+										<li><a href="#">Trabalhos Acadêmicos</a></li>
+										<li><a href="#">Espetáculos</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Profissionais</a></li>
-								<!-- <li class="dropdown">
+								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profissionais<span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="#">Criadores de luz</a></li>
+										<li><a href="#">Perfis</a></li>
 									</ul>
-								</li> -->
+								</li>
 								<li><a onclick="reloadContent('include-content', 'include/contato.html');" href="#">Contato</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<div style="padding:16px">
+									<div style="padding:17px">
 										<form action="">
 											<input type="text" placeholder="Buscar.." name="search">
 											<button type="submit"><i class="fa fa-search"></i></button>
@@ -165,10 +180,6 @@
 			<footer>
 				<div class="container">
 					<p><a href="#">Home</a> | <a href="#contact">Contact</a></p>
-					<div class="social">
-						<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/"><i class="fa fa-facebook"></i></a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/"><i class="fa fa-instagram"></i></a>
-					</div>
 					<!-- copy right -->
 					<p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz!</a> | All rights reserved. </p>
 				</div>
@@ -180,7 +191,6 @@
 		<!-- Javascript files -->
 		<!-- Slide Show -->
 		<script src="js/slideshow.js"></script>
-		<script src="js/collapse.js"></script>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JS -->
