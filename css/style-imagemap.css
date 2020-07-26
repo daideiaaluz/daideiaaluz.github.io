@@ -45,26 +45,35 @@
 }
 
 .collapsible {
-  background-color: rgba(1, 5, 115, 0.1);
-  color: #000;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  border-bottom: 1px solid #fff;
+    background-color: rgba(126, 129, 224, 0.1);
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
 }
 
 .active, .collapsible:hover {
-  background-color: rgba(0, 3, 69, 0.5);
+    background-color: rgba(87, 90, 156, 0.5);
 }
 
 .collapse-content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.collapse-content p{
+    text-align: left;
+    padding-left: 10px;
+    transition-timing-function: linear;
+    transition: padding-left 0.5s;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.collapse-content p:hover{
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
 }

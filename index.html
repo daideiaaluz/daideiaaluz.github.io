@@ -68,8 +68,9 @@
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="collapse navbar-collapse">
 							<ul class="nav navbar-nav navbar-left">
+								<li><a href="">Início</a></li>
 								<li><a onclick="reloadContent('include-content', 'include/sobre.html');" href="#">Sobre</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Produções<span class="caret"></span></a>
@@ -106,20 +107,20 @@
 			<div class="banner">
 				<div class="w3-content w3-display-container">
 					<div class="w3-display-container mySlides">
-						<img src="img/img01.jpg" style="width:100%;height:620px">
-						<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white" style="opacity:50%">
+						<img class="banner" src="img/img01.jpg">
+						<div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
 							Lorem Ipsum is <a href="#">clique aqui</a> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 						</div>
 					</div>
 					<div class="w3-display-container mySlides">
-						<img src="img/img02.jpg" style="width:100%;height:620px">
-						<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white" style="opacity:50%">
+						<img class="banner" src="img/img02.jpg">
+						<div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
 							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 						</div>
 					</div>
 					<div class="w3-display-container mySlides">
-						<img src="img/img03.jpg" style="width:100%;height:620px">
-						<div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white" style="opacity:50%">
+						<img class="banner" src="img/img03.jpg">
+						<div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</div>
 					</div>
@@ -178,11 +179,16 @@
 			<!-- footer -->
 			<footer>
 				<div class="container">
-					<p><a href="#">Home</a> | <a href="#contact">Contact</a></p>
-					<!-- copy right -->
-					<p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz!</a> | All rights reserved. </p>
+					<div style="padding: 30px;">
+						<p><a href="#">Home</a> | <a href="#contact">Contact</a></p>
+						<p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz!</a> | All rights reserved. </p>
+					</div>
+					<div class="support">
+						<h2>Apoiadores</h2>
+					</div>
 				</div>
 			</footer>
+			<!-- footer end -->
 
 		</div>
 
