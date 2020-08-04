@@ -1428,7 +1428,8 @@ meta.foundation-mq-topbar {
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		padding: 0 15px;
 		line-height: 45px;
-		background: #5ba8c2
+		background: #5ba8c2;
+		text-decoration: none;
 	}
 	.top-bar-section li:not(.has-form) a:not(.button):hover {
 		background: #007095
@@ -1485,7 +1486,7 @@ meta.foundation-mq-topbar {
 		line-height: 1;
 		white-space: nowrap;
 		padding: 12px 15px;
-		background: #333
+		background: #333;
 	}
 	.top-bar-section .dropdown li label {
 		white-space: nowrap;

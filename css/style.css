@@ -45,26 +45,9 @@ p{
 	color: #787878;
 }
 
-a{
-	text-decoration: none;
-	color: #9BB1C5;
-}
-
-a:hover{
-	text-decoration: none;
-	color: #a93c01;
-}
-
-a:hover,a:active,a:focus {
-	outline: 0;
-}
-
-:focus {
-	outline:none;
-}
-
-::-moz-focus-inner {
-	border:0;
+#upperbold {
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 /*
