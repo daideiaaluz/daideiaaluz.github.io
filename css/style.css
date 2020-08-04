@@ -154,8 +154,8 @@ header .navbar-text {
 	position: fixed;
 	right: 3%;
 	bottom: 3%;
-	background-color: #607b94;
-	border: 1px solid #fff;
+	background-color: #008cba;
+	/* border: 1px solid #fff; */
 	box-shadow: 2px 3px 10px rgba(0,0,0,0.5);
 }
 
@@ -169,7 +169,7 @@ header .navbar-text {
 }
 
 .menu-bar a:hover {
-	background-color: #000;
+	background-color: #007095;
 }
 
 .top-container {
