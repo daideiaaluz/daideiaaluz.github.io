@@ -8,6 +8,10 @@
 
 * {box-sizing: border-box}
 
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	background-color: #eee;
 	font-family: Helvetica, sans-serif;
@@ -69,6 +73,7 @@ a:hover,a:active,a:focus {
 
 header .navbar {
 	margin: 0;
+	padding-bottom: 0px;
 	background: #9BB1C5;
 	border: 0px;
 	border-radius: 0%;
@@ -78,10 +83,9 @@ header .navbar {
 header .navbar-default .navbar-nav>li>a {
 	text-transform: uppercase;
 	margin: 15px 2px;
-	padding-top: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	color: #fff;
-	padding-bottom: 6px;
-	border-radius: 2px;
 }
 
 header .navbar-top {
@@ -89,17 +93,6 @@ header .navbar-top {
 	padding-bottom: 25px;
 	height: 180px;
 	background: #eee;
-}
-
-header .navbar-logo {
-	width: 40%;
-	/* margin: 5px; */
-	/* border-bottom: 2px solid rgba(0,0,0,0.2); */
-}
-header .navbar-support {
-	width: 60%;
-	/* margin: 5px; */
-	/* border-bottom: 2px solid rgba(0,0,0,0.2); */
 }
 
 header .navbar-default .navbar-nav>li>a:hover,
@@ -153,6 +146,30 @@ header .navbar-brand img {
 header .navbar-text {
 	position: relative;
 	text-shadow: 2px 3px rgba(0,0,0,0.2);
+}
+
+.menu-bar {
+	display: none;
+	z-index: 1;
+	position: fixed;
+	right: 3%;
+	bottom: 3%;
+	background-color: #607b94;
+	border: 1px solid #fff;
+	box-shadow: 2px 3px 10px rgba(0,0,0,0.5);
+}
+
+.menu-bar a {
+	display: block;
+	text-align: center;
+	padding: 13px;
+	transition: all 0.3s ease;
+	color: #fff;
+	font-size: 15px;
+}
+
+.menu-bar a:hover {
+	background-color: #000;
 }
 
 .top-container {
