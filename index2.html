@@ -12,6 +12,8 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Foundation -->
 		<link href="css/foundation.min.css" rel="stylesheet">
+		<!-- Tablepress -->
+		<link href="css/tablepress-combined.min.css" rel="stylesheet">
 		<!-- W3 CSS -->
 		<link href="css/w3.css" rel="stylesheet">
 		<!-- Custom CSS -->
@@ -23,12 +25,25 @@
 		<!-- JS -->
 		<script src="js/includeContent.js"></script>
 	    <script src="js/reloadContent.js"></script>
+		<script src="js/loadTableContent.js"></script>
+		<script src="js/sortTable.js"></script>
 		<script src="js/collapse.js"></script>
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="#">
 
 		<script>
+		var Tabela = {
+		    titulo:"",
+		    resumo:"",
+		    autor:"",
+		    orientador:"",
+		    palavras_chave:"",
+		    ano:0,
+		    link:""
+		};
+		var tabela_content = Object.create(Tabela);
+
 		window.onload = function(e) {
 			var menu = document.getElementById("menu");
 
@@ -85,7 +100,7 @@
 								<li class="has-dropdown not-click">
 									<a id="upperbold" href="#">Produções</a>
 									<ul class="dropdown">
-										<li><a href="#">Trabalhos Acadêmicos</a></li>
+										<li><a onclick="reloadContent('include-content', 'include/trabalhos_academicos.html'); loadTableContent();" href="#">Trabalhos Acadêmicos</a></li>
 										<li><a href="#">Espetáculos</a></li>
 									</ul>
 								</li>

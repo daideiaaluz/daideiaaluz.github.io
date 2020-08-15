@@ -5497,7 +5497,7 @@ ul.off-canvas-list li a {
 
 table {
 	background: #fff;
-	margin-bottom: 1.25rem;
+	/* margin-bottom: 1.25rem; */
 	border: solid 1px #ddd
 }
 
