@@ -1,19 +1,27 @@
 <div id="spacetop-bot">
     <div class="content">
-        <table id="tablepress-1" class="tablepress tablepress-id-1">
-            <thead>
-                <tr class="row-1 odd">
-                    <th onclick="sortTable(0)" class="column-1 sorting">Título</th>
-                    <th onclick="sortTable(1)" class="column-2 sorting">Resumo</th>
-                    <th onclick="sortTable(2)" class="column-3 sorting">Autor(es)</th>
-                    <th onclick="sortTable(3)" class="column-4 sorting">Orientador</th>
-                    <th onclick="sortTable(4)" class="column-5 sorting">Palavras-chave</th>
-                    <th onclick="sortTable(5)" class="column-6 sorting">Ano</th>
-                    <th onclick="sortTable(6)" class="column-7 sorting">Publicação</th>
-                </tr>
-            </thead>
-            <tbody id="table-content" class="row-hover">
-            </tbody>
-        </table>
+        <div class="description">
+            Descrição: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        <div class="tablepress">
+            <div class="tablesearch">
+                <input type="search" id="inputSearchTable" onkeyup="searchTable();" placeholder="Pesquisar título">
+            </div>
+            <table id="tablepress-1" class="tablepress tablepress-id-1">
+                <thead>
+                    <tr class="row-1 odd">
+                        <th onclick="sortTable(0)" class="column-1 sorting">Título</th>
+                        <th onclick="sortTable(1)" class="column-2 sorting">Resumo</th>
+                        <th onclick="sortTable(2)" class="column-3 sorting">Autor(es)</th>
+                        <th onclick="sortTable(3)" class="column-4 sorting">Orientador</th>
+                        <th onclick="sortTable(4)" class="column-5 sorting">Palavras-chave</th>
+                        <th onclick="sortTable(5)" class="column-6 sorting">Ano</th>
+                        <th class="column-7 sorting">Publicação</th>
+                    </tr>
+                </thead>
+                <tbody id="table-content" class="row-hover">
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
