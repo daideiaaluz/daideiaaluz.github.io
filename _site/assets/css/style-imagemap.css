@@ -1,0 +1,84 @@
+.imagemap {
+    background-color: rgba(15, 15, 115, 0.08);
+    padding: 5px;
+}
+
+.imagemap-content {
+    background-color: rgba(15, 15, 115, 0.08);
+    border-right: 1px solid #fff;
+    padding: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-inside {
+    background-color: rgba(1, 5, 115, 0.1);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    border-bottom: 1px solid #fff;
+}
+
+.grid-content {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.img_estado {
+
+}
+
+.titulo {
+    margin-top: 30px;
+}
+
+.cidades{
+
+}
+
+.collapsible {
+    background-color: rgba(126, 129, 224, 0.1);
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+}
+.active, .collapsible:hover {
+    background-color: rgba(87, 90, 156, 0.5);
+}
+.collapsible:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+.collapse-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.collapse-content p{
+    text-align: left;
+    padding-left: 10px;
+    transition-timing-function: linear;
+    transition: padding-left 0.5s;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.collapse-content p:hover{
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}

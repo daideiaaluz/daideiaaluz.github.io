@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			{% include head_logo.html %}
+			{% include head_nav.html %}
+			<!-- header end -->
+
+			<!-- content -->
+			{{ content }}
+			<!-- content end -->
+
+			<!-- footer -->
+			{% include footer.html %}
+			<!-- footer end -->
+
+		</div>
+
+		<!-- Slideshow JS -->
+		<script src="/assets/js/slideshow.js"></script>
+
+	</body>
+</html>

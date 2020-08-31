@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Da Ideia à Luz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- JS -->
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <script src="/assets/js/loadTableContent.js"></script>
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#">
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 235 || document.documentElement.scrollTop > 235) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-logo">
+                <a class="navbar-brand" href=""><img class="img-responsive" src="/assets/img/logo.png" alt="Logo" /></a>
+                <a class="navbar-text" href=""><h1>Da Ideia à Luz</h1></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a id="upperbold" href="/index2.html">Início</a></li>
+                    <li class="divider"></li>
+                    <li><a id="upperbold" href="/sobre.html">Sobre</a></li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown not-click">
+                        <a id="upperbold">Produções</a>
+                        <ul class="dropdown">
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="#">Espetáculos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown not-click">
+                        <a id="upperbold">Profissionais</a>
+                        <ul class="dropdown">
+                            <li><a href="/perfis.html">Perfis</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a id="upperbold" href="/contato.html">Contato</a></li>
+                    <li class="divider"></li>
+                </ul>
+                <ul class="right">
+                    <li>
+                        <div style="padding:4px">
+                            <form action="">
+                                <input type="text" placeholder="Buscar..." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div class="container-content" id="include-content">
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="slideshow-container">
+            <div class="mySlides fading">
+                <img class="banner" src="/assets/img/img01.jpg">
+                <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
+                    <h1 style="color: #111">TRABALHOS ACADÊMICOS</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fading">
+                <img class="banner" src="/assets/img/img02.jpg">
+                <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
+                    <h1 style="color: #111">ESPETÁCULOS</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fading">
+                <img class="banner" src="/assets/img/img03.jpg">
+                <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
+                    <h1 style="color: #111">PERFIS</h1>
+                </div>
+            </div>
+
+            <a class="left carousel-control" onclick="plusSlides(-1)" style="cursor:pointer"></a>
+            <a class="right carousel-control" onclick="plusSlides(1)" style="cursor:pointer"></a>
+
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- map -->
+    <div id="spacetop-bot">
+        <div class="content">
+            <div class="description">
+                <h2>Iluminadores no Brasil</h2>
+                <p>Descrição: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div id="mapid" style="width:100%; height:700px;"></div>
+            <script>
+
+                var mymap = L.map('mapid').setView([-15.602, -48.604], 5);
+
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: 'mapbox/streets-v11',
+                    tileSize: 512,
+                    zoomOffset: -1
+                }).addTo(mymap);
+
+                L.marker([-15.602, -48.604]).addTo(mymap)
+                .bindPopup("<b>Marcelo A. Santana</b><br /><a href='/perfis/marcelo_augusto_santana.html'>Perfil</a>");
+
+            </script>
+        </div>
+    </div>
+    <!-- map end -->
+
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz!</a> | All rights reserved. </p>
+        </div>
+        <div class="support">
+            <h2>Apoiadores</h2>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+		<!-- Slideshow JS -->
+		<script src="/assets/js/slideshow.js"></script>
+
+	</body>
+</html>
