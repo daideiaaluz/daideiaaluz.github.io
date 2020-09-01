@@ -1,13 +1,11 @@
 ---
 layout: page
+title: Perfis
 ---
-<div onclick="location.href='perfis/marcelo_augusto_santana.html'" class="basic_card">
-    <img src="/assets/img/perfis/marcelo_augusto_santana.png">
-    <p class="nome">Marcelo A. Santana</p>
-    <p>&nbsp</p>
-</div>
-<div onclick="location.href='perfis/wallace_rios.html'" class="basic_card">
-    <img src="/assets/img/perfis/wallace_rios.png">
-    <p class="nome">Wallace Rios</p>
-    <p>&nbsp</p>
-</div>
+{% for perfil_item in site.perfis %}
+    <div onclick="location.href='{{ perfil_item.link }}'" class="basic_card">
+        <img src="{{ perfil_item.img }}">
+        <p class="nome">{{ perfil_item.name }}</p>
+        <p>&nbsp</p>
+    </div>
+{% endfor %}

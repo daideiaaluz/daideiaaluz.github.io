@@ -9,7 +9,7 @@
 .basic_card {
     display: inline-block;
     /* max-width: 200px; */
-    margin: 10px;
+    margin-right: 10px;
     text-align: center;
     font-family: arial;
     cursor: pointer;
