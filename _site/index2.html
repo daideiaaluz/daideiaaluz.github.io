@@ -36,6 +36,7 @@
     <script src="/assets/js/loadTableContent.js"></script>
     <script src="/assets/js/sortTable.js"></script>
     <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
     <!-- <script src="/assets/js/collapse.js"></script> -->
     <!-- jQuery -->
     <script src="/assets/js/jquery.js"></script>
@@ -156,21 +157,21 @@
         <div class="slideshow-container">
             
                 <div class="mySlides fading">
-                    <img class="banner" src="/assets/img/img01.jpg">
+                    <img class="banner" src="/assets/img/slideshow/img01.jpg">
                     <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
                         <h1 style="color: #111">TRABALHOS ACADÊMICOS</h1>
                     </div>
                 </div>
             
                 <div class="mySlides fading">
-                    <img class="banner" src="/assets/img/img02.jpg">
+                    <img class="banner" src="/assets/img/slideshow/img02.jpg">
                     <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
                         <h1 style="color: #111">ESPETÁCULOS</h1>
                     </div>
                 </div>
             
                 <div class="mySlides fading">
-                    <img class="banner" src="/assets/img/img03.jpg">
+                    <img class="banner" src="/assets/img/slideshow/img03.jpg">
                     <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
                         <h1 style="color: #111">PERFIS</h1>
                     </div>
@@ -215,8 +216,7 @@
                     zoomOffset: -1
                 }).addTo(mymap);
 
-                L.marker([-15.602, -48.604]).addTo(mymap)
-                .bindPopup("<b>Marcelo A. Santana</b><br /><a href='/perfis/marcelo_augusto_santana.html'>Perfil</a>");
+                loadLocation();
 
             </script>
         </div>
