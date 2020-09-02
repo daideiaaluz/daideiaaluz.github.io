@@ -3,9 +3,11 @@ layout: page
 title: Perfis
 ---
 {% for perfil_item in site.perfis %}
-    <div onclick="location.href='{{ perfil_item.link }}';" class="basic_card">
-        <img src="{{ perfil_item.img }}">
-        <p class="nome">{{ perfil_item.name }}</p>
-        <p>&nbsp</p>
-    </div>
+    <a href="{{ perfil_item.url }}">
+        <div class="basic_card">
+            <img src="{{ perfil_item.img }}">
+            <p class="nome">{{ perfil_item.iluminator }}</p>
+            <p>&nbsp</p>
+        </div>
+    </a>
 {% endfor %}

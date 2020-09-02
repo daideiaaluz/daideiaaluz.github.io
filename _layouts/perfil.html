@@ -1,0 +1,31 @@
+---
+layout: page
+---
+<div class="grid-profile">
+    <div class="card">
+        <img src="{{ page.img }}" style="width:100%;">
+        <p class="nome" style="font-size: 18px;">{{ page.iluminator }}</p>
+        <p class="title">{{ page.university }}</p>
+        <div style="margin: 24px 0;">
+            {% if page.email %}
+                <a target="_blank" rel="noopener noreferrer" href="{{ perfil_item.email }}" style="font-size: 22px;"><i class="fa fa-envelope"></i></a>
+            {% endif %}
+            {% if page.instagram %}
+                <a target="_blank" rel="noopener noreferrer" href="{{ perfil_item.instagram }}" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            {% endif %}
+            {% if page.facebook %}
+                <a target="_blank" rel="noopener noreferrer" href="{{ perfil_item.facebook }}" style="font-size: 22px;"><i class="fa fa-facebook"></i></a>
+            {% endif %}
+            {% if page.youtube %}
+                <a target="_blank" rel="noopener noreferrer" href="{{ perfil_item.youtube }}" style="font-size: 22px;"><i class="fa fa-youtube"></i></a>
+            {% endif %}
+            {% if page.linkedin %}
+                <a target="_blank" rel="noopener noreferrer" href="{{ perfil_item.linkedin }}" style="font-size: 22px;"><i class="fa fa-linkedin"></i></a>
+            {% endif %}
+        </div>
+        <p>&nbsp</p>
+    </div>
+    <div class="content-profile">
+        {{ content }}
+    </div>
+</div>
