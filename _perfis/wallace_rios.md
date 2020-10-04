@@ -9,7 +9,7 @@ instagram: https://www.instagram.com/marceloaugusto/
 youtube: youtube.com
 ---
 
-**Sobre**
+**SOBRE**
 
 Wallace Rios, iluminador cênico, de Fortaleza – Ceará. Graduado em Designer de Interiores e com especialização em ARQUITETURA & amp; LIGHTING. Possui formação técnica em interpretação teatral pelo Curso de Arte Dramática (CAD) pela Universidade Federal do Ceará. Coordenador do CENOTEC/CE, laboratório de estudos em tecnologias para a cena ligado ao Curso de Licenciatura em teatro da UFC onde ocupa o cargo de técnico de laboratório. Realiza projetos de criação, desenvolvimento e execução de iluminação cênica para espetáculos de teatro, dança e música. Ministra oficinas e cursos livre em iluminação cênica. Premiado, mas categorias de melhor iluminação com o espetáculo MAQUINISTA pelo 14° Semana de teatro do Maranhão em 2019; Melhor iluminação com o espetáculo MAQUINISTA pelo IV Ceará em Cena em 2018; Profissionais do ano pelo SATEDC-CE em 2015.
 

@@ -1,7 +1,5 @@
 name: Da Ideia a Luz
 
-baseurl: "/"
-
 include: ['_perfis']
 
 collections:
