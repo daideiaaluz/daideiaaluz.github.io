@@ -114,11 +114,11 @@ header .navbar-nav .dropdown-menu:before {
 header .navbar-brand {
 	padding: 0px;
 	height: auto;
+	position: absolute;
 }
 header .navbar-brand img {
-	z-index: 1;
-	position: relative;
 	max-width: 210px;
+	max-height: 210px;
 }
 header .navbar-text {
 	position: relative;
@@ -151,8 +151,12 @@ header .navbar-text {
 
 .top-container {
 	margin: 0px;
-	margin-right: auto;
+}
+.left-logo {
 	margin-left: 250px;
+}
+.right-logo {
+	right: 480px;
 }
 
 @media (min-width:768px) {
