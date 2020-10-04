@@ -4,9 +4,9 @@ permalink: /perfis/wallace_rios
 iluminator: Wallace Rios
 img: /assets/img/perfis/wallace_rios.png
 area: Iluminador Cênico
-email: email@email.com
-instagram: https://www.instagram.com/marceloaugusto/
-youtube: youtube.com
+email: mailto:email@email.com
+instagram: https://www.instagram.com/wallace_rios/
+youtube: https://www.youtube.com
 ---
 
 **SOBRE**

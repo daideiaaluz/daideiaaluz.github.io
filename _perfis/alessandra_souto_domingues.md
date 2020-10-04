@@ -4,7 +4,7 @@ permalink: /perfis/alessandra_souto_domingues
 iluminator: Alessandra S. Domingues
 img: /assets/img/perfis/alessandra_souto_domingues.png
 area: Iluminador Cênico
-email: lecasou@gmail.com
+email: mailto:lecasou@gmail.com
 instagram: https://www.instagram.com/
 youtube: https://www.youtube.com
 ---

@@ -4,7 +4,7 @@ permalink: /perfis/marcelo_augusto_santana
 iluminator: Marcelo A. Santana
 img: /assets/img/perfis/marcelo_augusto_santana.png
 area: Iluminador Cênico
-email: email@email.com
+email: mailto:email@email.com
 instagram: https://www.instagram.com/marceloaugusto/
 facebook: https://www.facebook.com/marceloaugusto.santana
 ---
