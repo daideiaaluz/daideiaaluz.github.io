@@ -1074,7 +1074,6 @@ meta.foundation-mq-topbar {
 	height: 45px;
 	line-height: 45px;
 	position: relative;
-	background: #5ba8c2;
 	margin-bottom: 0
 }
 
@@ -1369,9 +1368,11 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
 	.top-bar {
-		background: #5ba8c2;
-		*zoom: 1;
-		overflow: visible
+		z-index: 999;
+		width: 100%;
+		position: absolute;
+		top: 165px;
+		overflow: visible;
 	}
 	.top-bar:before,
 	.top-bar:after {
@@ -1405,10 +1406,8 @@ meta.foundation-mq-topbar {
 		margin-bottom: 0
 	}
 	.top-bar-section {
-		-webkit-transition: none 0 0;
-		-moz-transition: none 0 0;
-		transition: none 0 0;
-		left: 0 !important
+		left: 100px !important;
+		z-index: 1;
 	}
 	.top-bar-section ul {
 		width: auto;
@@ -1422,17 +1421,17 @@ meta.foundation-mq-topbar {
 		display: none
 	}
 	.top-bar-section li.hover>a:not(.button) {
-		background: #007095;
+		background: #ffc196;
 		color: #fff
 	}
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		padding: 0 15px;
 		line-height: 45px;
-		background: #5ba8c2;
+		background: #ea792b;
 		text-decoration: none;
 	}
 	.top-bar-section li:not(.has-form) a:not(.button):hover {
-		background: #007095
+		background: #ffc196
 	}
 	.top-bar-section li.active:not(.has-form) a:not(.button) {
 		padding: 0 15px;
@@ -1441,7 +1440,7 @@ meta.foundation-mq-topbar {
 		background: #008cba
 	}
 	.top-bar-section li.active:not(.has-form) a:not(.button):hover {
-		background: #0078a0
+		background: #ffc196
 	}
 	.top-bar-section .has-dropdown>a {
 		padding-right: 35px !important
@@ -1529,7 +1528,7 @@ meta.foundation-mq-topbar {
 		color: #fff
 	}
 	.no-js .top-bar-section ul li:active>a {
-		background: #008cba;
+		background: #ffc196;
 		color: #fff
 	}
 	.no-js .top-bar-section .has-dropdown:hover>.dropdown {
@@ -1726,7 +1725,7 @@ button,
 	/* padding-bottom: 1.0625rem; */
 	padding-left: 1rem;
 	/* font-size: 15px; */
-	background-color: #008cba;
+	background-color: #ffc196;
 	border-color: #fff;
 	color: #fff;
 	-webkit-transition: background-color 300ms ease-out;
@@ -1743,7 +1742,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-	background-color: #007095
+	background-color: #f79552
 }
 
 button:hover,

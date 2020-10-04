@@ -2,12 +2,18 @@
 layout: page
 title: Perfis
 ---
-{% for perfil_item in site.perfis %}
-    <a href="{{ perfil_item.url }}">
-        <div class="basic_card">
-            <img src="{{ perfil_item.img }}">
-            <p class="nome">{{ perfil_item.iluminator }}</p>
-            <p>&nbsp</p>
-        </div>
-    </a>
-{% endfor %}
+<div class="description">
+    Descrição: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</div>
+
+<div style="margin-left:12px;">
+    {% for perfil_item in site.perfis %}
+        <a href="{{ perfil_item.url }}">
+            <div class="basic_card">
+                <img src="{{ perfil_item.img }}">
+                <p class="nome">{{ perfil_item.iluminator }}</p>
+                <p>&nbsp</p>
+            </div>
+        </a>
+    {% endfor %}
+</div>

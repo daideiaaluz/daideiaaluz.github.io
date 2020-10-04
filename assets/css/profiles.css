@@ -10,15 +10,16 @@
     display: inline-block;
     /* max-width: 200px; */
     margin-right: 10px;
+    margin-bottom: 15px;
     text-align: center;
     font-family: arial;
     cursor: pointer;
     border: 1px solid #a6a6a6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 .basic_card img {
-    width: 230px;
-    height: 230px;
+    width: 175px;
+    height: 150px;
 }
 
 .card {

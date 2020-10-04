@@ -60,13 +60,22 @@
 
     window.onload = function(e) {
         var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
 
         document.addEventListener('scroll', function() {
             if (document.body.scrollTop > 235 || document.documentElement.scrollTop > 235) {
                 menu.style.display = 'block';
                 menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
             } else {
                 menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '165px';
+                top_bar.style.background = '';
             }
         });
     }
@@ -76,7 +85,7 @@
     <div class="icon-bar">
         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
     </div>
 
@@ -96,17 +105,14 @@
     <!-- logo -->
     <nav id="navbar-top" class="navbar-top">
         <div class="top-container">
-            <div class="navbar-logo">
-                <a class="navbar-brand" href=""><img class="img-responsive" src="/assets/img/logo.png" alt="Logo" /></a>
-                <a class="navbar-text" href=""><h1>Da Ideia à Luz</h1></a>
-            </div>
+            <a class="navbar-brand" href=""><img src="/assets/img/logo/logo_default.png" alt="Logo" /></a>
         </div>
     </nav>
 </header>
 
 			<header>
     <!-- navigation -->
-    <nav class="top-bar" data-topbar>
+    <nav id="top-bar" class="top-bar" data-topbar>
         <div class="container">
             <section class="top-bar-section">
                 <ul class="left">
@@ -158,23 +164,29 @@
 
         <h2>Perfis</h2>
 
-        
-    <a href="/perfis/marcelo_augusto_santana">
-        <div class="basic_card">
-            <img src="/assets/img/perfis/marcelo_augusto_santana.png">
-            <p class="nome">Marcelo A. Santana</p>
-            <p>&nbsp</p>
-        </div>
-    </a>
+        <div class="description">
+    Descrição: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</div>
 
-    <a href="/perfis/wallace_rios">
-        <div class="basic_card">
-            <img src="/assets/img/perfis/wallace_rios.png">
-            <p class="nome">Wallace Rios</p>
-            <p>&nbsp</p>
-        </div>
-    </a>
-
+<div style="margin-left:12px;">
+    
+        <a href="/perfis/marcelo_augusto_santana">
+            <div class="basic_card">
+                <img src="/assets/img/perfis/marcelo_augusto_santana.png">
+                <p class="nome">Marcelo A. Santana</p>
+                <p>&nbsp</p>
+            </div>
+        </a>
+    
+        <a href="/perfis/wallace_rios">
+            <div class="basic_card">
+                <img src="/assets/img/perfis/wallace_rios.png">
+                <p class="nome">Wallace Rios</p>
+                <p>&nbsp</p>
+            </div>
+        </a>
+    
+</div>
 
     </div>
 </div>
@@ -186,7 +198,7 @@
     <div class="container">
         <div style="padding: 30px;">
             <p><a href="#">Início</a> | <a href="#">Contato</a></p>
-            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz!</a> | All rights reserved. </p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
         </div>
         <div class="support">
             <h2>Apoiadores</h2>

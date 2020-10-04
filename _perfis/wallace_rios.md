@@ -3,7 +3,7 @@ layout: perfil
 permalink: /perfis/wallace_rios
 iluminator: Wallace Rios
 img: /assets/img/perfis/wallace_rios.png
-university: Universidade Federal do Ceará
+area: Iluminador Cênico
 email: email@email.com
 instagram: https://www.instagram.com/marceloaugusto/
 youtube: youtube.com

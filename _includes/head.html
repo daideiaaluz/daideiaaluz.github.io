@@ -58,13 +58,22 @@
 
     window.onload = function(e) {
         var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
 
         document.addEventListener('scroll', function() {
             if (document.body.scrollTop > 235 || document.documentElement.scrollTop > 235) {
                 menu.style.display = 'block';
                 menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
             } else {
                 menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '165px';
+                top_bar.style.background = '';
             }
         });
     }
@@ -74,7 +83,7 @@
     <div class="icon-bar">
         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
     </div>
 
