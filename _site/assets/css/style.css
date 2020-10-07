@@ -258,6 +258,7 @@ header .navbar-text {
 }
 
 .slideshow-container {
+	width: 1385px;
 	position: relative;
 	margin: auto;
 }
