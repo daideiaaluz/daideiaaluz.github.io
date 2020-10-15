@@ -47,7 +47,7 @@ p{
 
 #upperbold {
 	text-transform: uppercase;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 /*
@@ -258,7 +258,7 @@ header .navbar-text {
 }
 
 .slideshow-container {
-	width: 1385px;
+	width: 75%;
 	position: relative;
 	margin: auto;
 }
