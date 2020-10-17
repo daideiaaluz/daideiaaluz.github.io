@@ -9,11 +9,11 @@ layout: default
             {% for slide_item in site.slideshow %}
                 <div class="mySlides fading">
                     <img class="banner" src="{{ slide_item.img }}">
-                    <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
-                        {% if slide_item.title %}
+                    {% if slide_item.title %}
+                        <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
                             <h1 style="color: #111">{{ slide_item.title }}</h1>
-                        {% endif %}
-                    </div>
+                        </div>
+                    {% endif %}
                 </div>
             {% endfor %}
 
