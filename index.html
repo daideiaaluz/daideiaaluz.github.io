@@ -4,58 +4,11 @@ layout: default
 <div class="container-content" id="include-content">
 
     <!-- banner -->
-    <div class="banner">
-        <div class="slideshow-container">
-            {% for slide_item in site.slideshow %}
-                <div class="mySlides fading">
-                    <img class="banner" src="{{ slide_item.img }}">
-                    {% if slide_item.title %}
-                        <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
-                            <h1 style="color: #111">{{ slide_item.title }}</h1>
-                        </div>
-                    {% endif %}
-                </div>
-            {% endfor %}
-
-            <a class="left carousel-control" onclick="plusSlides(-1)" style="cursor:pointer"></a>
-            <a class="right carousel-control" onclick="plusSlides(1)" style="cursor:pointer"></a>
-        </div>
-        <br>
-        <div style="text-align:center">
-            {% for slide_item in site.slideshow %}
-                <span class="dot" onclick="currentSlide({{ slide_item.number }})"></span>
-            {% endfor %}
-        </div>
-    </div>
+    {% include slideshow.html %}
     <!-- banner end -->
 
     <!-- map -->
-    <div id="spacetop-bot">
-        <div class="content">
-            <div class="description">
-                <h2>Iluminadores no Brasil</h2>
-                <p>Descrição: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div id="mapid" style="width:100%; height:700px;"></div>
-            <script>
-
-                var mymap = L.map('mapid').setView([-15.602, -48.604], 5);
-
-                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                    maxZoom: 18,
-                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                    id: 'mapbox/streets-v11',
-                    tileSize: 512,
-                    zoomOffset: -1
-                }).addTo(mymap);
-
-                loadLocation();
-
-            </script>
-        </div>
-    </div>
+    {% include map.html %}
     <!-- map end -->
 
 </div>

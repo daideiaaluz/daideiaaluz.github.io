@@ -1,0 +1,23 @@
+<div class="banner">
+    <div class="slideshow-container">
+        {% for slide_item in site.slideshow %}
+            <div class="mySlides fading">
+                <img class="banner" src="{{ slide_item.img }}">
+                {% if slide_item.text %}
+                    <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
+                        <h1 style="color: #111">{{ slide_item.text }}</h1>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <a class="left carousel-control" onclick="plusSlides(-1)" style="cursor:pointer"></a>
+        <a class="right carousel-control" onclick="plusSlides(1)" style="cursor:pointer"></a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        {% for slide_item in site.slideshow %}
+            <span class="dot" onclick="currentSlide({{ slide_item.number }})"></span>
+        {% endfor %}
+    </div>
+</div>
