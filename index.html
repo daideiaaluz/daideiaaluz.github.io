@@ -10,7 +10,9 @@ layout: default
                 <div class="mySlides fading">
                     <img class="banner" src="{{ slide_item.img }}">
                     <div id="slide-content" class="w3-display-middle w3-large w3-container w3-padding-16 w3-white">
-                        <h1 style="color: #111">{{ slide_item.title }}</h1>
+                        {% if slide_item.title %}
+                            <h1 style="color: #111">{{ slide_item.title }}</h1>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}
