@@ -13,7 +13,7 @@ html {
 }
 
 body{
-	background-color: #eee;
+	background-color: #fff;
 	font-family: Helvetica, sans-serif;
 	font-weight: 400;
 	color: #545454;
@@ -362,7 +362,7 @@ footer p a:hover { color: #a93c01; }
 
 footer .support h2 {
 	padding: 30px;
-	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 	color: #fff;
 }
 
