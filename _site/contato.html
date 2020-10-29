@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Da Ideia à Luz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
@@ -129,26 +130,22 @@
                     <li class="has-dropdown not-click">
                         <a id="upperbold">Produções</a>
                         <ul class="dropdown">
-                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
                             <li><a href="#">Espetáculos</a></li>
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
                         </ul>
                     </li>
                     <li class="divider"></li>
-                    <li class="has-dropdown not-click">
-                        <a id="upperbold">Profissionais</a>
-                        <ul class="dropdown">
-                            <li><a href="/perfis.html">Perfis</a></li>
-                        </ul>
-                    </li>
+                    <li><a id="upperbold" href="/profissionais.html">Profissionais</a></li>
                     <li class="divider"></li>
                     <li><a id="upperbold" href="/contato.html">Contato</a></li>
                 </ul>
-                <ul class="right">
+                <ul class="right" style="padding:5px; margin-right:22%;">
                     <li>
-                        <div style="padding:4px; margin-right:200px;">
+                        <div>
                             <form action="">
                                 <input type="text" placeholder="Buscar..." name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
+                                <button class="button-search" type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                     </li>
@@ -174,7 +171,22 @@
 </div>
 
 <div class="container-contact">
-    <!-- Preencher com dados para contato -->
+    <div class="contato">
+        <h4>Formulário para contato</h4>
+        <form class="form" action="https://formspree.io/f/mqkgbeoy" method="POST">
+            <input class="field" class type="text" name="_name" placeholder="Seu nome">
+            <input class="field" type="text" name="_replyto" placeholder="Seu e-mail">
+            Assunto:
+            <select class="field" name="_subject">
+                <option value="Dúvida">Dúvida sobre o site ou projeto</option>
+                <option value="Sugestão">Sugestão para o site ou projeto</option>
+                <option value="Inscrição">Inscrição para fazer parte do site</option>
+            </select>
+            Sua message:
+            <textarea class="field" name="message"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
 </div>
 
     </div>
@@ -186,7 +198,7 @@
 			<footer>
     <div class="container">
         <div class="support">
-            <h2>Apoiadores</h2>
+            <h2>Apoio:</h2>
         </div>
         <div style="padding: 30px;">
             <p><a href="#">Início</a> | <a href="#">Contato</a></p>

@@ -24,7 +24,7 @@ img {
 	vertical-align: middle;
 }
 
-button {
+.button-search {
 	width: 25px;
 }
 
@@ -48,6 +48,12 @@ p{
 #upperbold {
 	text-transform: uppercase;
 	/* font-weight: bold; */
+}
+
+.container-content {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0 auto;
 }
 
 /*
@@ -175,6 +181,32 @@ header .navbar-text {
 	.top-container {
 		width: 1170px
 	}
+}
+
+/*
+ * Form email
+ */
+
+textarea{
+	height: 150px;
+}
+
+.contato{
+	/* display: flex; */
+	/* justify-content: center; */
+	width: 100%;
+	max-width: 600px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+}
+
+.field{
+	/* padding: 10px; */
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
 }
 
 /*
@@ -309,11 +341,6 @@ header .navbar-text {
 	padding-bottom: 20px;
 }
 
-.container-content {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin: 0 auto;
-}
 .content {
     background-color:rgba(255, 255, 255, 1);
     padding: 20px;

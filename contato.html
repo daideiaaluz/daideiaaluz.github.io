@@ -7,5 +7,20 @@ title: Contato
 </div>
 
 <div class="container-contact">
-    <!-- Preencher com dados para contato -->
+    <div class="contato">
+        <h4>Formulário para contato</h4>
+        <form class="form" action="https://formspree.io/f/mqkgbeoy" method="POST">
+            <input class="field" class type="text" name="_name" placeholder="Seu nome">
+            <input class="field" type="text" name="_replyto" placeholder="Seu e-mail">
+            Assunto:
+            <select class="field" name="_subject">
+                <option value="Dúvida">Dúvida sobre o site ou projeto</option>
+                <option value="Sugestão">Sugestão para o site ou projeto</option>
+                <option value="Inscrição">Inscrição para fazer parte do site</option>
+            </select>
+            Sua message:
+            <textarea class="field" name="message"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
 </div>

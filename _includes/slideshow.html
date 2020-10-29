@@ -14,8 +14,7 @@
         <a class="left carousel-control" onclick="plusSlides(-1)" style="cursor:pointer"></a>
         <a class="right carousel-control" onclick="plusSlides(1)" style="cursor:pointer"></a>
     </div>
-    <br>
-    <div style="text-align:center">
+    <div style="text-align: center; margin: 5px;">
         {% for slide_item in site.slideshow %}
             <span class="dot" onclick="currentSlide({{ slide_item.number }})"></span>
         {% endfor %}
