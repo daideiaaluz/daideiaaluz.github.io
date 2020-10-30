@@ -204,7 +204,7 @@ textarea{
 }
 
 .field{
-	/* padding: 10px; */
+	padding-left: 10px;
 	margin-bottom: 15px;
 	border: 1px solid #ccc;
 }
