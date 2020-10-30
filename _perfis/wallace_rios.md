@@ -1,7 +1,8 @@
 ---
 layout: perfil
 permalink: /perfis/wallace_rios
-iluminator: Wallace Rios
+name: Wallace Rios
+state: Ceará
 img: /assets/img/perfis/wallace_rios.png
 area: Iluminador Cênico
 email: mailto:email@email.com

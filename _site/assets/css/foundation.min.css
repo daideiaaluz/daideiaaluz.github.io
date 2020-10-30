@@ -3688,8 +3688,8 @@ h6 {
 	font-style: normal;
 	color: #222;
 	text-rendering: optimizeLegibility;
-	margin-top: 0.2rem;
-	margin-bottom: 0.5rem;
+	/* margin-top: 0.2rem; */
+	/* margin-bottom: 0.5rem; */
 	line-height: 1.4
 }
 

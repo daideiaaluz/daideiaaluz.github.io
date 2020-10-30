@@ -1,7 +1,8 @@
 ---
 layout: perfil
 permalink: /perfis/alessandra_souto_domingues
-iluminator: Alessandra S. Domingues
+name: Alessandra S. Domingues
+state: São Paulo
 img: /assets/img/perfis/alessandra_souto_domingues.png
 area: Iluminador Cênico
 email: mailto:lecasou@gmail.com

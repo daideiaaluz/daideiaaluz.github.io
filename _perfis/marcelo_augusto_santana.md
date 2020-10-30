@@ -1,7 +1,8 @@
 ---
 layout: perfil
 permalink: /perfis/marcelo_augusto_santana
-iluminator: Marcelo A. Santana
+name: Marcelo A. Santana
+state: Distrito Federal
 img: /assets/img/perfis/marcelo_augusto_santana.png
 area: Iluminador Cênico
 email: mailto:email@email.com
