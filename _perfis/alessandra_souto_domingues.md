@@ -1,7 +1,7 @@
 ---
 layout: perfil
 permalink: /perfis/alessandra_souto_domingues
-name: Alessandra S. Domingues
+alias: Alessandra S. Domingues
 state: São Paulo
 img: /assets/img/perfis/alessandra_souto_domingues.png
 area: Iluminador Cênico

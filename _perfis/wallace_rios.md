@@ -1,7 +1,7 @@
 ---
 layout: perfil
 permalink: /perfis/wallace_rios
-name: Wallace Rios
+alias: Wallace Rios
 state: Ceará
 img: /assets/img/perfis/wallace_rios.png
 area: Iluminador Cênico
