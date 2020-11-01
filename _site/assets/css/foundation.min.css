@@ -127,11 +127,6 @@ img {
 	vertical-align: middle
 }
 
-textarea {
-	height: auto;
-	min-height: 50px
-}
-
 select {
 	width: 100%
 }
@@ -1368,7 +1363,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
 	.top-bar {
-		z-index: 9999;
+		z-index: 999;
 		width: 100%;
 		position: absolute;
 		top: 165px;
@@ -1711,7 +1706,7 @@ meta.foundation-mq-topbar {
 
 button,
 .button {
-	top: 1px;
+	/* top: 1px; */
 	border: 1px solid #fff;
 	border-width: 0px;
 	cursor: pointer;
@@ -1723,13 +1718,13 @@ button,
 	text-decoration: none;
 	text-align: center;
 	/* display: block; */
-	padding: 5px;
-	padding-right: 2rem;
+	/* padding: 5px; */
+	/* padding-right: 2rem; */
 	/* padding-bottom: 1.0625rem; */
-	padding-left: 1rem;
+	/* padding-left: 1rem; */
 	/* font-size: 15px; */
 	background-color: #ffc196;
-	border-color: #fff;
+	/* border-color: #fff; */
 	color: #fff;
 	-webkit-transition: background-color 450ms ease-out;
 	-moz-transition: background-color 450ms ease-out;
@@ -5571,9 +5566,7 @@ form .row .row.collapse input {
 }
 
 form .row input.column,
-form .row input.columns,
-form .row textarea.column,
-form .row textarea.columns {
+form .row input.columns {
 	padding-left: 0.5rem
 }
 
@@ -5761,7 +5754,7 @@ label.postfix.radius {
 	border-top-right-radius: 3px
 }
 
-input[type="text"],
+/* input[type="text"], */
 input[type="password"],
 input[type="date"],
 input[type="datetime"],
@@ -5773,8 +5766,7 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 input[type="time"],
-input[type="url"],
-textarea {
+input[type="url"] {
 	-webkit-appearance: none;
 	background-color: #fff;
 	font-family: inherit;
@@ -5796,7 +5788,7 @@ textarea {
 	transition: box-shadow 0.45s, border-color 0.45s ease-in-out
 }
 
-input[type="text"]:focus,
+/* input[type="text"]:focus, */
 input[type="password"]:focus,
 input[type="date"]:focus,
 input[type="datetime"]:focus,
@@ -5808,15 +5800,14 @@ input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus {
+input[type="url"]:focus {
 	-webkit-box-shadow: 0 0 5px #999;
 	-moz-box-shadow: 0 0 5px #999;
 	box-shadow: 0 0 5px #999;
 	border-color: #999
 }
 
-input[type="text"]:focus,
+/* input[type="text"]:focus, */
 input[type="password"]:focus,
 input[type="date"]:focus,
 input[type="datetime"]:focus,
@@ -5828,14 +5819,13 @@ input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus {
+input[type="url"]:focus {
 	background: #fafafa;
 	border-color: #999;
 	outline: none
 }
 
-input[type="text"][disabled],
+/* input[type="text"][disabled], */
 input[type="password"][disabled],
 input[type="date"][disabled],
 input[type="datetime"][disabled],
@@ -5847,12 +5837,11 @@ input[type="number"][disabled],
 input[type="search"][disabled],
 input[type="tel"][disabled],
 input[type="time"][disabled],
-input[type="url"][disabled],
-textarea[disabled] {
+input[type="url"][disabled] {
 	background-color: #ddd
 }
 
-input[type="text"].radius,
+/* input[type="text"].radius, */
 input[type="password"].radius,
 input[type="date"].radius,
 input[type="datetime"].radius,
@@ -5864,8 +5853,7 @@ input[type="number"].radius,
 input[type="search"].radius,
 input[type="tel"].radius,
 input[type="time"].radius,
-input[type="url"].radius,
-textarea.radius {
+input[type="url"].radius {
 	-webkit-border-radius: 3px;
 	border-radius: 3px
 }
@@ -5941,7 +5929,6 @@ small.error {
 }
 
 .error input,
-.error textarea,
 .error select {
 	margin-bottom: 0
 }
@@ -5983,8 +5970,7 @@ small.error {
 	display: block
 }
 
-input.error,
-textarea.error {
+input.error {
 	margin-bottom: 0
 }
 

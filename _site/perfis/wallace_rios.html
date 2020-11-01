@@ -2,7 +2,13 @@
 <html>
 	<head>
     <meta charset="utf-8">
-    <title>Da Ideia à Luz</title>
+    <title>
+        
+            
+                Wallace Rios
+            
+        
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="origin">
 
@@ -42,6 +48,8 @@
     <script src="/assets/js/sortTable.js"></script>
     <script src="/assets/js/searchTable.js"></script>
     <script src="/assets/js/loadLocation.js"></script>
+    <script src="/assets/js/showHide.js"></script>
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
     <!-- <script src="/assets/js/collapse.js"></script> -->
     <!-- jQuery -->
     <script src="/assets/js/jquery.js"></script>
@@ -95,6 +103,14 @@
     <div id="menu" class="menu-bar">
         <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
     </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
 </head>
 
 
@@ -142,12 +158,7 @@
                 </ul>
                 <ul class="right" style="padding:5px; margin-right:22%;">
                     <li>
-                        <div>
-                            <form action="">
-                                <input type="text" placeholder="Buscar..." name="search">
-                                <button class="button-search" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
                     </li>
                 </ul>
             </section>

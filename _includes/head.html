@@ -1,6 +1,14 @@
 <head>
     <meta charset="utf-8">
-    <title>Da Ideia à Luz</title>
+    <title>
+        {% if page.title %}
+            {{ page.title }}
+        {% else %}
+            {% if page.alias %}
+                {{ page.alias }}
+            {% endif %}
+        {% endif %}
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="origin">
 
@@ -40,6 +48,8 @@
     <script src="/assets/js/sortTable.js"></script>
     <script src="/assets/js/searchTable.js"></script>
     <script src="/assets/js/loadLocation.js"></script>
+    <script src="/assets/js/showHide.js"></script>
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
     <!-- <script src="/assets/js/collapse.js"></script> -->
     <!-- jQuery -->
     <script src="/assets/js/jquery.js"></script>
@@ -92,5 +102,13 @@
     <!-- Back to top -->
     <div id="menu" class="menu-bar">
         <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
     </div>
 </head>

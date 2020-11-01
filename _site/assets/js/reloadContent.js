@@ -1,6 +1,6 @@
 function reloadContent(div, link) {
     var z = document.getElementById(div);
-    z.setAttribute("w3-include-html", link);
+    z.setAttribute("include-html", link);
 
     if (div != "include-content") {
         // Prevent automatic roll
