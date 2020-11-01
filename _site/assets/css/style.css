@@ -383,9 +383,11 @@ footer p a {
 }
 footer p a:hover { color: #a93c01; }
 
+footer .support {
+	border-bottom: 1px solid #fff;
+}
 footer .support h2 {
 	padding: 30px;
-	border-bottom: 1px solid #fff;
 	color: #fff;
 }
 
