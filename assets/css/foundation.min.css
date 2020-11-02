@@ -5516,7 +5516,7 @@ table tfoot tr td {
 
 table tr th,
 table tr td {
-	padding: 0.5625rem 0.625rem;
+	/* padding: 0.5625rem 0.625rem; */
 	font-size: 0.875rem;
 	color: #222
 }
@@ -5533,7 +5533,7 @@ table tbody tr td,
 table tr td,
 table tfoot tr td {
 	display: table-cell;
-	line-height: 1.125rem
+	/* line-height: 1.125rem */
 }
 
 form {
