@@ -1363,10 +1363,10 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
 	.top-bar {
-		z-index: 999;
+		z-index: 9999;
 		width: 100%;
 		position: absolute;
-		top: 165px;
+		top: 105px;
 		overflow: visible;
 	}
 	.top-bar:before,
@@ -1401,7 +1401,7 @@ meta.foundation-mq-topbar {
 		margin-bottom: 0
 	}
 	.top-bar-section {
-		left: 11% !important;
+		left: 20% !important;
 		z-index: 1;
 	}
 	.top-bar-section ul {

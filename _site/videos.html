@@ -71,7 +71,7 @@
         var top_bar = document.getElementById("top-bar");
 
         document.addEventListener('scroll', function() {
-            if (document.body.scrollTop > 235 || document.documentElement.scrollTop > 235) {
+            if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
                 menu.style.display = 'block';
                 menu.style.zIndex = '1';
 
@@ -82,7 +82,7 @@
                 menu.style.display = 'none';
 
                 top_bar.style.position = 'absolute';
-                top_bar.style.top = '165px';
+                top_bar.style.top = '105px';
                 top_bar.style.background = '';
             }
         });
@@ -154,7 +154,7 @@
                     <li class="divider"></li>
                     <li><a id="upperbold" href="/contato.html">Contato</a></li>
                 </ul>
-                <ul class="right" style="padding:5px; margin-right:22%;">
+                <ul class="right" style="padding:5px; margin-right:35%;">
                     <li>
                         <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
                     </li>
@@ -175,7 +175,13 @@
 
         <h2>Vídeos</h2>
 
-        <iframe width="1345"
+        <div class="description">
+    Descrição dos vídeos.
+</div>
+
+<!-- Colocar subdivisões para cada grupo de vídeos (palestras, debates, vídeoaulas e entrevistas) -->
+
+<iframe width="1345"
         height="600"
         src="https://www.youtube.com/embed/videoseries?list=PLOzDu-MXXLliO9fBNZOQTBDddoA3FzZUo"
         frameborder="0"
@@ -191,7 +197,7 @@
 			<footer>
     <div class="container">
         <div class="support">
-            <h2>Apoio:</h2>
+            <h2>Apoio</h2>
             <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
         </div>
         <div style="padding: 30px;">

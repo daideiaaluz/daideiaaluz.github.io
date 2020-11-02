@@ -78,7 +78,7 @@ header .navbar-default .navbar-nav>li>a {
 }
 
 header .navbar-top {
-	height: 210px;
+	height: 150px;
 	background: #ea792b;
 }
 
@@ -123,8 +123,8 @@ header .navbar-brand {
 	position: absolute;
 }
 header .navbar-brand img {
-	max-width: 210px;
-	max-height: 210px;
+	max-width: 150px;
+	max-height: 150px;
 }
 header .navbar-text {
 	position: relative;
@@ -341,7 +341,7 @@ textarea {
 
 .banner img {
 	width: 100%;
-	/* height: 450px; */
+	height: 300px;
 }
 
 .banner #slide-content {
@@ -429,7 +429,7 @@ textarea {
 footer {
 	margin-top: 40px;
 	padding: 30px 0;
-	background: #0c2444; /* #5576a3 */
+	background: #f9ee48; /* #5576a3 */
 	text-align: center;
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
@@ -437,23 +437,25 @@ footer.ffoot {margin-top: 0;}
 footer p {
 	font-size: 13px;
 	line-height: 25px;
-	color: #fff;
+	color: #000;
 }
 footer p a {
 	font-size: 13px;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.055em;
-	color: #fff;
+	color: #000;
 }
 footer p a:hover { color: #a93c01; }
 
 footer .support {
-	border-bottom: 1px solid #fff;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #000;
 }
 footer .support h2 {
+	margin-bottom: 15px;
 	padding: 0px;
-	color: #fff;
+	color: #000;
 }
 
 footer .copy-right {
