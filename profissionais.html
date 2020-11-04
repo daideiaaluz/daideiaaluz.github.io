@@ -9,56 +9,55 @@ title: Profissionais
 <div style="display:flex;">
     <div id="column01" class="column-professional">
         <div class="state">
-            <h6>Acre</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Acre" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Acre</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Acre" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Alagoas</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Alagoas" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Alagoas</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Alagoas" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Amapá</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Amapá" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Amapá</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Amapá" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Amazonas</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Amazonas" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Amazonas</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Amazonas" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Bahia</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Bahia" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Bahia</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Bahia" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
-        
         <div class="state">
             <div class="collapsible button-state"><h6 style="display:inline-block">Ceará</h6></div>
             <div class="collapse-content basic_list">
@@ -69,36 +68,35 @@ title: Profissionais
                 {% endfor %}
             </div>
         </div>
-
         <div class="state">
-            <h6>Distrito Federal</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Distrito Federal" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Distrito Federal</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Distrito Federal" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Espírito Santo</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Espírito Santo" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Espírito Santo</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Espírito Santo" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Goiás</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Goiás" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Goiás</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Goiás" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 
@@ -106,94 +104,94 @@ title: Profissionais
 
     <div id="column02" class="column-professional">
         <div class="state">
-            <h6>Maranhão</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Maranhão" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Maranhão</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Maranhão" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Mato Grosso</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Mato Grosso" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Mato Grosso</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Mato Grosso" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Mato Grosso do Sul</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Mato Grosso do Sul" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Mato Grosso do Sul</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Mato Grosso do Sul" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Minas Gerais</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Minas Gerais" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Minas Gerais</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Minas Gerais" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Pará</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Pará" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Pará</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Pará" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Paraíba</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Paraíba" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Paraíba</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Paraíba" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Paraná</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Paraná" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Paraná</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Paraná" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Pernambuco</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Pernambuco" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Pernambuco</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Pernambuco" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Piauí</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Piauí" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Piauí</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Piauí" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 
@@ -201,92 +199,111 @@ title: Profissionais
 
     <div id="column03" class="column-professional" style="margin-right:0px">
         <div class="state">
-            <h6>Rio de Janeiro</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Rio de Janeiro" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Rio de Janeiro</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Rio de Janeiro" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Rio Grande do Norte</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Rio Grande do Norte" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Rio Grande do Norte</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Rio Grande do Norte" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Rio Grande do Sul</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Rio Grande do Sul" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Rio Grande do Sul</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Rio Grande do Sul" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Rondônia</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Rondônia" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Rondônia</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Rondônia" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Santa Catarina</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Santa Catarina" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Roraima</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Roraima" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>São Paulo</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "São Paulo" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Santa Catarina</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Santa Catarina" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Sergipe</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Sergipe" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">São Paulo</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "São Paulo" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
         <div class="state">
-            <h6>Tocantins</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Tocantins" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Sergipe</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Sergipe" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="state">
+            <div class="collapsible button-state"><h6 style="display:inline-block">Tocantins</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Tocantins" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
 
 <script>
+var collapse_content = document.getElementsByClassName("collapse-content");
+var i;
+
+// Verificar se existe algum elemento <p> no div de collapse.
+for (i = 0; i < collapse_content.length; i++) {
+    if (collapse_content[i].children.length > 0) { // Se existir, mudar cor do div. Para marcar quais estados tem perfis.
+        collapse_content[i].parentElement.setAttribute("style", "background-color: #ffc196");
+    }
+}
+
 var coll = document.getElementsByClassName("collapsible");
 // var valor = 23 * coll.length;
-var i;
 
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
