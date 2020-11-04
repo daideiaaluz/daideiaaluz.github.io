@@ -71,13 +71,14 @@
         var top_bar = document.getElementById("top-bar");
 
         document.addEventListener('scroll', function() {
-            if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
                 menu.style.display = 'block';
                 menu.style.zIndex = '1';
 
                 top_bar.style.position = 'fixed';
                 top_bar.style.top = '0px';
                 top_bar.style.background = '#ea792b';
+                // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); Aplicar esta sombra no top_bar
             } else {
                 menu.style.display = 'none';
 
@@ -144,7 +145,7 @@
                     <li class="has-dropdown not-click">
                         <a id="upperbold">Produções</a>
                         <ul class="dropdown">
-                            <li><a href="#">Espetáculos</a></li>
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
                             <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
                             <li><a href="/videos.html">Vídeos</a></li>
                         </ul>
@@ -154,7 +155,7 @@
                     <li class="divider"></li>
                     <li><a id="upperbold" href="/contato.html">Contato</a></li>
                 </ul>
-                <ul class="right" style="padding:5px; margin-right:35%;">
+                <ul class="right" style="padding:5px; margin-right:45%;">
                     <li>
                         <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
                     </li>
@@ -183,11 +184,6 @@
                 
             </div>
         
-            <div class="mySlides fading">
-                <img class="banner" src="/assets/img/slideshow/capa03.png">
-                
-            </div>
-        
 
         <a class="left carousel-control" onclick="plusSlides(-1)" style="cursor:pointer"></a>
         <a class="right carousel-control" onclick="plusSlides(1)" style="cursor:pointer"></a>
@@ -197,8 +193,6 @@
             <span class="dot" onclick="currentSlide(1)"></span>
         
             <span class="dot" onclick="currentSlide(2)"></span>
-        
-            <span class="dot" onclick="currentSlide(3)"></span>
         
     </div>
 </div>

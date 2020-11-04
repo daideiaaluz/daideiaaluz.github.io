@@ -58,16 +58,18 @@ title: Profissionais
                 {% endif %}
             {% endfor %}
         </div>
+        
         <div class="state">
-            <h6>Ceará</h6>
-            {% for perfil_item in site.perfis %}
-                {% if perfil_item.state == "Ceará" %}
-                    <div class="basic_list" onclick="location.href='{{ perfil_item.url }}'">
-                        <p class="nome">{{ perfil_item.alias }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="collapsible button-state"><h6 style="display:inline-block">Ceará</h6></div>
+            <div class="collapse-content basic_list">
+                {% for perfil_item in site.perfis %}
+                    {% if perfil_item.state == "Ceará" %}
+                        <p onclick="location.href='{{ perfil_item.url }}'" class="nome">{{ perfil_item.alias }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
+
         <div class="state">
             <h6>Distrito Federal</h6>
             {% for perfil_item in site.perfis %}
@@ -280,3 +282,23 @@ title: Profissionais
         </div>
     </div>
 </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+// var valor = 23 * coll.length;
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            // content.style.maxHeight = null;
+        } else {
+            content.style.display = "block";
+            // content.style.maxHeight = valor + "px";
+        }
+    });
+}
+</script>

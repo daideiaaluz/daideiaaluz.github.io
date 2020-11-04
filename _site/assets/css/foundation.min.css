@@ -1401,7 +1401,7 @@ meta.foundation-mq-topbar {
 		margin-bottom: 0
 	}
 	.top-bar-section {
-		left: 20% !important;
+		left: 23% !important;
 		z-index: 1;
 	}
 	.top-bar-section ul {
@@ -5763,7 +5763,6 @@ input[type="month"],
 input[type="week"],
 input[type="email"],
 input[type="number"],
-input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"] {
@@ -5797,7 +5796,6 @@ input[type="month"]:focus,
 input[type="week"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus {
@@ -5816,7 +5814,6 @@ input[type="month"]:focus,
 input[type="week"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus {
@@ -5834,7 +5831,6 @@ input[type="month"][disabled],
 input[type="week"][disabled],
 input[type="email"][disabled],
 input[type="number"][disabled],
-input[type="search"][disabled],
 input[type="tel"][disabled],
 input[type="time"][disabled],
 input[type="url"][disabled] {
@@ -5850,7 +5846,6 @@ input[type="month"].radius,
 input[type="week"].radius,
 input[type="email"].radius,
 input[type="number"].radius,
-input[type="search"].radius,
 input[type="tel"].radius,
 input[type="time"].radius,
 input[type="url"].radius {
