@@ -80,13 +80,14 @@
                 top_bar.style.position = 'fixed';
                 top_bar.style.top = '0px';
                 top_bar.style.background = '#ea792b';
-                // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); Aplicar esta sombra no top_bar
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
             } else {
                 menu.style.display = 'none';
 
                 top_bar.style.position = 'absolute';
                 top_bar.style.top = '105px';
                 top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
             }
         });
     }
