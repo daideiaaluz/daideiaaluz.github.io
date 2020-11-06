@@ -400,6 +400,8 @@ textarea {
 .collapsible {
 	width: 100%;
 	text-align: left;
+	padding: 5px;
+	padding-bottom: 0px;
 }
 .collapsible:after {
 	content: '\002B'; /* Unicode character for "plus" sign (+) */
