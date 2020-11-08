@@ -253,6 +253,10 @@ textarea {
 	margin-bottom: 5px;
 }
 
+.highlight {
+	background-color: yellow;
+}
+
 .search_button_modal {
 	float: left;
 	width: 9%;
