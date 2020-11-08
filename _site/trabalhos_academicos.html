@@ -30,29 +30,29 @@
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin=""/>
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
     <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
 
     <!-- Leafmap JS -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
-    <!-- JS -->
-    <!-- <script src="/assets/js/includeContent.js"></script> -->
-    <!-- <script src="/assets/js/reloadContent.js"></script> -->
-    <script src="/assets/js/loadTableContent.js"></script>
-    <script src="/assets/js/sortTable.js"></script>
-    <script src="/assets/js/searchTable.js"></script>
-    <script src="/assets/js/loadLocation.js"></script>
-    <script src="/assets/js/showHide.js"></script>
-    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
-    <!-- <script src="/assets/js/collapse.js"></script> -->
     <!-- jQuery -->
     <script src="/assets/js/jquery.js"></script>
     <!-- Bootstrap JS -->
     <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
 
     <script>
     var Tabela = {
@@ -95,8 +95,8 @@
     <div class="icon-bar">
         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
     </div>
 
     <!-- Back to top -->
@@ -177,9 +177,7 @@
 
         <h2>Trabalhos Acadêmicos</h2>
 
-        <script>loadTableContent();</script>
-
-<div class="description">
+        <div class="description">
     <p>Encontre trabalhos acadêmicos de diversos iluminadores brasileiros. Para buscas mais específicas, clique na área de maior interesse: palavras-chave, ano de publicação ou nome dos autotes, por exemplo.</p>
 </div>
 <div class="tablepress">
@@ -195,10 +193,83 @@
                 <th onclick="sortTable(3)" class="column-4 sorting">Orientador</th>
                 <th onclick="sortTable(4)" class="column-5 sorting">Palavras-chave</th>
                 <th onclick="sortTable(5)" class="column-6 sorting">Ano</th>
-                <th class="column-7 sorting">Publicação</th>
+                <th class="column-7 sorting" style="cursor:auto;">Publicação</th>
             </tr>
         </thead>
         <tbody id="table-content" class="row-hover">
+            
+                <tr>
+                    <td>
+                        Desenho de luz: um estudo sobre o uso da iluminação no palco
+                    </td>
+                    <td style="text-align:justify;">
+                        Esta pesquisa tem como objetivo central valorizar um elemento do espetáculo ainda pouco contemplado pela academia no Brasil. A Iluminação foi coadjuvante do teatro, no momento da sua gênese, participou do seu desenvolvimento e ainda acompanha a arte da representação. O recorte da investigação evidencia os aspectos pertinentes à formação do Iluminador. Abordam-se os princípios que envolvem o desenvolvimento do Desenho de Luz para a cena, estabelecendo um diálogo entre aspectos da realidade brasileira e exemplos estrangeiros. Apresenta-se também a função do artista em questão (o iluminador) e seu ofício. O texto destaca a importância do processo histórico do teatro associado à evolução tecnológica. Esta ultima é valorizada a partir da sua origem, quando eram empregados princípios artesanais engenhosos para dominar e administrar a luz artificial. Por fim, o espetáculo Mestre Haroldo... e os meninos, é analisado. Para esta abordagem foram utilizados os tópicos escolhidos para compor esta dissertação, pautados na relação: unidade de cena e composição de luz.
+                    </td>
+                    <td>
+                        Benevides, Pedro Dultra
+                    </td>
+                    <td>
+                        Santos, Gláucio Machado
+                    </td>
+                    <td>
+                        Iluminação Cênica; Desenho de Luz; Iluminador
+                    </td>
+                    <td>
+                        2011
+                    </td>
+                    <td>
+                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufba.br/ri/handle/ri/9635">Link</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Iluminação cênica: possibilidades de um sujeito em cena
+                    </td>
+                    <td style="text-align:justify;">
+                        Este artigo faz uma reflexão sobre a importância e as capacidades que a iluminação cênica tem no desenvolvimento da concepção de um espetáculo. Pensar em iluminação cênica é abrir um enorme leque de possibilidades para pesquisa e criação. O artigo aborda principalmente trabalhos nos quais esse recurso cênico é usado em cenas cômicas. Com base na experimentação prática realizada durante a pesquisa com alunos do Curso de Teatro da Universidade Federal de Uberlândia (MG), foi possível refletir sobre as capacidades que a iluminação tem ao se potencializar como sujeito de uma situação cômica, a partir da relação criada entre o(a) ator(atriz) e a luminotécnica.
+                    </td>
+                    <td>
+                        Felipe Braccialli
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        Iluminação cênica; Comicidade; Personagem
+                    </td>
+                    <td>
+                        2015
+                    </td>
+                    <td>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.usp.br/salapreta/article/view/102164">Link</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Por uma história do pensamento sobre o fazer da iluminação cênica moderna: a cena além do humano
+                    </td>
+                    <td style="text-align:justify;">
+                        O presente artigo, um dos resultados parciais de pesquisa de pós-doutoramento sobre uma história do fazer e do pensamento da iluminação cênica moderna, apresenta algumas questões relativas a tal proposição e estabelece algumas bases do pensamento da iluminação em cena entre finais do século XIX e início do XX. Para tal, articula, com base sobretudo em Adolphe Appia e Gordon Craig, a relação entre os avanços propiciados pela iluminação elétrica e reconfigurações das tradições do teatro de figuras (marionetes), como estudado por Cristina Grazioli, numa proposição de modernização da cena, considerando-se os modos de produção, tanto da iluminação quanto da cena, em seus contextos culturais.
+                    </td>
+                    <td>
+                        Nosella, Berilo Luigi Deiró
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        Teatro de formas animadas; Gordon Craig; Adolphe Appia; História e historiografia do teatro; Stage lighting history
+                    </td>
+                    <td>
+                        2018
+                    </td>
+                    <td>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.repositorio.ufop.br/handle/123456789/10148">Link</a>
+                    </td>
+                </tr>
+            
         </tbody>
     </table>
 </div>

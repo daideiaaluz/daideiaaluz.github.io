@@ -1,32 +1,32 @@
-function applyLocation(location_content) {
-    for (var i = 0; i < location_content.length; i++) {
-        let d = location_content[i];
-        let values = Object.values(d);
+function loadLocation() {
+    var table, tr, td, i, j, txtValue, l1, l2, link, name;
+    table = document.getElementById("temporary-table");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        for (j = 0; j < 4; j++) {
+            td = tr[i].getElementsByTagName("td")[j];
 
-        var l2 = values.pop();
-        var l1 = values.pop();
-        var link = values.pop();
-        var name = values.pop();
+            txtValue = td.textContent || td.innerText;
+            switch (j) {
+                case 0:
+                    name = txtValue;
+                    break;
+                case 1:
+                    link = txtValue;
+                    break;
+                case 2:
+                    l1 = txtValue;
+                    break;
+                case 3:
+                    l2 = txtValue;
+                    break;
+            }
+        }
 
         var string = "<b>" + name + "</b><br /><a href='" + link + "'>Perfil</a>"
 
-        L.marker([l1, l2]).addTo(mymap)
-        .bindPopup(string);
+        L.marker([l1, l2]).addTo(mymap).bindPopup(string);
     }
 
-
-}
-
-function loadLocation() {
-    var xhr = new XMLHttpRequest();
-    var url = "assets/files/localizacoes_mapa";
-    xhr.overrideMimeType("application/json");
-    xhr.open("GET", url, true);
-    xhr.onreadystatechange = function() {
-        if(xhr.readyState == 4 && xhr.status == 200) {
-            location_content = JSON.parse(xhr.responseText);
-            applyLocation(location_content);
-        }
-    }
-    xhr.send(null);
+    table.parentNode.removeChild(table);
 }

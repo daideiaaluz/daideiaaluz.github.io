@@ -8,6 +8,8 @@ area: Iluminador Cênico
 email: mailto:email@email.com
 instagram: https://www.instagram.com/marceloaugusto/
 facebook: https://www.facebook.com/marceloaugusto.santana
+latitude: "-15.602"
+longitude: "-48.604"
 ---
 
 ##### **SOBRE**

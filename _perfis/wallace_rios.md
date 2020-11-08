@@ -8,6 +8,8 @@ area: Iluminador Cênico
 email: mailto:email@email.com
 instagram: https://www.instagram.com/wallace_rios/
 youtube: https://www.youtube.com
+latitude: "-4.921"
+longitude: "-39.556"
 ---
 
 ##### **SOBRE**

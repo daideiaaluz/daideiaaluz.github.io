@@ -197,6 +197,16 @@
 	padding: 0!important
 }
 
+.tablepress .column-1 {
+	width: 140px;
+}
+.tablepress .column-2 {
+	width: 650px;
+}
+.tablepress .column-5 {
+	width: 130px;
+}
+
 .tablepress .sorting,
 .tablepress .sorting_asc,
 .tablepress .sorting_desc {

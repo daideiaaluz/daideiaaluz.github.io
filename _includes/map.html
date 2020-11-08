@@ -1,3 +1,14 @@
+<table id="temporary-table" style="display:none;">
+    {% for perfil_item in site.perfis %}
+        <tr>
+            <td> {{ perfil_item.alias }} </td>
+            <td> {{ perfil_item.permalink }} </td>
+            <td> {{ perfil_item.latitude }} </td>
+            <td> {{ perfil_item.longitude }} </td>
+        </tr>
+    {% endfor %}
+</table>
+
 <div id="spacetop-bot">
     <div class="content">
         <div class="description" style="text-align:center;">

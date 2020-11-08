@@ -8,6 +8,8 @@ area: Iluminador Cênico
 email: mailto:lecasou@gmail.com
 instagram: https://www.instagram.com/
 youtube: https://www.youtube.com
+latitude: "-23.6609"
+longitude: "-46.4845"
 ---
 
 ##### **SOBRE**
