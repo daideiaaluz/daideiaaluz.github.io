@@ -1366,7 +1366,7 @@ meta.foundation-mq-topbar {
 		z-index: 9999;
 		width: 100%;
 		position: absolute;
-		top: 105px;
+		top: 55px;
 		overflow: visible;
 	}
 	.top-bar:before,
@@ -1483,7 +1483,7 @@ meta.foundation-mq-topbar {
 		line-height: 1;
 		white-space: nowrap;
 		padding: 12px 15px;
-		background-color: #ea792b;
+		background-color: #f79552;
 	}
 	.top-bar-section .dropdown li label {
 		white-space: nowrap;
