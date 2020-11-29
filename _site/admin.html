@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <title>
         
-            
-                Wallace Rios
-            
+            Área de Admin
         
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -177,38 +175,142 @@
             <!-- colocar caminho das páginas anteriores -->
         </div>
 
-        <h2></h2>
+        <h2>Área de Admin</h2>
 
-        <div class="grid-profile">
-    <div class="card">
-        <img src="/assets/img/perfis/wallace_rios.png" style="width:100%;">
-        <p class="nome" style="font-size: 18px;margin:15px;">Wallace Rios</p>
-        <p class="title">Iluminador Cênico</p>
-        <div style="margin: 20px 0; background-color: #ccc8c8;">
-            
-                <a target="_blank" rel="noopener noreferrer" href="mailto:email@email.com" style="font-size: 22px;"><i class="fa fa-envelope"></i></a>
-            
-            
-                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/wallace_rios/" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
-            
-            
-            
-                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" style="font-size: 22px;"><i class="fa fa-youtube"></i></a>
-            
-            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script src="/assets/js/fileSaver.js"></script>
+
+<div class="container-contact">
+    <div style="width:100%;">
+        <h4 style="margin-bottom:10px;margin-top:10px;">Formulário para cria arquivo de inserção de profissionais no portal</h4>
+        <div class="form">
+            <p><b>Obs: Onde for nome de arquivo, trocar o espaço por underline. -Exemplo: avner_maximiliano)</b></p>
+            <br>
+            <p>Arquivo</p>
+            <input class="field" type="text" id="filename" placeholder="Nome do arquivo que será baixado (somente o nome, sem extensão.)">
+            <br>
+            <p>Dados principais</p>
+            <input class="field" type="text" id="alias" placeholder="Nome do profissional">
+            <!-- <input class="field" type="text" id="state" placeholder=""> -->
+            <input class="field" type="text" id="area" placeholder="Área de atuação">
+            <input class="field" type="text" id="email" placeholder="E-mail do profissional">
+            <input class="field" type="text" id="img" placeholder="Nome do arquivo da foto (Incluir a extensão. -Exemplo: avner_maximiliano.png)">
+            <p>Estado onde o profissional trabalha:</p>
+            <select class="field" id="state">
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Amapá">Amapá</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará">Ceará</option>
+                <option value="Distrito Federal">Distrito Federal</option>
+                <option value="Espírito Santo">Espírito Santo</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Maranhão">Maranhão</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Pará">Pará</option>
+                <option value="Paraíba">Paraíba</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Piauí">Piauí</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Tocantins">Tocantins</option>
+            </select>
+            <br>
+            <p>Redes Sociais</p>
+            <input class="field" type="text" id="instagram" placeholder="Instagram do profisional">
+            <input class="field" type="text" id="facebook" placeholder="Facebook do profisional">
+            <input class="field" type="text" id="youtube" placeholder="YouTube do profisional">
+            <input class="field" type="text" id="linkedin" placeholder="LinkedIn do profisional">
+            <br>
+            <p>Localização no mapa</p>
+            <input class="field" type="text" id="latitude" placeholder="Latitude para exibir no mapa">
+            <input class="field" type="text" id="longitude" placeholder="Longitude para exibir no mapa">
+            <br>
+            <p>Escrever o sobre:</p>
+            <textarea id="mdEditor"></textarea>
+          <button type="submit" onclick="saveDynamicDataToFile();">Baixar</button>
         </div>
     </div>
-    <div class="content-profile">
-        <h5 id="sobre"><strong>SOBRE</strong></h5>
-
-<p>Wallace Rios, iluminador cênico, de Fortaleza – Ceará. Graduado em Designer de Interiores e com especialização em ARQUITETURA &amp; amp; LIGHTING. Possui formação técnica em interpretação teatral pelo Curso de Arte Dramática (CAD) pela Universidade Federal do Ceará. Coordenador do CENOTEC/CE, laboratório de estudos em tecnologias para a cena ligado ao Curso de Licenciatura em teatro da UFC onde ocupa o cargo de técnico de laboratório. Realiza projetos de criação, desenvolvimento e execução de iluminação cênica para espetáculos de teatro, dança e música. Ministra oficinas e cursos livre em iluminação cênica. Premiado, mas categorias de melhor iluminação com o espetáculo MAQUINISTA pelo 14° Semana de teatro do Maranhão em 2019; Melhor iluminação com o espetáculo MAQUINISTA pelo IV Ceará em Cena em 2018; Profissionais do ano pelo SATEDC-CE em 2015.</p>
-
-<p><br /></p>
-
-<p>Nascido em Fortaleza - Ceará, começou sua carreira artística em 2002 no Curso Princípios Básicos de Teatro ? CPBT. No mesmo ano cursou o módulo de ILUMINAÇÃO do Colégio de dança de Fortaleza realizado pelo INSTITUTO DRAGÃO DO MAR. Desde então, iniciou sua pesquisa na área de Iluminação Cênica. Concluiu o Curso de Arte Dramática ? CAD pela UFC (Universidade Federal do Ceará) no ano de 2006 realizou registro de profissional no MINISTÉRIO DO TRABALHO E EMPREGO. Ministra Cursos livre de Iluminação Cênica. Primeiro técnico cearense agraciado com o Prêmio de FORMAÇÃO na categoria TEATRO promovido pela FUNCET (Fundação de Cultura, Esporte e Turismo) do município de Fortaleza ? Ceará, no ano de 2007. Graduado em Designer de Interiores na Faculdade Integrada do Ceará ?ESTÁCIO DE SÁ/FIC; Especialista pelo MASTER EM ARQUITETURA &amp; LIGHTING no INSTITUTO DE PÓS-GRADUAÇÃO ? IPOG. Atualmente Iluminador do Instituto de Cultura e Arte ? ICA da Universidade Federal do Ceará. Realiza projetos de criação, desenvolvimento e execução de iluminação cênica para espetáculos de divertimento. Presta serviço a grupos de teatro, dança e música. Ministra oficinas e cursos livre em iluminação cênica.</p>
-
-    </div>
 </div>
+
+<script>
+    var simplemde = new SimpleMDE({
+        element: document.getElementById("mdEditor"),
+        toolbar: ["bold", "italic", "heading", "|", "quote", "unordered-list", "ordered-list", "|", "link", "image", "horizontal-rule", "|", "preview", "|", "guide"],
+    });
+
+    function saveDynamicDataToFile() {
+
+        // Construir o MD de acordo com os dados preenchidos.
+        var inifim = "---\n";
+        var layout = "layout: perfil\n";
+
+        var filename = document.getElementById("filename").value;
+        var permalink = "permalink: /perfis/" + filename + "\n";
+
+        var alias = document.getElementById("alias").value;
+        alias = "alias: " + alias + "\n";
+        var state = document.getElementById("state").value;
+        state = "state: " + state + "\n";
+        var img = document.getElementById("img").value;
+        img = "img: /assets/img/perfis/" + img + "\n";
+        var area = document.getElementById("area").value;
+        area = "area: " + area + "\n";
+
+        var userInput = inifim + layout + permalink + alias + state + img + area;
+
+        if(document.getElementById("email").value){
+            var email = document.getElementById("email").value;
+            email = "email: " + email + "\n";
+            var userInput = userInput + email;
+        }
+        if(document.getElementById("instagram").value){
+            var instagram = document.getElementById("instagram").value;
+            instagram = "instagram: " + instagram + "\n";
+            var userInput = userInput + instagram;
+        }
+        if(document.getElementById("facebook").value){
+            var facebook = document.getElementById("facebook").value;
+            facebook = "facebook: " + facebook + "\n";
+            var userInput = userInput + facebook;
+        }
+        if(document.getElementById("youtube").value){
+            var youtube = document.getElementById("youtube").value;
+            youtube = "youtube: " + youtube + "\n";
+            var userInput = userInput + youtube;
+        }
+        if(document.getElementById("linkedin").value){
+            var linkedin = document.getElementById("linkedin").value;
+            linkedin = "linkedin: " + linkedin + "\n";
+            var userInput = userInput + linkedin;
+        }
+
+        var latitude = document.getElementById("latitude").value;
+        latitude = "latitude: " + latitude + "\n";
+        var longitude = document.getElementById("longitude").value;
+        longitude = "longitude: " + longitude + "\n";
+
+        var userInput = userInput + latitude + longitude + inifim + "\n";
+
+        var sobre = simplemde.value();
+
+        var userInput = userInput + sobre;
+
+        var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
+        saveAs(blob, filename + ".md");
+    }
+</script>
 
     </div>
 </div>
