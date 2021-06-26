@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>
+        
+            
+                Aurélio de Simoni
+            
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
+            } else {
+                menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '55px';
+                top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-brand left-logo">
+                <a href=""><img src="/assets/img/logo/logo_default.png"/></a>
+            </div>
+            <div class="navbar-brand right-logo">
+                <img src="/assets/img/logo/Padrao_Azul-Parcial(direita).png"/>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav id="top-bar" class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a id="upperbold" href="/index.html" style="background-color: #f79552">Início</a></li>
+                    <li class="divider" style="display: none"></li>
+                    <li><a id="upperbold" href="/sobre.html">Sobre</a></li>
+                    <li class="divider" style="display: none"></li>
+                    <li class="has-dropdown not-click">
+                        <a id="upperbold">Produções</a>
+                        <ul class="dropdown">
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider" style="display: none"></li>
+                    <li><a id="upperbold" href="/profissionais.html">Profissionais</a></li>
+                    <li class="divider" style="display: none"></li>
+                    <li><a id="upperbold" href="/contato.html">Contato</a></li>
+                </ul>
+                <ul class="left" style="margin-top:7px; margin-left:15px; /*margin-right:45%; caso usar 'right'*/">
+                    <li>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div id="spacetop-bot">
+    <div class="content">
+        <div id="path">
+            <!-- colocar caminho das páginas anteriores -->
+        </div>
+
+        <h2></h2>
+
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/aurelio_de_simoni.jpg">
+        <p class="nome">Aurélio de Simoni</p>
+        <p class="title">Iluminador Cênico</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/desimoniaurelio" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/aurelio.simoni" style="font-size: 22px;"><i class="fa fa-facebook"></i></a>
+            
+            
+            
+        </div>
+    </div>
+    <div class="content-profile">
+        <h5 id="sobre"><strong>SOBRE</strong></h5>
+
+<p>Aurélio de Simoni nascido em 1948 na cidade do Rio de Janeiro – RJ, é iluminador e um dos grandes nomes que marcam uma geração precursora da iluminação Brasileira na década de 70.</p>
+
+<p><br /></p>
+
+<p>Seu primeiro contato com o teatro se deu aos 17 anos. Junto a outros amigos da escola fundou o grupo MOCA (Movimento Cultural e Artístico) e montaram o espetáculo “Zé menino – Vida e História”, que estreou no Teatro Arthur Azevedo em 1965. No espetáculo, ainda não exercia a função de iluminador, no entanto fazia parte do “MoQuarteto” na função de cantor. Nessa época, o país estava sob um governo ditatorial e logo em seguida, o grupo foi cassado. Apesar de ser coordenador do grupo, não precisou prestar depoimento no DOPS (Departamento de Ordem Política e Social), porém outros integrantes foram intimados a depor para instituição.</p>
+
+<p>Em 1969, entra para o exército por uma necessidade financeira. Foi tenente pelo CPOR (Centro de Preparação de Oficiais da Reserva), fez o curso pelo programa e saiu Oficial Aspirante da Reserva. Serviu no 1º Batalhão de Guardas e por lá permaneceu até o ano de 1973. Durante o tempo em que serviu o exército brasileiro, não manteve mais contato com o teatro.</p>
+
+<p>Passam-se os anos e em 1976 acompanhou os ensaios de sua esposa, Aline Molinari, para o espetáculo “Ambrósio, o Boneco” de Luis Rodi no teatro Cacilda Becker, no Rio de Janeiro. Durante o processo de montagem do espetáculo, ajudava com pequenos serviços nos bastidores e deste modo, gradualmente, foi participando da equipe técnica. Foi neste período que começa a entender como funcionava o teatro e teve a primeira experiência como operador de luz, quando em uma das apresentações do espetáculo substituiu o operador Zé Roberto na operação de luz e som, pois conhecia bem o espetáculo.</p>
+
+<p><br /></p>
+
+<p>Aurélio, na época, era funcionário da Rede Ferroviária Federal. Em 1977, José Roberto Mendes resolveu remontar o espetáculo “Ambrósio” e o convida para integrar a equipe. No mesmo ano, além de “Ambrósio”, passa também a operar a luz do espetáculo “ Flicts”, ambos no teatro SESC da Tijuca. A convite de Mauro A. Silveira, diretor do teatro na época, começa a trabalhar como operador de luz no teatro SESC, dando início a sua atuação profissional em 1978. Por um tempo conseguiu conciliar o ofício de operador com seu trabalho na rede Ferroviária Federal, porém depois de 3 anos pede demissão na rede ferroviária e  passa a se dedicar apenas ao teatro.</p>
+
+<p><br /></p>
+
+<p>Começou operando a luz do espetáculo “Se Chovesse Vocês Estragavam Todos”, direção de Clóvis Levy, iluminação de Luiz Paulo Neném. Quatro meses depois, assumiu a operação de luz do espetáculo “O Mistério das 9 Luas” do diretor Ilo Krugli, a iluminação era de Jorginho de Carvalho. A partir dessa montagem percebeu que a luz estava integrada ao espetáculo e, percebendo suas outras potências, passa se interessar também pela criação.
+Dali em diante foi assistente de iluminação de Jorginho de Carvalho com quem muito aprendeu sobre a técnica e, durante o trabalho conheceu Luiz Paulo Nenem, com quem estabeleceu parcerias por longos anos.</p>
+
+<p>Assina a primeira criação em 1979 no espetáculo “Ponto de Partida”, texto de Gianfrancesco Guarnieri. Ainda em 1979, assinou a iluminação do espetáculo infantil “Zé Vagão da Roda Fina e sua Mãe Leopoldina”, direção de Júlio Cezar Cavalcanti e, o espetáculo “As Preciosas Ridículas, de Moliére, direção Marília Pera, no teatro Alaska.</p>
+
+<p><br /></p>
+
+<p>Na década de 80 estabelece uma parceria com o iluminador Luiz Paulo Nenem e, em 1982 a dupla recebe o Troféu Mambembe. Realizavam uma média de oito espetáculos por ano, entre eles podemos citar: “Dzi Croquetes” - TV Croquete Canal Dzi, criação coletiva do grupo, 1980; “Poleiro dos Anjos”, de Buza Ferraz, 1981; “Serafim Ponte Grande”, de Oswald de Andrade (1890 - 1954), “Bar Doce Bar”, roteiro de Álvaro Ramos, Pedro Cardoso e Felipe Pinheiro, e “As Lágrimas Amargas” de Petra von Kant, de Fassbinder, em 1982; “A Família Titanic - a Família que Afunda Rindo”, de Mauro Rasi, “Folias do Coração”, adaptação de Geraldo Carneiro, “Quem Tem Medo de Itália Fausta”, de Ricardo de Almeida e Miguel Magno, “Viúva, porém Honesta”, de Nelson Rodrigues, e “A Terra dos Meninos Pelados”, adaptação da obra de Graciliano Ramos, em 1983; “Ensaio nº 1 - A Tragédia Brasileira”, de Sérgio Sant’Anna, 1984, ambas direções de Bia Lessa. Esta parceria se estendeu até 1984, ano em que passa a trabalhar sozinho, neste período iluminou os espetáculos: “Emily”, de William Luce, direção de Miguel Falabella, 1984; “Galileu Galilei”, de Bertolt Brecht, direção de Celso Nunes, 1987; “A Caravana da Ilusão”, de Alcione Araújo, direção de Luiz Arthur Nunes, 1993; “Sermão da Quarta-Feira de Cinzas”, de Padre Antônio Vieira, direção de Moacir Chaves, 1994; “Lima Barreto ao Terceiro Dia”, de Luís Alberto de Abreu, direção de Aderbal Freire Filho, 1995; “Noite de Reis”, de William Shakespeare, direção de Amir Haddad, 1997; “A Capital Federal”, de Artur Azevedo, direção de André Paes Leme, 1997; “Bugiaria - O Processo de João Cointa”, direção de Moacir Chaves, 1999.</p>
+
+<p><br /></p>
+
+<p>Ganha seu primeiro Prêmio Shell com espetáculo Caravana da Ilusão, autoria de Alcione Araújo com direção de Arthur Nunes, no teatro Nelson Rodrigues no ano de 1982.
+Atualmente, é iluminador da Companhia de Teatro Atores de Laura, sediada na cidade do Rio de Janeiro – RJ, há 25 anos. Trabalha com muitos diretores importantes na cena carioca de teatro, entre eles, Moacir Chaves e Henrique Tavares, diretores com quem estabelece parcerias há mais de 20 anos.</p>
+
+<p>Aurélio de Simoni pertence a uma geração de iluminadores no Brasil que aprendeu o ofício na prática teatral cotidiana e na troca de informação entre seus contemporâneos. Da mesma forma que aprendeu com profissionais dispostos a partilhar o conhecimento, também abriu caminhos para outros que estavam começando. Acompanhou o desenvolvimento tecnológico dos aparatos técnicos da iluminação e se reinventa a cada trabalho desde a década de 70.</p>
+
+<p><br /></p>
+
+<h5 id="trabalhos-realizados-e-premiações"><strong>TRABALHOS REALIZADOS E PREMIAÇÕES</strong></h5>
+
+<p><strong>Teatro Infantil e Jovem</strong></p>
+
+<ul>
+  <li>Prêmio Mambembe
+    <blockquote>
+      <p>1998 – Em Cantos, direção Ricardo Kosovski - Prêmio de Iluminação<br />
+1996 – Os Impagáveis, direção Henri Pagnoncelli - Indicação a Categoria Especial pela Iluminação.<br />
+1989 – Prêmio Categoria Especial (pelo conjunto de trabalhos no ano)</p>
+    </blockquote>
+  </li>
+  <li>Prêmio Coca-Cola de Teatro Jovem
+    <blockquote>
+      <p>1999 – A Flauta Mágica, direção Daniel Herz e Susanna Kruger, Casa de Cultura Laura Alvim<br />
+1995 – Romeu &amp; Isolda, direção Daniel Herz e Susanna Kruger, Casa de Cultura Laura Alvim<br />
+<em>Indicações</em><br />
+1997 – Um Conto Para Rosa, direção Nara Keiserman, Teatro Ziembinski<br />
+1996 – Decote, direção Daniel Herz e Susanna Kruger, Teatro Gláucio Gill</p>
+    </blockquote>
+  </li>
+  <li>Prêmio Coca-Cola de Teatro Infantil
+    <blockquote>
+      <p>1992 – Sete Quedas – A Lenda e o Sonho, direção Lúcia Coelho, CCBB – Teatro II<br />
+1992 – Uma História de Boto Vermelho, direção Ricardo Schöpek, Casa de Cultura Laura Alvim<br />
+1992 – Rastros, Faros e Outras Pistas, direção Ivanir Callado, Casa de Cultura Laura Alvim<br />
+1991 – A Sereiazinha, direção Miguel Falabella, Teatro Clara Nunes<br />
+<em>Indicações</em><br />
+1990 – Muita Mentira para não Ser Verdade, direção Theotonio de Paiva, Teatro Benjamin Constant<br />
+1988 – Pássaro Azul, direção Eduardo Wotzik, Teatro Villa Lobos</p>
+    </blockquote>
+  </li>
+  <li>Prêmio Maria Clara Machado de Teatro Infantil<br />
+<em>Indicações</em>
+    <blockquote>
+      <p>2001/2002 – Memórias da Barriga, direção Maria Mariana e Cristina Bethecourt, Casa de Cultura Laura Alvim – Porão</p>
+    </blockquote>
+  </li>
+  <li>Prêmio CBTIJ de Teatro para Crianças
+    <blockquote>
+      <p>2014 – Fonchito e a Lua, direção Daniel Herz, CCBB – Pátio<br />
+<em>Indicações</em><br />
+2015 – A Casa Bem Assombrada, direção Ivan Fernandes, Teatro Oi Ipanema<br />
+2014 – O Elixir do Amor, direção Daniel Herz, Teatro Municipal do Jockey</p>
+    </blockquote>
+  </li>
+  <li>Prêmio Zilka Sallaberry de Teatro Infantil
+    <blockquote>
+      <p>2006 – O Passarinho e a Borboleta, direção Marcelo Saback, Teatro das Artes<br />
+2014 – Fonchito e a Lua, direção Daniel Herz, CCBB – Pátio<br />
+<em>Indicações</em><br />
+2015 – Tra-la-lá , direção Ana Paula Abreu, Teatro Oi Futuro Ipanema<br />
+2014 – Elixir do Amor, direção Daniel Herz, Teatro Municipal do Jockey<br />
+2014 – Oikos – Uma História de Amor à Terra, direção Fabianna de Mello Souza<br />
+2012 – A Borralheira – Uma Opereta Brasileira, direção Fabiana de Mello Souto, Teatro Oi Casa Grande<br />
+2009 – Como Nascem as Estrelas, direção Kátia Brito, CCBB – Teatro III<br />
+2008 – Tecendo Vassalissa, direção Monica Alvarenga, Teatro Leblom, Sala Fernanda Montenegro<br />
+2008 – Nariz de Prata, direção Susanna Kruger<br />
+2007 –  ABela Adormecida por Lasanha e Ravioli, direção Ana Barroso e Monica Bel</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><strong>Shell de Teatro</strong></p>
+<ul>
+  <li>Prêmio de Melhor Iluminador na 8º edição
+    <blockquote>
+      <p>1995 – Romeu e Isolda, direção Susanna Krueger e Daniel Herz, Casa de Cultura Laura Alvim</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><strong>Teatro Adulto</strong></p>
+
+<p><strong>Shell de Teatro</strong></p>
+
+<ul>
+  <li>Prêmio Melhor Iluminador na 5º edição
+    <blockquote>
+      <p>1992 – Dorotéia (direção Carlos Augusto Strazzer, Teatro Posto 6), Solidão, a Comédia (direção Marcos Alvisi, Teatro Teresa Raquel) e A Caravana da Ilusão (direção Luiz Arthur Nunes, Teatro Nelson Rodrigues)</p>
+    </blockquote>
+  </li>
+  <li>Prêmio 8º edição
+    <blockquote>
+      <p>1995 – Zoo Story , direção Shimon Nahmias e Marcelo Taranto, CCBB – Teatro II, Teatro Glauce Rocha<br />
+1995 – Romeu e Isolda, direção Susanna Krueger e Daniel Herz, Casa de Cultura Laura Alvim<br />
+1995 – Lima Barreto – Terceiro Dia, direção Aderbal Freire – Filho, CCBB – Teatro II</p>
+    </blockquote>
+  </li>
+  <li>Prêmio 9º edição
+    <blockquote>
+      <p>1996 – Roberto Zucco , direção Gilles Dao e Moacir Chaves, CCBB – Teatro I</p>
+    </blockquote>
+  </li>
+  <li>Prêmio 16º edição
+    <blockquote>
+      <p>2003 – Veneza, direção Miguel Falabella, Teatro dos Quatro</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><em>Indicações 24º edição</em></p>
+<blockquote>
+  <p>2009 – O Filho Eterno (1º semestre), direção Daniel Herz, Teatro Oi Futuro Flamengo</p>
+</blockquote>
+
+<p><em>Indicações 28º edição</em></p>
+<blockquote>
+  <p>2015 – Meu Sabá (1º semestre), direção Daniel Herz, espaço Cultural Sérgio Porto</p>
+</blockquote>
+
+<p>Prêmio Mambembe</p>
+
+<p><br /></p>
+
+<p><strong>Adulto</strong></p>
+
+<blockquote>
+  <p>1982 – Prêmio na Categoria Especial (em parceria com Luís Paulo Neném – pelo conjunto de trabalhos de iluminação durante o ano: Evita-me que Assim não Dá ; A Megera Domada, entre outros)<br />
+1989 – Indicação por Os Cegos, direção Moacir Góes<br />
+1997 – Indicação por Don Juan, direção Moacir Chaves</p>
+</blockquote>
+
+<p><strong>Prêmio SATED</strong></p>
+<blockquote>
+  <p>1991 e 1994 – Sem informação dos espetáculos</p>
+</blockquote>
+
+<p><strong>Prêmio SHARP</strong></p>
+<blockquote>
+  <p>1998 – Sem Informação do Espetáculo</p>
+</blockquote>
+
+<p><strong>Prêmio Gralha Azul (Curitiba)</strong></p>
+<blockquote>
+  <p>2006 – Sem informação do Espetáculo</p>
+</blockquote>
+
+<p><strong>Festival de Teatro de Rezende (RJ)</strong></p>
+<blockquote>
+  <p>2007 – Sem informação do Espetáculo</p>
+</blockquote>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li><a href="https://cbtij.org.br/46440-2/" target="_blank">Centro Brasileiro de Teatro para a Infância e Juventude</a></li>
+  <li><a href="http://enciclopedia.itaucultural.org.br/pessoa359324/aurelio-de-simoni" target="_blank">Enciclopédia Itaú Cultural</a></li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=kkOv2eY8ubQ" target="_blank">Cenogravando - CENO TALKS Arthur Farinon+Daniela Sanchez+Aurélio de Simoni</a></li>
+  <li><a href="https://www.youtube.com/watch?v=ndTbWXy9x04" target="_blank">Da Ideia à Luz - Aurélio de Simoni - Bate-papo sobre as criações das luzes dos seus espetáculos</a></li>
+  <li><a href="https://www.youtube.com/watch?v=yxRsF3j27V0" target="_blank">Lighting Studio</a></li>
+</ul>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div class="support">
+            <h2>Apoio</h2>
+            <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
+        </div>
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+	</body>
+</html>

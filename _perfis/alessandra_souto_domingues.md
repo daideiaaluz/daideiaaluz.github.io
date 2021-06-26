@@ -4,10 +4,9 @@ permalink: /perfis/alessandra_souto_domingues
 alias: Alessandra S. Domingues
 state: São Paulo
 img: /assets/img/perfis/alessandra_souto_domingues.png
-area: Iluminador Cênico
+area: Iluminadora Cênica
 email: mailto:lecasou@gmail.com
-instagram: https://www.instagram.com/
-youtube: https://www.youtube.com
+instagram: https://www.instagram.com/ale_domingues/
 latitude: "-23.6609"
 longitude: "-46.4845"
 ---

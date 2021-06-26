@@ -19,18 +19,30 @@
 }
 
 .card {
-    max-width: 300px;
-    max-height: 520px;
+    /* max-width: 300px; */
+    /* max-height: 400px; */
+    height: 380px;
     text-align: center;
     font-family: arial;
     background-color: #f2f2f2;
     border: 1px solid #a6a6a6;
 }
+.card img{
+    margin: 10px 0px 0px;
+    height:200px;
+    width:260px;
+}
 
-.nome {
+.nomeprofissionais {
     /* margin-top: 20px; */
     color: black;
     font-size: 14px;
+}
+
+.nome {
+    color: black;
+    font-size: 18px;
+    margin: 15px;
 }
 .title {
     margin-top: 20px;
@@ -38,8 +50,13 @@
     font-size: 17px;
 }
 
+.socialmedia {
+    margin: 20px 0px;
+    background-color: #ccc8c8;
+}
+
 .content-profile {
-    padding: 10px;
+    padding: 0px 10px;
     width: 100%;
     /* border-left: 1px solid #a6a6a6; */
     text-align: justify;

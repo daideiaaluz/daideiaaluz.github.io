@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>
+        
+            
+                Caetano Vilela
+            
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
+            } else {
+                menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '55px';
+                top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-brand left-logo">
+                <a href=""><img src="/assets/img/logo/logo_default.png"/></a>
+            </div>
+            <div class="navbar-brand right-logo">
+                <img src="/assets/img/logo/Padrao_Azul-Parcial(direita).png"/>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav id="top-bar" class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a id="upperbold" href="/index.html" style="background-color: #f79552">Início</a></li>
+                    <li class="divider" style="display: none"></li>
+                    <li><a id="upperbold" href="/sobre.html">Sobre</a></li>
+                    <li class="divider" style="display: none"></li>
+                    <li class="has-dropdown not-click">
+                        <a id="upperbold">Produções</a>
+                        <ul class="dropdown">
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider" style="display: none"></li>
+                    <li><a id="upperbold" href="/profissionais.html">Profissionais</a></li>
+                    <li class="divider" style="display: none"></li>
+                    <li><a id="upperbold" href="/contato.html">Contato</a></li>
+                </ul>
+                <ul class="left" style="margin-top:7px; margin-left:15px; /*margin-right:45%; caso usar 'right'*/">
+                    <li>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div id="spacetop-bot">
+    <div class="content">
+        <div id="path">
+            <!-- colocar caminho das páginas anteriores -->
+        </div>
+
+        <h2></h2>
+
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/caetano_vilela.jpg">
+        <p class="nome">Caetano Vilela</p>
+        <p class="title">Encenador e Iluminador</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/caetano.vilela" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/caetano68" style="font-size: 22px;"><i class="fa fa-youtube"></i></a>
+            
+            
+        </div>
+    </div>
+    <div class="content-profile">
+        <h5 id="sobre"><strong>SOBRE</strong></h5>
+
+<p>Caetano Vilela, natural de São Paulo (SP), é encenador e iluminador, ao longo de 35 anos de carreira realizou dezenas de produções em importantes teatros pelo Brasil e também no exterior. Começou sua carreira ainda adolescente, aos 15 anos participava de grupos teatrais amadores na escola e aos 18 anos se profissionalizou como ator.</p>
+
+<p>Aos 19 anos entrou para o grupo de teatro “Boi Voador” e foi integrante do núcleo coordenado pela diretora Elizabeth Lopes, que estreou sua primeira criação na cidade de São Paulo, o espetáculo “Em observatório”, baseado na novela de Júlio Cortázar com adaptação Jayme Compri. Foi durante os ensaios e vivências no grupo que, Caetano teve maior contato com o ofício técnico da caixa cênica. Nesta mesma época, conheceu o iluminador Domingos Quintiliano, que também atuava no grupo Boi Voador, e teve a oportunidade de observar seu trabalho como iluminador e  Desde o primeiro contato, passa a se encantar e se interessar pela concepção da luz.</p>
+
+<p>Sua formação profissional veio através das experiências do cotidiano a partir do trabalho prático e de muita leitura autônoma. Por essa característica autodidata, seu envolvimento com a luz partiu de duas experiências importantes para sua trajetória com iluminador. A primeira foi durante seu trabalho como assistente de direção para o espetáculo “O Cobrador”, adaptação de um conto de Ruben Fonseca com direção de Elizabeth Lopes - Cia Teatro em Quadrinhos, concepção de luz pelo iluminador Wagner Pinto. O espetáculo foi convidado para cumprir uma temporada no Festival de Manizales, na Colômbia, e na impossibilidade da presença do operador de luz, Caetano assumiu o ofício durante toda a temporada. A cada apresentação teve a oportunidade de aprender na prática com o executar da operação de luz.</p>
+
+<p>O segundo momento veio ao conhecer o diretor Sérgio Ferrara. Na década de 90 moraram juntos e Caetano passou a iluminar todas as peças do diretor no início de sua carreira.</p>
+
+<p><br /></p>
+
+<p>Em 1998 adentra ao universo da ópera. Ilumina “Elixir d’Amore” ópera dirigida pelo diretor, iluminador e professor Iacov Hillel, com quem trabalhou por 7 anos seguidos. Seu nome teve grande destaque referente às produções de ópera realizadas no Brasil e exterior. Dentre as óperas que dirigiu, destacam–se: “A Queda da Casa de Usher” de Phillip Glass (2005), “Lady Macbeth do Distrito de Mtzensk” de Shostakovich (2007), “Ariadne em Naxos” de Strauss (2008), “Os Troianos” de Berlioz (2009) e a estreia no Brasil da ópera “Ça Ira” de Roger Waters (2008). Em 2008 foi considerado pela revista de ópera alemã “Neue Merker” o iluminador brasileiro especializado em ópera de maior importância na atualidade.</p>
+
+<p><br /></p>
+
+<p>Trabalhou durante 11 anos no Festival Amazonas de Ópera (FAO) iluminando todas as óperas do festival em sua 13º edição, com destaque para a iluminação de  “Sansão e Dalila”, direção de Emílio Sagi. Para o mesmo festival iluminou e dirigiu “Les troyens” de Beriloz , sob a regência do francês Laurent Campellone.</p>
+
+<p><br /></p>
+
+<p>Em 2011 ganhou o Prêmio Shell de melhor iluminação para teatro pelo espetáculo “Dueto para Um” com direção de Mika Lins. Recebeu indicações em 2014 para o espetáculo “Assim é (se lhe parece)”; 2015 “Dias de Vinho e Rosas” e em 2016 “As Benevolentes”.</p>
+
+<p><br /></p>
+
+<p>Com mais de 30 anos de carreira, atualmente, executa múltiplas funções como iluminador, produtor, diretor cênico em espetáculos de ópera, teatro e também musicais.</p>
+
+<h5 id="trabalhos-realizados"><strong>TRABALHOS REALIZADOS</strong></h5>
+
+<ul>
+  <li><a href="https://www.behance.net/gallery/2596057/Play-Apenas-um-Saxofone" target="_blank">APENAS UM SAXOFONE</a></li>
+  <li><a href="https://www.behance.net/gallery/1048613/Play-Duet-for-oneDueto-para-um" target="_blank">DUETO PARA UM</a></li>
+  <li><a href="https://www.behance.net/gallery/2575711/Play-AdultriosRiverside-Drive" target="_blank">ADULTÉRIOS</a></li>
+  <li><a href="https://www.behance.net/gallery/1048687/Play-Travesties" target="_blank">TRAVESTIES</a></li>
+  <li><a href="https://www.behance.net/gallery/3745065/Play-LichtLicht" target="_blank">LICHT+LICHT</a></li>
+  <li><a href="https://www.behance.net/gallery/28385689/Play-Cosi-e-%28se-vi-pare%29Assim-%28se-lhe-parece%29" target="_blank">ASSIM É (SE LHE PARECE)</a></li>
+  <li><a href="https://www.behance.net/gallery/28385979/Play-Days-of-Wine-and-RosesDias-de-Vinho-e-Rosas" target="_blank">DIAS DE VONHO E ROSAS</a></li>
+  <li><a href="https://www.behance.net/gallery/5135735/Play-The-Sunset-LimitedO-Expresso-do-Por-do-Sol" target="_blank">O EXPRESSO DO PÔR DO SOL</a></li>
+  <li><a href="https://www.behance.net/gallery/41119219/Play-As-BenevolentesLes-Bienveillantes" target="_blank">AS BENEVOLENTES</a></li>
+  <li><a href="https://www.behance.net/gallery/84578345/Play-Tutankaton" target="_blank">TUTANKÁTON</a></li>
+  <li><a href="https://www.behance.net/gallery/393349/Musical-The-Sound-of-MusicThatre-du-Chatelet" target="_blank">MUSICAL - THE SOUND OF MUSIC</a></li>
+  <li><a href="https://www.behance.net/gallery/84579509/Musical-Zorro" target="_blank">MUSICAL -: ZORRO</a></li>
+  <li><a href="https://www.behance.net/gallery/93457837/Musical-Summer-The-Donna-Summer-Musical" target="_blank">MUSICAL - SUMMER: THE DONNA SUMMER MUSICAL</a></li>
+  <li><a href="https://www.behance.net/gallery/2575621/Opera-Ariadne-auf-Naxos" target="_blank">ÓPERA - ARIADNE AUF NAXOS</a></li>
+  <li><a href="https://www.behance.net/gallery/2596309/Opera-Ca-IraRoger-Waters" target="_blank">ÓPERA - ÇA IRA /ROGER WATERS</a></li>
+  <li><a href="https://www.behance.net/gallery/1310595/Opera-La-Voix-Humaine" target="_blank">ÓPERA - LA VOIX HUMAINE</a></li>
+  <li><a href="https://www.behance.net/gallery/2596439/Opera-The-fall-of-the-House-of-UsherPhilip-Glass" target="_blank">ÓPERA - THE FALL OF THE HOUSE OF USER/ PHILIP GLASS</a></li>
+  <li><a href="https://www.behance.net/gallery/17446587/Opera-Carmen" target="_blank">ÓPERA - CARMEM</a></li>
+  <li><a href="https://www.behance.net/gallery/11202627/Opera-Der-Fliegende-HollaenderThe-Flying-Dutchman" target="_blank">ÓPERA - THE FLYING DUTCHMAN</a></li>
+  <li><a href="https://www.behance.net/gallery/9981663/Opera-TannhaeuserBogota" target="_blank">ÓPERA - BOGOTÁ</a></li>
+  <li><a href="https://www.behance.net/gallery/1140887/Opera-La-Boheme" target="_blank">ÓPERA - LA BOHÉME</a></li>
+  <li><a href="https://www.behance.net/gallery/393394/Opera-Les-Troyens" target="_blank">ÓPERA - LES TRYENS</a></li>
+  <li><a href="https://www.behance.net/gallery/2575473/Opera-Lady-Macbeth-of-the-Mtsensk-District" target="_blank">ÓPERA - LADY MACBETH OF THE MTSENSK DISTRICT</a></li>
+  <li><a href="https://www.behance.net/gallery/28383301/Opera-Werther" target="_blank">ÓPERA - WETHER</a></li>
+  <li><a href="https://www.behance.net/gallery/25850135/Opera-Um-Homem-So" target="_blank">ÓPERA - UM HOMEM SÓ</a></li>
+  <li><a href="https://www.behance.net/gallery/25850441/Opera-Ainadamar" target="_blank">ÓPERA - AINADAMAR</a></li>
+  <li><a href="https://www.behance.net/gallery/26840943/Opera-Eugene-Onegin" target="_blank">ÓPERA - EUGENE ONEGIN</a></li>
+  <li><a href="https://www.behance.net/gallery/28385297/Opera-Pagliacci" target="_blank">ÓPERA - PAGLIACCI</a></li>
+  <li><a href="https://www.behance.net/gallery/19058479/Opera-Mefistofele" target="_blank">ÓPERA - MEFISTOFELE</a></li>
+  <li><a href="https://www.behance.net/gallery/89390823/Opera-La-Vida-Breve" target="_blank">ÓPERA - LA VIDA BREVE</a></li>
+  <li><a href="https://www.behance.net/gallery/89390823/Opera-La-Vida-Breve" target="_blank">ÓPERA - LA FAVORITE</a></li>
+  <li><a href="https://www.behance.net/gallery/80376877/Opera-A-Midsummer-Nights-Dream" target="_blank">ÓPERA - A MIDSUMMER NIGHT’S DREM</a></li>
+  <li><a href="https://www.behance.net/gallery/41118175/Opera-Orfeo-ed-Euridice" target="_blank">ÓPERA - ORFEO ED EURIDICE</a></li>
+  <li><a href="https://www.behance.net/gallery/31493219/Opera-Oedipus-Rex" target="_blank">ÓPERA - OEDIPUS REX</a></li>
+  <li><a href="https://www.behance.net/gallery/31492669/Opera-O-Homem-dos-Crocodilos" target="_blank">ÓPERA - O HOMEM DOS CROCODILOS</a></li>
+  <li><a href="https://www.behance.net/gallery/80375873/Opera-Il-Matrimonio-Segreto" target="_blank">ÓPERA - II MATRIMONIO SEGRETO</a></li>
+  <li><a href="https://www.behance.net/gallery/79219091/Opera-La-Clemenza-di-Tito" target="_blank">ÓPERA - LA CLEMENZA DI TITO</a></li>
+</ul>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li><a href="https://www.behance.net/gallery/1188693/Videos-Drops-of-works" target="_blank">VÍDEOS - DROPS OF WORKS</a></li>
+  <li><a href="https://www.linkedin.com/in/caetano-vilela-48830418/?originalSubdomain=br" target="_blank">Linkedin Caetano Vilela</a></li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=U90S2RYPI6I" target="_blank">Lighting Studio</a></li>
+  <li><a href="https://www.youtube.com/watch?v=jTKswoH6JNk" target="_blank">Theatro São Pedro - Olhar do Músico / Maurício Martins entrevista Caetano Vilela</a></li>
+</ul>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div class="support">
+            <h2>Apoio</h2>
+            <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
+        </div>
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+	</body>
+</html>
