@@ -11,20 +11,6 @@ latitude: "-23.6609"
 longitude: "-46.4845"
 ---
 
-##### **SOBRE**
-
-Alessandra Souto Domingues, natural de São Paulo-SP, é Iluminadora cênica e artista visual, pesquisadora em Artes Cênicas e Artes Plásticas. Licenciada em Artes Visuais pela Faculdade Paulista de Artes (São Paulo,2012), Graduada em Artes Visuais pelo Instituto Brasileiro de Desenvolvimento Empresarial (2013) e atualmente Mestranda em Artes Cênicas pela Universidade de São Paulo, com início em 2018. A artista hoje reside em Genebra – Suíça, onde atua profissionalmente concomitante ao seu trabalho na cidade São Paulo, Brasil.
-
-<br>
-
-Começou sua carreira como Iluminadora no Teatro Oficina (1995), onde desenvolveu a sua curiosidade e deu início à jornada de estudos sobre a Iluminação. Na companhia, assinou sua primeira Iluminação junto a Cibele Forjaz no espetáculo Cacilda!, de Zé Celso Martinez, no ano de 1998. A artista é co-fundadora da Cia Livre de Teatro (2000) também em parceria com Cibele Forjaz, e colaboradora da SP Escola de Teatro desde 2010. Na mundana companhia, onde atua desde 2010, iluminou os espetáculos: A Máquina do Mundo (2017), textos de Clarice Lispector, Drummond e Machado de Assis; Na Selva das Cidades, de Brecht (2015 a 2017); O Idiota (2010 e 2011), adaptação de Vadim Nikitin para o texto homônimo de Dostoievski. A Pluralidade como iluminadora, e sua relação direta entre a concepção da luz e o espaço, marcam fortes características em seu trabalho, que está sempre testando e reinventando as possibilidades durante o processo de criação.
-
-<br>
-
-Realiza instalações site specific que tem a luz como linguagem, e cria projetos de luz para teatro, dança, shows de música e exposições. Ao longo de 20 anos, realizou exposições artísticas individuais e coletivas no Brasil e no exterior. Recebeu vários prêmios por suas criações teatrais, entre eles: Prêmio Melhor Criação de Luz para Teatro, Questão de Crítica em 2011; Prêmio Melhor Espetáculo, Associação Paulista dos Críticos de Arte em 2010; Prêmio Melhor Criação de Luz para Teatro, categoria especial, Prêmio Shell, SP em 2005; Prêmio Melhor Criação de Luz para Teatro, Brazil Quality em 2002, e outros.  De 2008 a 2012 foi artista do coletivo Casadalapa. Fez residências artísticas no Experiência 2012 (Itaú Cultural, São Paulo, 2012); Projeto Fidalga (Ateliê Fidalga,2016) e no Red Bull Station (São Paulo, 2013-2014).
-
-<br>
-
 ##### **TRABALHOS REALIZADOS**
 
 **1998**
