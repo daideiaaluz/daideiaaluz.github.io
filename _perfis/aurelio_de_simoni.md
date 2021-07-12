@@ -11,42 +11,6 @@ latitude: -22.9407
 longitude: -43.2745
 ---
 
-##### **SOBRE**
-
-Aurélio de Simoni nascido em 1948 na cidade do Rio de Janeiro – RJ, é iluminador e um dos grandes nomes que marcam uma geração precursora da iluminação Brasileira na década de 70.
-
-<br>
-
-Seu primeiro contato com o teatro se deu aos 17 anos. Junto a outros amigos da escola fundou o grupo MOCA (Movimento Cultural e Artístico) e montaram o espetáculo “Zé menino – Vida e História”, que estreou no Teatro Arthur Azevedo em 1965. No espetáculo, ainda não exercia a função de iluminador, no entanto fazia parte do “MoQuarteto” na função de cantor. Nessa época, o país estava sob um governo ditatorial e logo em seguida, o grupo foi cassado. Apesar de ser coordenador do grupo, não precisou prestar depoimento no DOPS (Departamento de Ordem Política e Social), porém outros integrantes foram intimados a depor para instituição.
-
-Em 1969, entra para o exército por uma necessidade financeira. Foi tenente pelo CPOR (Centro de Preparação de Oficiais da Reserva), fez o curso pelo programa e saiu Oficial Aspirante da Reserva. Serviu no 1º Batalhão de Guardas e por lá permaneceu até o ano de 1973. Durante o tempo em que serviu o exército brasileiro, não manteve mais contato com o teatro.
-
-Passam-se os anos e em 1976 acompanhou os ensaios de sua esposa, Aline Molinari, para o espetáculo “Ambrósio, o Boneco” de Luis Rodi no teatro Cacilda Becker, no Rio de Janeiro. Durante o processo de montagem do espetáculo, ajudava com pequenos serviços nos bastidores e deste modo, gradualmente, foi participando da equipe técnica. Foi neste período que começa a entender como funcionava o teatro e teve a primeira experiência como operador de luz, quando em uma das apresentações do espetáculo substituiu o operador Zé Roberto na operação de luz e som, pois conhecia bem o espetáculo.
-
-<br>
-
-Aurélio, na época, era funcionário da Rede Ferroviária Federal. Em 1977, José Roberto Mendes resolveu remontar o espetáculo “Ambrósio” e o convida para integrar a equipe. No mesmo ano, além de “Ambrósio”, passa também a operar a luz do espetáculo “ Flicts”, ambos no teatro SESC da Tijuca. A convite de Mauro A. Silveira, diretor do teatro na época, começa a trabalhar como operador de luz no teatro SESC, dando início a sua atuação profissional em 1978. Por um tempo conseguiu conciliar o ofício de operador com seu trabalho na rede Ferroviária Federal, porém depois de 3 anos pede demissão na rede ferroviária e  passa a se dedicar apenas ao teatro.
-
-<br>
-
-Começou operando a luz do espetáculo “Se Chovesse Vocês Estragavam Todos”, direção de Clóvis Levy, iluminação de Luiz Paulo Neném. Quatro meses depois, assumiu a operação de luz do espetáculo “O Mistério das 9 Luas” do diretor Ilo Krugli, a iluminação era de Jorginho de Carvalho. A partir dessa montagem percebeu que a luz estava integrada ao espetáculo e, percebendo suas outras potências, passa se interessar também pela criação.
-Dali em diante foi assistente de iluminação de Jorginho de Carvalho com quem muito aprendeu sobre a técnica e, durante o trabalho conheceu Luiz Paulo Nenem, com quem estabeleceu parcerias por longos anos.
-
-Assina a primeira criação em 1979 no espetáculo “Ponto de Partida”, texto de Gianfrancesco Guarnieri. Ainda em 1979, assinou a iluminação do espetáculo infantil “Zé Vagão da Roda Fina e sua Mãe Leopoldina”, direção de Júlio Cezar Cavalcanti e, o espetáculo “As Preciosas Ridículas, de Moliére, direção Marília Pera, no teatro Alaska.
-
-<br>
-
-Na década de 80 estabelece uma parceria com o iluminador Luiz Paulo Nenem e, em 1982 a dupla recebe o Troféu Mambembe. Realizavam uma média de oito espetáculos por ano, entre eles podemos citar: “Dzi Croquetes” - TV Croquete Canal Dzi, criação coletiva do grupo, 1980; “Poleiro dos Anjos”, de Buza Ferraz, 1981; “Serafim Ponte Grande”, de Oswald de Andrade (1890 - 1954), “Bar Doce Bar”, roteiro de Álvaro Ramos, Pedro Cardoso e Felipe Pinheiro, e “As Lágrimas Amargas” de Petra von Kant, de Fassbinder, em 1982; “A Família Titanic - a Família que Afunda Rindo”, de Mauro Rasi, “Folias do Coração”, adaptação de Geraldo Carneiro, “Quem Tem Medo de Itália Fausta”, de Ricardo de Almeida e Miguel Magno, “Viúva, porém Honesta”, de Nelson Rodrigues, e “A Terra dos Meninos Pelados”, adaptação da obra de Graciliano Ramos, em 1983; “Ensaio nº 1 - A Tragédia Brasileira”, de Sérgio Sant'Anna, 1984, ambas direções de Bia Lessa. Esta parceria se estendeu até 1984, ano em que passa a trabalhar sozinho, neste período iluminou os espetáculos: “Emily”, de William Luce, direção de Miguel Falabella, 1984; “Galileu Galilei”, de Bertolt Brecht, direção de Celso Nunes, 1987; “A Caravana da Ilusão”, de Alcione Araújo, direção de Luiz Arthur Nunes, 1993; “Sermão da Quarta-Feira de Cinzas”, de Padre Antônio Vieira, direção de Moacir Chaves, 1994; “Lima Barreto ao Terceiro Dia”, de Luís Alberto de Abreu, direção de Aderbal Freire Filho, 1995; “Noite de Reis”, de William Shakespeare, direção de Amir Haddad, 1997; “A Capital Federal”, de Artur Azevedo, direção de André Paes Leme, 1997; “Bugiaria - O Processo de João Cointa”, direção de Moacir Chaves, 1999.
-
-<br>
-
-Ganha seu primeiro Prêmio Shell com espetáculo Caravana da Ilusão, autoria de Alcione Araújo com direção de Arthur Nunes, no teatro Nelson Rodrigues no ano de 1982.
-Atualmente, é iluminador da Companhia de Teatro Atores de Laura, sediada na cidade do Rio de Janeiro – RJ, há 25 anos. Trabalha com muitos diretores importantes na cena carioca de teatro, entre eles, Moacir Chaves e Henrique Tavares, diretores com quem estabelece parcerias há mais de 20 anos.
-
-Aurélio de Simoni pertence a uma geração de iluminadores no Brasil que aprendeu o ofício na prática teatral cotidiana e na troca de informação entre seus contemporâneos. Da mesma forma que aprendeu com profissionais dispostos a partilhar o conhecimento, também abriu caminhos para outros que estavam começando. Acompanhou o desenvolvimento tecnológico dos aparatos técnicos da iluminação e se reinventa a cada trabalho desde a década de 70.
-
-<br>
-
 ##### **TRABALHOS REALIZADOS E PREMIAÇÕES**
 
 **Teatro Infantil e Jovem**

@@ -5,30 +5,11 @@ alias: Anna Turra
 state: São Paulo
 img: /assets/img/perfis/anna_turra.jpg
 area: Iluminadora e Designer
-email: annaturra@gmail.com
 instagram: https://www.instagram.com/annaturra
 youtube: https://www.youtube.com/user/annaturra
 latitude: -23.6932
 longitude: -46.5557
 ---
-
-##### **SOBRE**
-
-Ana Turra, natural de São Paulo (SP), é iluminadora e designer multidisciplinar. É graduada em Arquitetura e Urbanismo pela Universidade de São Paulo, FAU/USP (2010). Teve seu contato inicial e curiosidade para com as artes ainda adolescente, e interessada por cinema, desde nova produzia vídeos caseiros de forma autodidata.  Logo no início de sua graduação em arquitetura, a artista Anna Turra se interessou pelos vários eixos artísticos, permitindo-se a transitar e trabalhar em diversos projetos interdisciplinares. Este universo múltiplo das áreas de conhecimento, fez de Anna Turra uma profissional que parte do pensamento integrado em busca de um diálogo amplo entres os diversos elementos artísticos que compõem o espaço da cena como um todo.
-
-<br>
-
-Pela sua aproximação do audiovisual, a artista, durante a graduação em arquitetura, começou a criar projetos de vídeos-cenários e desing gráfico para shows, trabalhando em conjunto com outros cursos como, por exemplo, música e dança. Em 2005 começa atuar profissionalmente e, no mesmo ano, junto à Rodrigo Belloto, realizou o projeto de vídeo-cenário   para a banda “Trash Pour 4” em um show realizado no Gervásio. A partir de suas experiências no palco e em contato com a iluminação, começa a se interessar e propor o diálogo com iluminadores, que como consequência passa também a criar projeto e desenhos de luz. Sob a perspectiva do olhar múltiplo, Anna Turra assina projetos de iluminação, cenografia, vídeo-cenografia, videomapping, direção de arte e projetos de comunicação visual para o teatro, dança, shows e exposições.
-
-<br>
-
-No teatro, destacam-se o set design (iluminação, cenografia e video-design  em parceria com Camila Schmidt e Rogério Velloso) e lighting design de “Merlin e Arthur – um sonho de liberdade”, com direção de Guilherme Leme Garcia. O espetáculo, que teve sua estreia em março de 2019, recebeu o 14º Prêmio da APTR (Associação dos Produtores de Teatro)  de melhor iluminação, e foi indicado ao Prêmio Cesgranrio de Teatro 2019 na categoria Especial, pelo Set Design.
-
-<br>
-
-Na música, destacam-se os trabalhos de direção de arte, iluminação, cenografia e vídeo-projeções na turnê "A Mulher do Fim do Mundo", de Elza Soares, bem como direção de arte, cenografia e iluminação na turnê "Deus é Mulher", da mesma intérprete; desenho de luz e operação de luz nas turnês do disco, “Já É”, ao vivo em Lisboa, e RSTUVXZ, de Arnaldo Antunes; cenografia e desenho de luz para a turnê Quebra-Cabeça, de Bixiga70; iluminação e vídeo-cenografia nas turnês Sou Suspeita Estou Sujeita Não Sou Santa e Amigos Imaginários, de Anelis Assumpção.
-
-<br>
 
 ##### **TRABALHOS REALIZADOS**
 

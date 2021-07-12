@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>
+        
+            
+                Rodrigo Assis
+            
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
+            } else {
+                menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '55px';
+                top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-brand left-logo">
+                <a href="index.html"><img src="/assets/img/logo/logo_default.png"/></a>
+            </div>
+            <div class="navbar-brand right-logo">
+                <img src="/assets/img/logo/Padrao_Azul-Parcial(direita).png"/>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav id="top-bar" class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="/index.html">Início</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown not-click">
+                        <a >Produções</a>
+                        <ul class="dropdown">
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="/profissionais.html">Profissionais</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+                <ul class="left" style="margin-top:7px; margin-left:15px; /*margin-right:45%; caso usar 'right'*/">
+                    <li>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div id="spacetop-bot">
+    <div class="content">
+        <div id="path">
+            <!-- colocar caminho das páginas anteriores -->
+        </div>
+
+        <h2></h2>
+
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/rodrigo_assis.png">
+        <p class="nome">Rodrigo Assis</p>
+        <p class="title">Iluminador Cênico</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="instagram.com/rodrigohorse" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="content-profile">
+        <h5 id="trabalhos-realizados"><strong>TRABALHOS REALIZADOS</strong></h5>
+
+<p><strong>2012</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=OuIAGjM-l9M" target="_blank">Plural de Hélio Fróes, Abilio Carrascal e Izabela Nascente, direção Izabela Nascente, CIA. Nu Escuro, Goiânia Documentário do espetáculo em 2012</a></li>
+  <li><a href="https://www.youtube.com/watch?v=PWc93d4oeyI" target="_blank">Q.Q.ISS? - As Aventuras de Pendu e Cami do outro lado da Lua e do Arco Íris de Fernando Rocha e Pablo Angelino, direção Miqueias Paz, Grupo Sonhus Teatro Ritual</a></li>
+</ul>
+
+<p><strong>2014</strong></p>
+
+<ul>
+  <li><a href="https://rodrigohorse.com.br/project/sasha/" target="_blank">Maurice de Andreane Lima, direção Altair de Sousa, Cia. de Teatro Sala 3</a></li>
+</ul>
+
+<p><strong>2018</strong></p>
+
+<ul>
+  <li><a href="https://rodrigohorse.com.br/project/we-stole-the-fire/" target="_blank">A casa de bernada alba de Federico García Lorca, direção Altair de Sousa, CIA. de Teatro Sala 3</a></li>
+</ul>
+
+<p><strong>2019</strong></p>
+
+<ul>
+  <li><a href="https://rodrigohorse.com.br/project/orfeu/" target="_blank">L’orfeu de ALESSANDRI STRIGIO, direção Ivan Lima, Orquestra Claudio Monteverdi Goiás, Coro Sinfônico Jovem De Goiás</a></li>
+</ul>
+
+<p><strong>Textos</strong></p>
+
+<ul>
+  <li>Livro Design de Iluminação</li>
+  <li>Revista Luz e Cena</li>
+</ul>
+
+<p><strong>2020</strong></p>
+
+<ul>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/07/Revista_DIntBR_Ed_2_2020.pdf" target="_blank">LUZ E SOMBRA</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/07/revista_dintbr_ed1_abr-mai-jun-2020-1-1.pdf" target="_blank">ILUMINAÇÃO</a></li>
+  <li><a href="http://www.loricrizel.arq.br/2179-2/" target="_blank">A ILUMINAÇÃO CÊNICA COMO MODIFICADORA DE ESPAÇOS, Texto publicado no blog do arquiteto, light designer e professor Lori Crizel</a></li>
+</ul>
+
+<p><strong>2016</strong></p>
+
+<ul>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/11-Luz-_-Cena-DEz-2016.pdf" target="_blank">A EVOLUÇÃO DOS CONCEITOS DE ILUMINAÇÃO</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/6-Luz-_-Cena-Jan_2016.pdf" target="_blank">ILUMINANDO COM ARTE, TÉCNICA E SEGURANÇA</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/7-Luz-_-Cena-Fev.-2016.pdf" target="_blank">COR E LUZ TRABALHANDO EM HARMONIA</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/8-Luz-_-Cena-Abril-2016.pdf" target="_blank">ILUMINANDO O CINEMA</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/9-Luz-Cena-Julho-2016.pdf" target="_blank">A REPRESENTAÇÃO DA LUZ EM DOCUMENTO</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/10-Luz_Cena-Out_2016.pdf" target="_blank">QUANTO VALE SEU SUOR?</a></li>
+  <li>Revista DIntBR</li>
+</ul>
+
+<p><strong>2015</strong></p>
+
+<ul>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/01_Luz___Cena_-_Fevereiro_2015_Iluminando_com_Cie%CC%82ncia.pdf" target="_blank">ILUMINANDO COM CIÊNCIA</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/2-Luz-_-Cena-julho-2015-Montando-operando-e-iluminando.pdf" target="_blank">MONTANDO, OPERANDO E ILUMINANDO</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/3-Luz-_-Cena-Agosto-2015-tecnologia-iluminando-nossos-projetos.pdf" target="_blank">TECNOLOGIA ILUMINANDO NOSSOS PROJETOS</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/4-Luz-_-Cena-Out_2015-1.pdf" target="_blank">ILUMINAR BEM OU ILUMINAR CORRETAMENTE?</a></li>
+  <li><a href="https://rodrigohorse.com.br/wp-content/uploads/2020/06/5-Luz-_-Cena-Nov_2015.pdf" target="_blank">A ILUMINAÇÃO CÊNICA ATRAVÉS DO TEMPO</a></li>
+</ul>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li><a href="http://lattes.cnpq.br/8088122174791639" target="_blank">Lattes</a></li>
+  <li><a href="https://www.youtube.com/watch?v=S_rAJ2NsxK4" target="_blank">Breve Portifólio em video</a></li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=jmG9Yn2eMJ4" target="_blank">Da ideia à Luz, Rodrigo Assis Horse e a criação da Luz para a peça No Fundo do Poço</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Yq9B8JK7KpI" target="_blank">Enredo Cultural</a></li>
+  <li><a href="https://www.annamorais.com/post/a-luz-de-rodrigo-horse" target="_blank">Site annamorais</a></li>
+  <li><a href="http://impresso.dm.com.br/edicao/20200407/pagina/11?fbclid=IwAR37rF7jo9wpGvoGLaML2UyELzoD7MIR3C8lbtvNq3fcI6k9i_tD4wGhPD4" target="_blank">Diario da manhã</a></li>
+  <li><a href="http://kfeinamidiaecultura.blogspot.com/2012/04/por-deborah-de-sousa-rodrigo-assis-o.html" target="_blank">Blog de Kfeína</a></li>
+</ul>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div class="support">
+            <h2>Apoio</h2>
+            <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
+        </div>
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+	</body>
+</html>

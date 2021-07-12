@@ -10,30 +10,6 @@ latitude: -23.6367
 longitude: -46.5336
 ---
 
-##### **SOBRE**
-
-Guilherme Bonfanti Piedade natural de Leme, São Paulo, nasceu em 1956 , Light designer  atuante como diretor técnico e é um dos fundadores do Teatro da Vertigem junto com Antônio Araújo. Tem sua ascensão na década de 90 com o grupo Teatro Vertigem., participa também como iluminador em demandas de outros grupos e diretores como; Eduardo Tolentino de Araújo, do Grupo TAPA, Oswaldo Gabrielli,  grupo XPTO, William Pereira e Gabriel Villela.
-
-<br>
-
-Inicia sua carreira profissional em corpo estrangeiro, de Marguerite Dura em 1986. Cria e opera a luz do espetáculo Off em São Paulo no ano de 1987. Seguido por: espetáculo de dança de para Ana Mondini, companhia República da Dança, Gisela Rocha, companhia Terceira Dança, Décio (1990), cria as luzes para Oberösterreich, de Franz Xaver Kroetz, e Hiperborea, espetáculos de Antônio Araújo (1996), ilumina Fui, Vim e Voltei, de Renata Melo (1996) e a ópera Fata Morgana, direção de Marcia Abujamra. Coordenador do Festival Internacional  de Teatro de Londrina em 1991, um marco na sua carreira.
-
-<br>
-
-Ganhador do prêmio Sheell e APCA de iluminação em 1992, com a ambientação da luz na Igreja de Santa Ifigênia em parceria Marisa Bentivegna na primeira encenação do grupo teatro da vertigem, 1995 também com o grupo teatro da vertigem agora em um hospital com espetáculo O Livro de Jó, de Luís Alberto de Abreu  ganha um prêmio Shell e APCA, 1997 recebe os Prêmios Shell e Mambembe de melhor iluminação com o espetáculo O Livro do Desassossego, de Fernando Pessoa, direção de William Pereira.
-
-<br>
-
-Como docente ministrou inúmeros  cursos, oficinas e workshops em uma diversidade de estados brasileiros, palestras na América Latina e eventos de universidades brasileiras,formulou e coordena o primeiro curso de iluminação regular do Brasil em São Paulo na SP ESCOLA DE TEATRO, sendo um de seus fundadores desde 2009.
-
-Acompanhado de uma longa experiência internacional, trabalhando em Nova York, Chicago, Lisboa, Moscou, São Petersburgo, Aarhus (Dinamarca), Wroclaw (Polônia), Londres, Berlin, Koln, Bruxelas, Lyon, Paris, Romênia Hong Kong, Caracas, Bogotá, Buenos Aires, Lima, Quito.
-
-<br>
-
-Guilherme Bonfanti uma das grandes referências em iluminação cênica brasileira  e atuante neste nicho nos trouxe e traz referências para as novas gerações construindo um arquivo artístico de grande importância para a arte do país.
-
-<br>
-
 ##### **TRABALHOS REALIZADOS**
 
 **2018**

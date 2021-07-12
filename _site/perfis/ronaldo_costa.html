@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>
+        
+            
+                Ronaldo Costa
+            
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
+            } else {
+                menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '55px';
+                top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-brand left-logo">
+                <a href="index.html"><img src="/assets/img/logo/logo_default.png"/></a>
+            </div>
+            <div class="navbar-brand right-logo">
+                <img src="/assets/img/logo/Padrao_Azul-Parcial(direita).png"/>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav id="top-bar" class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="/index.html">Início</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown not-click">
+                        <a >Produções</a>
+                        <ul class="dropdown">
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="/profissionais.html">Profissionais</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+                <ul class="left" style="margin-top:7px; margin-left:15px; /*margin-right:45%; caso usar 'right'*/">
+                    <li>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div id="spacetop-bot">
+    <div class="content">
+        <div id="path">
+            <!-- colocar caminho das páginas anteriores -->
+        </div>
+
+        <h2></h2>
+
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/ronaldo_costa.png">
+        <p class="nome">Ronaldo Costa</p>
+        <p class="title">Iluminador Cênico</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="instagram.com/rcostailuminacao" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="content-profile">
+        <h5 id="trabalhos-realizados"><strong>TRABALHOS REALIZADOS</strong></h5>
+
+<p><strong>2020</strong></p>
+
+<ul>
+  <li>Margem Ribeira de Rafael Barbosa, direção Marcondes Lima, grupo Bololô Cia. Cênica</li>
+  <li><a href="https://www.youtube.com/watch?v=hKau4cJJ3c4" target="_blank">Ad Infinitum direção Mathieu Duvignaud</a></li>
+</ul>
+
+<p><strong>2019</strong></p>
+
+<ul>
+  <li><a href="https://www.sympla.com.br/espetaculo-rio-cor-de-rosa__698076" target="_blank">Rio Cor de Rosa de Clébio Oliveira e Daniela Fusaro, direção coreográfica Clébio Oliveira</a></li>
+  <li><a href="https://www.youtube.com/watch?v=xszcwxdugf4" target="_blank">Inverno do Cavalos, direção coreográfica Clébio Oliveira</a></li>
+</ul>
+
+<p><strong>2012</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=VUVcJMT-Wxo" target="_blank">Sobre Todas as Coisas, direção coreográfica Mário Nascimento, Companhia Gira Dança</a></li>
+  <li><a href="https://www.youtube.com/watch?v=MSMFBdZEY2E" target="_blank">Proibido Elefantes, direção e coreografia Clébio Oliveira</a></li>
+  <li><a href="https://www.youtube.com/watch?v=FOkhd2qLOoQ" target="_blank">SUA INCELENÇA, RICARDO III de Shakespeare, encenador Grabriel Villella,  direção Marco França, Ernani Malleta e Babaya Grupo de Teatro Clowns de Shakespeare</a></li>
+</ul>
+
+<p><strong>2010</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=5u66p_V4gl0" target="_blank">Abrazo, direção Marco França, grupo Clowns de Shakespeare</a></li>
+  <li><a href="https://www.youtube.com/watch?v=_z6oXnuznCE" target="_blank">NUESTRA SENHORA DE LAS NUVENSde Arístides Vargas do grupo Malayerba do Equador, e direção de Fernando Yamamoto</a></li>
+</ul>
+
+<p><strong>Textos</strong></p>
+
+<ul>
+  <li>Iluminação ‘Basic One’. Revista Balaio, v.1, p. 98-106, 2013</li>
+  <li>Uma Experiencia Colaborativa na Iluminação.Revista Balaio, v.1, p. 43-53, 2011</li>
+  <li>Pesquisa-ação e iluminação cênica. Cadernos do LINCC , v. 01, p. 99-109, 2008</li>
+  <li>Iluminação Cênica e a Construção do Espetáculo: considerações acerca dos sistemas de construção espetacular</li>
+  <li><a href="http://www.portalabrace.org/vcongresso/textos/pedagogia/Ronaldo%20Fernando%20Costa%20-%20Iluminacao%20Cenica%20e%20uma%20construcao%20do%20espetaculo%20uma%20abordagem%20pedagogica.pdf" target="_blank">Iluminação Cênica e a Construção do Espetáculo: Uma Abordagem Pedagógica</a></li>
+  <li>A luz da Encenação “Uma Coisa que Não Tem Nome”</li>
+  <li>A Luz como Elemento Dialógico</li>
+  <li><a href="https://monografias.ufrn.br/jspui/bitstream/123456789/6259/1/TCC_LUCIFRANKLIN.pdf" target="_blank">A oficina de iluminação e a construção do espetáculo: anatoções para uma proposta pedagógica</a></li>
+  <li><a href="http://www.iar.unicamp.br/lab/luz/ld/C%EAnica/Pesquisa/Dialogos%20com%20a%20ilumina%E7%E3o/Capa.pdf" target="_blank">Título: Diálogos com a Iluminação: uma proposta de ensino</a></li>
+</ul>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li><a href="https://www.escavador.com/sobre/7672310/ronaldo-fernando-costa">Escavador Ronaldo Costa</a> {:target=”_blank”}</li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=XGc0YSj9Zdo" target="_blank">Café Filosófico UFRN</a></li>
+  <li><a href="https://www.youtube.com/watch?v=5NCEU2pZsOs" target="_blank">Lighting Studio</a></li>
+  <li><a href="https://www.youtube.com/watch?v=pIXU-5K7Ym0" target="_blank">Ifrn Cidade Alta - Aula com o Iluminador Cênico Ronaldo Costa no curso de Produção Cultural</a></li>
+</ul>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div class="support">
+            <h2>Apoio</h2>
+            <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
+        </div>
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+	</body>
+</html>

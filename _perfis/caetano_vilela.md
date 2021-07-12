@@ -11,32 +11,6 @@ latitude: -23.6961
 longitude: -46.8594
 ---
 
-##### **SOBRE**
-
-Caetano Vilela, natural de São Paulo (SP), é encenador e iluminador, ao longo de 35 anos de carreira realizou dezenas de produções em importantes teatros pelo Brasil e também no exterior. Começou sua carreira ainda adolescente, aos 15 anos participava de grupos teatrais amadores na escola e aos 18 anos se profissionalizou como ator.
-
-Aos 19 anos entrou para o grupo de teatro “Boi Voador” e foi integrante do núcleo coordenado pela diretora Elizabeth Lopes, que estreou sua primeira criação na cidade de São Paulo, o espetáculo “Em observatório”, baseado na novela de Júlio Cortázar com adaptação Jayme Compri. Foi durante os ensaios e vivências no grupo que, Caetano teve maior contato com o ofício técnico da caixa cênica. Nesta mesma época, conheceu o iluminador Domingos Quintiliano, que também atuava no grupo Boi Voador, e teve a oportunidade de observar seu trabalho como iluminador e  Desde o primeiro contato, passa a se encantar e se interessar pela concepção da luz.
-
-Sua formação profissional veio através das experiências do cotidiano a partir do trabalho prático e de muita leitura autônoma. Por essa característica autodidata, seu envolvimento com a luz partiu de duas experiências importantes para sua trajetória com iluminador. A primeira foi durante seu trabalho como assistente de direção para o espetáculo “O Cobrador”, adaptação de um conto de Ruben Fonseca com direção de Elizabeth Lopes - Cia Teatro em Quadrinhos, concepção de luz pelo iluminador Wagner Pinto. O espetáculo foi convidado para cumprir uma temporada no Festival de Manizales, na Colômbia, e na impossibilidade da presença do operador de luz, Caetano assumiu o ofício durante toda a temporada. A cada apresentação teve a oportunidade de aprender na prática com o executar da operação de luz.
-
-O segundo momento veio ao conhecer o diretor Sérgio Ferrara. Na década de 90 moraram juntos e Caetano passou a iluminar todas as peças do diretor no início de sua carreira.
-
-<br>
-
-Em 1998 adentra ao universo da ópera. Ilumina “Elixir d’Amore” ópera dirigida pelo diretor, iluminador e professor Iacov Hillel, com quem trabalhou por 7 anos seguidos. Seu nome teve grande destaque referente às produções de ópera realizadas no Brasil e exterior. Dentre as óperas que dirigiu, destacam–se: “A Queda da Casa de Usher” de Phillip Glass (2005), “Lady Macbeth do Distrito de Mtzensk” de Shostakovich (2007), “Ariadne em Naxos” de Strauss (2008), “Os Troianos” de Berlioz (2009) e a estreia no Brasil da ópera “Ça Ira” de Roger Waters (2008). Em 2008 foi considerado pela revista de ópera alemã “Neue Merker” o iluminador brasileiro especializado em ópera de maior importância na atualidade.
-
-<br>
-
-Trabalhou durante 11 anos no Festival Amazonas de Ópera (FAO) iluminando todas as óperas do festival em sua 13º edição, com destaque para a iluminação de  “Sansão e Dalila”, direção de Emílio Sagi. Para o mesmo festival iluminou e dirigiu “Les troyens” de Beriloz , sob a regência do francês Laurent Campellone.
-
-<br>
-
-Em 2011 ganhou o Prêmio Shell de melhor iluminação para teatro pelo espetáculo “Dueto para Um” com direção de Mika Lins. Recebeu indicações em 2014 para o espetáculo “Assim é (se lhe parece)”; 2015 “Dias de Vinho e Rosas” e em 2016 “As Benevolentes”.
-
-<br>
-
-Com mais de 30 anos de carreira, atualmente, executa múltiplas funções como iluminador, produtor, diretor cênico em espetáculos de ópera, teatro e também musicais.
-
 ##### **TRABALHOS REALIZADOS**
 
 - [APENAS UM SAXOFONE](https://www.behance.net/gallery/2596057/Play-Apenas-um-Saxofone){:target="_blank"}

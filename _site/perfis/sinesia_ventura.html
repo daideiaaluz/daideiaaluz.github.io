@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>
+        
+            
+                Sinésia Ventura
+            
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
+            } else {
+                menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '55px';
+                top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-brand left-logo">
+                <a href="index.html"><img src="/assets/img/logo/logo_default.png"/></a>
+            </div>
+            <div class="navbar-brand right-logo">
+                <img src="/assets/img/logo/Padrao_Azul-Parcial(direita).png"/>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav id="top-bar" class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="/index.html">Início</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown not-click">
+                        <a >Produções</a>
+                        <ul class="dropdown">
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="/profissionais.html">Profissionais</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+                <ul class="left" style="margin-top:7px; margin-left:15px; /*margin-right:45%; caso usar 'right'*/">
+                    <li>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div id="spacetop-bot">
+    <div class="content">
+        <div id="path">
+            <!-- colocar caminho das páginas anteriores -->
+        </div>
+
+        <h2></h2>
+
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/sinesia_ventura.png">
+        <p class="nome">Sinésia Ventura</p>
+        <p class="title">Iluminadora Cênica</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="www.instagram.com/sinesiaventura" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="content-profile">
+        <h5 id="trabalhos-realizados"><strong>TRABALHOS REALIZADOS</strong></h5>
+
+<p><strong>2020</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=dZcCmqKnSeY" target="_blank">“1,99” videoclipe da banda Nuverse</a></li>
+</ul>
+
+<p><strong>2020</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=BcPFuzsBvX0" target="_blank">Língua videoclipe da banda Corpo em Crise</a></li>
+</ul>
+
+<p><strong>2019</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=h1EJNH-uc7s" target="_blank">Show da banda Nuverse no Música Vocal do Centro Cultural Banco do Nordeste – CCBNB</a></li>
+  <li>Adaptou e operou a luz de artistas como:
+    <ul>
+      <li>Dani Black</li>
+      <li>Francisco, el hombre</li>
+      <li>Khrystal</li>
+      <li>Selvagens à Procura de Lei</li>
+      <li>Leo Fressato</li>
+      <li>Pièta</li>
+      <li>Leandro Léo</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li><a href="https://mapacultural.secult.ce.gov.br/agente/20529" target="_blank">Mapa Cultural</a></li>
+  <li><a href="https://www.youtube.com/channel/UC0EiOslIEFRvKtutDYTqcOw" target="_blank">Canal do You Tube da Sinésia Ventura</a></li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=h-Ceg4BaeKk" target="_blank">Entrevista cedida ao Coletivo Dama Vermelha</a></li>
+  <li><a href="https://www.youtube.com/watch?v=pa2M1gHKtT8" target="_blank">Passando a Luz</a></li>
+  <li><a href="https://www.youtube.com/watch?v=_rHlfnfTXrw" target="_blank">Processo de Criação para Iluminação Cênica</a></li>
+  <li><a href="https://www.youtube.com/watch?v=lu2Glf-lo3M" target="_blank">CANAL FICHA TÉCNICA O CANAL DA GRAXA - BATE PAPO COM SINÉSIA VENTURA-ILUMINAÇAO</a></li>
+</ul>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div class="support">
+            <h2>Apoio</h2>
+            <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
+        </div>
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+	</body>
+</html>

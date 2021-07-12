@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>
+        
+            
+                Renato Machado
+            
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.ico"/>
+
+    <!-- Styles -->
+    <!-- Font awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Foundation -->
+    <link href="/assets/css/foundation.min.css" rel="stylesheet">
+    <!-- Tablepress -->
+    <link href="/assets/css/tablepress-combined.min.css" rel="stylesheet">
+    <!-- W3 CSS -->
+    <link href="/assets/css/w3.css" rel="stylesheet">
+    <!-- Leafmap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/profiles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-contact.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-imagemap.css"> -->
+
+    <!-- Leafmap JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/assets/js/sortTable.js"></script>
+    <script src="/assets/js/searchTable.js"></script>
+    <script src="/assets/js/loadLocation.js"></script>
+    <!-- <script src="/assets/js/includeContent.js"></script> -->
+    <!-- <script src="/assets/js/reloadContent.js"></script> -->
+    <!-- <script src="/assets/js/loadTableContent.js"></script> -->
+    <!-- <script src="/assets/js/showHide.js"></script> -->
+    <!-- <script src="/assets/js/createSearchForm.js"></script> -->
+    <!-- <script src="/assets/js/collapse.js"></script> -->
+
+    <script>
+    var Tabela = {
+        titulo:"",
+        resumo:"",
+        autor:"",
+        orientador:"",
+        palavras_chave:"",
+        ano:0,
+        link:""
+    };
+    var tabela_content = Object.create(Tabela);
+
+    window.onload = function(e) {
+        var menu = document.getElementById("menu");
+        var top_bar = document.getElementById("top-bar");
+
+        document.addEventListener('scroll', function() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                menu.style.display = 'block';
+                menu.style.zIndex = '1';
+
+                top_bar.style.position = 'fixed';
+                top_bar.style.top = '0px';
+                top_bar.style.background = '#ea792b';
+                top_bar.style.boxShadow = '0 3px 4px 0 rgba(0, 0, 0, 0.3)';
+            } else {
+                menu.style.display = 'none';
+
+                top_bar.style.position = 'absolute';
+                top_bar.style.top = '55px';
+                top_bar.style.background = '';
+                top_bar.style.boxShadow = null;
+            }
+        });
+    }
+    </script>
+
+    <!-- Social -->
+    <div class="icon-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/daideiaaluz/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/daideiaaluz/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg" class="youtube"><i class="fa fa-youtube"></i></a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/portal-daideialuz-0937b11b3/" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+    </div>
+
+    <!-- Back to top -->
+    <div id="menu" class="menu-bar">
+        <a href="#navbar-top"><img src="/assets/img/arrowup.png" width="20" height="20"></a>
+    </div>
+
+    <!-- Modal Box (Não está sendo usado, porém pode servir no futuro, se for necessário implementar MODAL) -->
+    <div id="search_box" class="search_box">
+        <span onclick="showHide('search_box');" class="close" title="Fechar">×</span>
+        <div class="search_box_content" id="search_input_form">
+            <!-- Here goes the auto generated form -->
+        </div>
+    </div>
+</head>
+
+
+	<body>
+
+		<div class="wrapper">
+
+			<!-- header -->
+			<header>
+    <!-- logo -->
+    <nav id="navbar-top" class="navbar-top">
+        <div class="top-container">
+            <div class="navbar-brand left-logo">
+                <a href="index.html"><img src="/assets/img/logo/logo_default.png"/></a>
+            </div>
+            <div class="navbar-brand right-logo">
+                <img src="/assets/img/logo/Padrao_Azul-Parcial(direita).png"/>
+            </div>
+        </div>
+    </nav>
+</header>
+
+			<header>
+    <!-- navigation -->
+    <nav id="top-bar" class="top-bar" data-topbar>
+        <div class="container">
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="/index.html">Início</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown not-click">
+                        <a >Produções</a>
+                        <ul class="dropdown">
+                            <!-- <li><a href="#">Espetáculos</a></li> -->
+                            <li><a href="/trabalhos_academicos.html">Trabalhos Acadêmicos</a></li>
+                            <li><a href="/videos.html">Vídeos</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="/profissionais.html">Profissionais</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+                <ul class="left" style="margin-top:7px; margin-left:15px; /*margin-right:45%; caso usar 'right'*/">
+                    <li>
+                        <button class="button-search" onclick="location.href='/buscar.html'"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+</header>
+
+			<!-- header end -->
+
+			<!-- content -->
+			<div id="spacetop-bot">
+    <div class="content">
+        <div id="path">
+            <!-- colocar caminho das páginas anteriores -->
+        </div>
+
+        <h2></h2>
+
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/renato_machado.jpg">
+        <p class="nome">Renato Machado</p>
+        <p class="title">Iluminador Cênico</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="instagram.com/renatomachado300" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="content-profile">
+        <h5 id="trabalhos-realizados"><strong>TRABALHOS REALIZADOS</strong></h5>
+
+<p><strong>2020</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=hsMZ7pQfA_k" target="_blank">Vim Assim que Pude de Renato Carreira, direção Marco André Nunes</a></li>
+</ul>
+
+<p><strong>2019</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=QA6eyMx90ew" target="_blank">Filhos da Medéa de Carolina Lavigne com fragmentos de Alexandre Costa, Fluxodrama, -Martina Sohn Fisher e Pedro Uchoa, direção  Marco André Nunes</a></li>
+</ul>
+
+<p><strong>2015</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=QZV3Q_Xj--4" target="_blank">Laio e Críspio de  Pedro Kosovski, direção Marco André Nunes</a></li>
+</ul>
+
+<p><strong>2014</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Leb6QZzzuak" target="_blank">EdyPop de Pedro Kosovski, direção Marco André Nunes</a></li>
+</ul>
+
+<p><strong>2010</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=Rm95Z3XDdD0" target="_blank">Retrato do Artista Quando Jovem de Pedo Kosovski, direção Marco André Nunes</a></li>
+</ul>
+
+<p><strong>2002</strong></p>
+
+<ul>
+  <li>Premio Shell de Teatro por Tereza d´Ávila, a Santa Descalça, de Fidélis Fraga</li>
+</ul>
+
+<p><strong>2005</strong></p>
+
+<ul>
+  <li><a href="http://christianejatahy.com.br/project/a-falta-que-nos-move" target="_blank">A Falta que Nos Move ou Todas As Histórias São Ficção, com direção de Christiane Jatahy</a></li>
+</ul>
+
+<p><strong>2006</strong></p>
+
+<ul>
+  <li><a href="https://www.terra.com.br/istoegente/335/diversao_arte/teatro_leitor_horas.htm" target="_blank">Leitor por Horas, de José Sanchis Sinisterra, direção Christiane Jatahy</a></li>
+  <li><a href="http://www.amokteatro.com.br/espetaculo/savina/6" target="_blank">Savina, de Stéphane Brodt e Ana Teixeira</a></li>
+  <li><a href="http://www.zucca.com.br/projetos/o-pequenino-grao-de-areia" target="_blank">O Pequenino Grão de Areia, de João Falcão</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Na-XG-gVnoI" target="_blank">O Cabaré dos Quase-Vivos, do grupo Sobrevento</a></li>
+  <li>Projeto K, de Walter Daguerre</li>
+</ul>
+
+<p><strong>2007</strong></p>
+
+<ul>
+  <li><a href="http://daniellacavalcanti.com.br/wp-content/uploads/2013/07/%C3%9Altimos-Remorsos-antes-do-Esquecimento_de-Jean-Luc-Lagarce_Dire%C3%A7%C3%A3o-Ivan-Sugahara_a-partir-de-04-de-agosto_Teatro-da-Sede-das-Cias.pdf" target="_blank">Últimos Remorsos Antes do Esquecimento, de Jean-Luc Lagarce, com a Cia Os Dezequilibrados</a></li>
+</ul>
+
+<p><strong>2008</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=8F-i1ciiaYc" target="_blank">Nú de Mim Mesmo de Flafio Graff, direção  Jefferson Miranda</a></li>
+</ul>
+
+<p><strong>2020</strong></p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=m2Xy0tNjDfw" target="_blank">Só de Luiz André Cherubini, Sandra Vargas, Sueli Andrade, J. E. Tico, Liana Yuri, Daniel Viana e Maurício Santana, direção Luiz André Cherubini e Sandra Vargas, Grupo Sobrevento, palco do Sesc Santana, São Paulo</a></li>
+</ul>
+
+<p><strong>Textos</strong></p>
+
+<ul>
+  <li><a href="https://www.revistas.udesc.br/index.php/moin/article/view/1059652595034701052008188" target="_blank">A Luz Montagem Uma análise comparativa dos mecanismos de edição utilizados no teatro e no cinema</a></li>
+  <li><a href="http://www.repositorio-bc.unirio.br:8080/xmlui/bitstream/handle/unirio/11389/Disserta%C3%A7%C3%A3o%20-%20Renato%20Bandeira.pdf?sequence=1" target="_blank">Dissertação de mestrado A luz montagem</a></li>
+  <li><a href="http://ppgac-ecoufrj.com.br/uploads/f/s/disserta-fernanda-mattos_bpfr.pdf" target="_blank">Dissertação de mestrado de Fernanda Guimarães Mattos de Souza - GAMBIARRAS DE LUZ: reflexões sobre a formação do iluminador cênico sob a ótica de três gerações cariocas</a></li>
+</ul>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li><a href="http://www.todoteatrocarioca.com.br/pessoa/9130/renato-machado-iluminador" target="_blank">Trabalhos</a></li>
+  <li><a href="http://enciclopedia.itaucultural.org.br/pessoa456680/renato-machado" target="_blank">Itaú Cultural</a></li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=-gJitzzgCrg" target="_blank">Lighting Studio</a></li>
+  <li><a href="https://cbtij.org.br/joao-batista-companhia-dramatica-de-comedia/" target="_blank">Centro brasileiro Teatro para a Infância e Juventude</a></li>
+  <li><a href="http://www.pequod.com.br/2015/author/renatomachado/" target="_blank">CIA. Pequod</a></li>
+</ul>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+			<!-- content end -->
+
+			<!-- footer -->
+			<footer>
+    <div class="container">
+        <div class="support">
+            <h2>Apoio</h2>
+            <img src="/assets/img/logo/logos_apoio.png" alt="Apoio">
+        </div>
+        <div style="padding: 30px;">
+            <p><a href="#">Início</a> | <a href="#">Contato</a></p>
+            <p class="copy-right">Copyright &copy; 2020 <a href="#">Da ideia a luz</a> | All rights reserved. </p>
+        </div>
+    </div>
+</footer>
+
+			<!-- footer end -->
+
+		</div>
+
+	</body>
+</html>

@@ -1263,8 +1263,8 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li:hover>a {
-	box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px;
-	background: #f79552;
+	/* box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px; */
+	/* background: #f79552; */
 	color: #fff
 }
 
@@ -1402,8 +1402,8 @@ meta.foundation-mq-topbar {
 		margin-bottom: 0
 	}
 	.top-bar-section {
-		left: 23% !important;
-		z-index: 1;
+		left: 25% !important;
+		/* z-index: 1; */
 	}
 	.top-bar-section ul {
 		width: auto;
@@ -1430,8 +1430,10 @@ meta.foundation-mq-topbar {
 		transition: background-color 450ms ease-out;
 	}
 	.top-bar-section li:not(.has-form) a:not(.button):hover {
-		box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px;
-		background-color: #f79552
+		/* box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px; */
+		/* background-color: #f79552;*/
+		text-shadow: 1px 1px #fff;
+		color: #0c2444;
 	}
 	.top-bar-section li.active:not(.has-form) a:not(.button) {
 		padding: 0 15px;
@@ -1451,10 +1453,13 @@ meta.foundation-mq-topbar {
 		width: 0;
 		height: 0;
 		border: inset 5px;
-		border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+		border-color: rgba(255, 255, 255, 1) transparent transparent transparent;
 		border-top-style: solid;
 		margin-top: -2.5px;
 		top: 22.5px
+	}
+	.top-bar-section .has-dropdown:hover>a:after {
+		border-color: rgba(12, 36, 68, 1) transparent transparent transparent;
 	}
 	.top-bar-section .has-dropdown.moved {
 		position: relative
@@ -1464,7 +1469,7 @@ meta.foundation-mq-topbar {
 	}
 	.top-bar-section .has-dropdown.hover>.dropdown,
 	.top-bar-section .has-dropdown.not-click:hover>.dropdown {
-		display: block
+		display: block;
 	}
 	.top-bar-section .has-dropdown .dropdown li.has-dropdown>a:after {
 		border: none;
@@ -1477,16 +1482,19 @@ meta.foundation-mq-topbar {
 	.top-bar-section .dropdown {
 		left: 0;
 		top: auto;
-		background-color: transparent;
+		background-color: #ea792b;
 		min-width: 100%;
-		box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px;
+		border-top: none;
+		border-bottom: solid 1px #fff;
+		border-right: solid 1px #fff;
+		border-left: solid 1px #fff;
+		/* box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px; */
 	}
 	.top-bar-section .dropdown li a {
 		color: #fff;
 		line-height: 1;
 		white-space: nowrap;
 		padding: 12px 15px;
-		background-color: #ff7e26;
 	}
 	.top-bar-section .dropdown li label {
 		white-space: nowrap;
@@ -1519,7 +1527,7 @@ meta.foundation-mq-topbar {
 	}
 	.top-bar-section .left li .dropdown {
 		right: auto;
-		left: 0
+		left: -1px;
 	}
 	.top-bar-section .left li .dropdown li .dropdown {
 		left: 100%

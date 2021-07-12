@@ -10,30 +10,55 @@ latitude: -5.8015
 longitude: -35.2222
 ---
 
-##### **SOBRE**
+##### **TRABALHOS REALIZADOS**
 
-Nascido em Recife no ano de 1973, Cleison Ramos, exerce a profissão de iluminador cênico há 13 anos na sua cidade natal. Ganhador na categoria de melhor iluminação no prêmio APACEPE JGE 2016,com o  espetáculo de dança  Bailaora da CIA Karina Leiro, assina projetos de luz para os campos das artes cênicas, música, audiovisual, eventos, mas principalmente na área da dança. Atualmente, o artista é sócio na empresa Farol- ateliê de luz, ao lado de Natalie Revoredo e João Guilherme de Paula, é iluminador-performer em ESTESIA (um espetáculo/show imersivo de som e luz), faz o projeto de luz e também atua como bailarino na CIA Digue, ministra oficinas e o curso 1._, coordena a técnica em festivais locais,  presta assessoria técnica em projetos de iluminação para espaços alternativos e realiza manutenções luminotécnica, cenotécnica e sonora em teatros de pequeno porte.
+**2020**
 
-<br>
+- [Trecho do show da banda Estesia, música Dizem que sou Louca](https://www.youtube.com/watch?v=j4_Jc2jq6PE){:target="_blank"}
+- [Videoclipe Te Alma de Juan Guiã, Seven Estúdios](https://www.youtube.com/watch?v=YNTI38uI8QU){:target="_blank"}
 
-Notóriamente dedicado ao curso e oficinas em que leciona, o iluminador, curiosamente não queria ser arte educador. Com desejo de estudar cinema, em 2002, ele ingressa no curso de LICENCIATURA EM ARTES CêNICAS da UFPE(2002/2007) e foi assim que, o jovem universitário, teve seu primeiro contato com a arte teatral. Em 2005, já no meio de sua graduação e com a certeza de que não queria seguir no caminho da licenciatura, o acaso o colocou como monitor de luz do curso operando som e posteriormente a luz da Cia do professor João Denis Araújo Leite, segundo Cleison foi operando iluminações naquela época que ele começou a enxergar a luz como um possível caminho.
+**2019**
 
-<br>
+- [Videoclipe Mais um Lamento da banda Estesia, direção Jão Vicente e Laura Olívia](https://www.youtube.com/watch?v=LiHUlruCChk&list=OLAK5uy_mmfTInnv1vJ3FErri0T_hqGkgevqAHzKA&index=3){:target="_blank"}
+- [Teaser Z.I.G.O.T.O.- A Primeira Célula de Um Novo Ser, direção Black Escobar](https://www.youtube.com/watch?v=D7xhbJaEeqc){:target="_blank"}
 
-Não parou mais. No mesmo ano, foi ser estagiário por 8 meses no Teatro Paulo Emílio no armazém XIV, acompanhando montagens e aproveitando a oportunidade para observar e aprender como aquele sistema era operacionado. Em 2006, fez a sua primeira técnica em teatro, em 2009 ganhou o primeiro cachê em 2013 ministrou a primeira edição de seu Curso 1.0, sob orientação do Professor João Leite no centro cultural Benfica da UFPE, no teatro Joaquim Cardozo, teatro esse que até hoje presta serviços de manutenção técnica e que por 10 anos acompanhou montagens e assinou luzes, tendo destaque em sua aprendizagem.
+**2018**
 
-<br>
+- [Afoxé Oxum Pandá Canta](https://www.youtube.com/watch?v=BKMC_JWzCfQ){:target="_blank"}
 
-Além de sua formação no ofício ser quase que autodidata, pesquisando internet adentro e lendo diversos livros de iluminadores que tem por referência como Valmir Perez, Gil Camargo, Cibele Forjaz, Eduardo Tudella entre outros; ele relata considerar ter tido dois mestres em sua trajetória, são eles o técnico Nade Jackson ,quem o ensinou a tipologia dos equipamentos do trabalho, e o iluminador Jatyles Miranda quem acompanhou em diversas montagens durante longas madrugadas e também responsável por  o atentar a criação de luminárias, elemento também presente em suas assinaturas.
+**2017**
 
-<br>
+- [Show completo da banda Estesia](https://www.youtube.com/watch?v=r60GR0SxKhE&t=797s){:target="_blank"}
+- [Trecho do Show de lançamento do 1° EP da banda Sue](https://www.youtube.com/watch?v=r60GR0SxKhE){:target="_blank"}
+
+**2015**
+
+- [Videoclipe de Romero Ferro](https://www.youtube.com/watch?v=ivH3-ISQUXo){:target="_blank"}
+- [Videoclipe da banda Jack Noise, música Fogo Cruzado](https://www.youtube.com/watch?v=usezE7cja88){:target="_blank"}
+
+**2014**
+
+- [Teresa & Tereza](https://www.youtube.com/watch?v=GmQsXA7XpfA){:target="_blank"}
+- [Trecho do Show de Karynna Spinelli](https://www.youtube.com/watch?v=eZoQQe5rOb0){:target="_blank"}
+- [Videoclipe Outro Lugar de Helô Carvalho, direção Heloíse Carvalho](https://www.youtube.com/watch?v=_kJzr8VebGU){:target="_blank"}
+
+**2013**
+
+- [Trecho do Show de Romero Ferro](https://www.youtube.com/watch?v=xJsPnRDal6I){:target="_blank"}
+- [Show de Roero Ferro](https://www.youtube.com/watch?v=-Xj6_kLrhtM){:target="_blank"}
+
+**2012**
+
+- [O Baile dos Seres Imaginários](https://www.youtube.com/watch?v=IVrg0ez40GQ){:target="_blank"}
+
+- [Como se Ícaro Falasse, direção Jorge Feó](https://www.youtube.com/watch?v=lmsgPUxLsu4){:target="_blank"}
+- Casulo, direção Marcos Brandão
 
 ##### **MATERIAL DE PESQUISA**
 
 * [Lattes](http://lattes.cnpq.br/5118371270723405){:target="_blank"}
 
-<br>
-
 ##### **ENTREVISTAS**
 
 * [Lighting Studio](https://www.youtube.com/watch?v=15LZWnF7kYk&ab_channel=LightingStudio){:target="_blank"}
+* [Da Ideia à Luz - Cleison Ramos e a criação da Luz para o projeto “Estesia”](https://www.youtube.com/watch?v=q9o7-szRVVg&ab_channel=daideia%C3%A0luz){:target="_blank"}

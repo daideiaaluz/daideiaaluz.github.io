@@ -5,17 +5,44 @@ alias: Wallace Rios
 state: Ceará
 img: /assets/img/perfis/wallace_rios.png
 area: Iluminador Cênico
-email: mailto:email@email.com
 instagram: https://www.instagram.com/wallace_rios/
-youtube: https://www.youtube.com
-latitude: "-4.921"
-longitude: "-39.556"
+youtube: https://www.youtube.com/channel/UCXsOP-rqOnfMp5AhHED0axg
+latitude: "-3.7353"
+longitude: "-38.5572"
 ---
 
-##### **SOBRE**
+##### **TRABALHOS REALIZADOS**
 
-Wallace Rios, iluminador cênico, de Fortaleza – Ceará. Graduado em Designer de Interiores e com especialização em ARQUITETURA & amp; LIGHTING. Possui formação técnica em interpretação teatral pelo Curso de Arte Dramática (CAD) pela Universidade Federal do Ceará. Coordenador do CENOTEC/CE, laboratório de estudos em tecnologias para a cena ligado ao Curso de Licenciatura em teatro da UFC onde ocupa o cargo de técnico de laboratório. Realiza projetos de criação, desenvolvimento e execução de iluminação cênica para espetáculos de teatro, dança e música. Ministra oficinas e cursos livre em iluminação cênica. Premiado, mas categorias de melhor iluminação com o espetáculo MAQUINISTA pelo 14° Semana de teatro do Maranhão em 2019; Melhor iluminação com o espetáculo MAQUINISTA pelo IV Ceará em Cena em 2018; Profissionais do ano pelo SATEDC-CE em 2015.
+**2017**
 
-<br>
+- [Aquela, Uma Dieta Para se Caber no Mundo, do mesmo grupo](https://www.youtube.com/watch?v=9FaREGmGjQ8){:target="_blank"}
+- [Palafita, do Grupo Fuzuê](https://www.youtube.com/watch?v=GmUqXuXuFsU){:target="_blank"}
 
-Nascido em Fortaleza - Ceará, começou sua carreira artística em 2002 no Curso Princípios Básicos de Teatro ? CPBT. No mesmo ano cursou o módulo de ILUMINAÇÃO do Colégio de dança de Fortaleza realizado pelo INSTITUTO DRAGÃO DO MAR. Desde então, iniciou sua pesquisa na área de Iluminação Cênica. Concluiu o Curso de Arte Dramática ? CAD pela UFC (Universidade Federal do Ceará) no ano de 2006 realizou registro de profissional no MINISTÉRIO DO TRABALHO E EMPREGO. Ministra Cursos livre de Iluminação Cênica. Primeiro técnico cearense agraciado com o Prêmio de FORMAÇÃO na categoria TEATRO promovido pela FUNCET (Fundação de Cultura, Esporte e Turismo) do município de Fortaleza ? Ceará, no ano de 2007. Graduado em Designer de Interiores na Faculdade Integrada do Ceará ?ESTÁCIO DE SÁ/FIC; Especialista pelo MASTER EM ARQUITETURA & LIGHTING no INSTITUTO DE PÓS-GRADUAÇÃO ? IPOG. Atualmente Iluminador do Instituto de Cultura e Arte ? ICA da Universidade Federal do Ceará. Realiza projetos de criação, desenvolvimento e execução de iluminação cênica para espetáculos de divertimento. Presta serviço a grupos de teatro, dança e música. Ministra oficinas e cursos livre em iluminação cênica.
+**2019**
+
+- [Maquinista do Grupo Pavilhão da Magnólia](https://www.facebook.com/watch/live/?v=189230555279117&ref=watch_permalink){:target="_blank"}
+
+**2016**
+
+- [Baldio de Astier Basílio, direção Héctor Briones, Grupo Pavilão da Magnólia](https://www.youtube.com/watch?v=VM4VgGG7qls){:target="_blank"}
+
+**2009**
+
+- [Encantagros do Grupo Expressões Humanas](https://br.pinterest.com/wallacerios/2009-encantrago-ver-de-rosa-um-ser-t%C3%A3o/){:target="_blank"}
+
+**Textos**
+
+- OLIVEIRA, W. R. . Pedagogias Cênicas: prática e formação. 2019.
+- OLIVEIRA, W. R. ; Briones, Héctor Vásquez . A iluminação cênica como um não-lugar existente: reflexões sobre o trabalho da iluminação no espetáculo Um Lugar Para Ficar em Pé. 2015.
+- OLIVEIRA, W. R. . Panorama da iluminação Brasilleira. 2015.
+
+
+##### **MATERIAL DE PESQUISA**
+
+- [Escavador Wallace Rios](https://www.escavador.com/sobre/3871470/wallace-rios-de-oliveira){:target="_blank"}
+- [Fotos de alguns trabalhos](https://www.pavilhaodamagnolia.com/festivais-e-premios){:target="_blank"}
+
+##### **ENTREVISTAS**
+
+- [Lighting Studio](https://www.youtube.com/watch?v=WQUmYwuWB0g){:target="_blank"}
+- [Passando a Luz](https://www.youtube.com/watch?v=aEtnrtAM6hc){:target="_blank"}
