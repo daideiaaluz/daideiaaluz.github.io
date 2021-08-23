@@ -1,3 +1,12 @@
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
 .tablepress-table-description {
 	clear: both;
 	display: block
@@ -8,7 +17,6 @@
 	border-spacing: 0;
 	width: 100%;
 	margin-bottom: 1em;
-	border: none
 }
 
 .tablepress td,
@@ -198,13 +206,13 @@
 }
 
 .tablepress .column-1 {
-	width: 140px;
+	width: 200px;
 }
 .tablepress .column-2 {
-	width: 650px;
+	width: 250px;
 }
 .tablepress .column-5 {
-	width: 130px;
+	width: 250px;
 }
 
 .tablepress .sorting,
@@ -275,4 +283,86 @@
 .tablepress thead th {
 	background-color: #6d86a8;
 	color: #fff
+}
+
+/* Table aba */
+.nav_tabs{
+	height: 600px;
+	background-color: #fff;
+	position: relative;
+}
+
+.nav_tabs ul{
+	list-style: none;
+	margin: 0;
+}
+
+.nav_tabs ul li{
+	float: left;
+	margin-right: 5px;
+}
+
+.tab_label{
+	display: block;
+	background-color: #aab8ca;
+	padding: 8px;
+	font-size: 15px;
+	color:#fff;
+	cursor: pointer;
+	text-align: center;
+}
+
+.nav_tabs .rd_tab {
+	display:none;
+	position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label {
+	background-color: #283e5d;
+	color:#fff;
+}
+
+.tab-content{
+	border-top: solid 5px #283e5d;
+	display: none;
+	position: absolute;
+	height: calc(100% - 40px);
+	left: 0;
+	overflow: auto;
+}
+
+.rd_tab:checked ~ .tab-content{
+	display: block;
+	border-left: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.tab-content h2{
+	padding: 10px;
+	color: #87d3b7;
+}
+
+.tab-content article{
+	padding: 10px;
+	color: #555;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c1c1c1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #777;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
 }
