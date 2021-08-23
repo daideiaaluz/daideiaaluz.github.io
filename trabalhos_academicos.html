@@ -5,48 +5,164 @@ title: Trabalhos Acadêmicos
 <div class="description">
     <p>Encontre trabalhos acadêmicos de diversos iluminadores brasileiros. Para buscas mais específicas, clique na área de maior interesse: palavras-chave, ano de publicação ou nome dos autotes, por exemplo.</p>
 </div>
-<div class="tablepress">
-    <div class="tablesearch">
-        <input type="search" id="inputSearchTable" onkeyup="searchTable();" placeholder="Pesquisar Trabalho">
-    </div>
-    <table id="tablepress-1" class="tablepress tablepress-id-1">
-        <thead>
-            <tr class="row-1 odd">
-                <th onclick="sortTable(0)" class="column-1 sorting">Título</th>
-                <th onclick="sortTable(1)" class="column-2 sorting">Resumo</th>
-                <th onclick="sortTable(2)" class="column-3 sorting">Autor(es)</th>
-                <th onclick="sortTable(3)" class="column-4 sorting">Orientador</th>
-                <th onclick="sortTable(4)" class="column-5 sorting">Palavras-chave</th>
-                <th onclick="sortTable(5)" class="column-6 sorting">Ano</th>
-                <th class="column-7 sorting" style="cursor:auto;">Publicação</th>
-            </tr>
-        </thead>
-        <tbody id="table-content" class="row-hover">
-            {% for trabalhos_item in site.trabalhos %}
-                <tr>
-                    <td>
-                        {{ trabalhos_item.titulo }}
-                    </td>
-                    <td style="text-align:justify;">
-                        {{ trabalhos_item.resumo }}
-                    </td>
-                    <td>
-                        {{ trabalhos_item.autor }}
-                    </td>
-                    <td>
-                        {{ trabalhos_item.orientador }}
-                    </td>
-                    <td>
-                        {{ trabalhos_item.palavrasChave }}
-                    </td>
-                    <td>
-                        {{ trabalhos_item.ano }}
-                    </td>
-                    <td>
-                        <a target="_blank" rel="noopener noreferrer" href="{{ trabalhos_item.publicacao }}">Link</a>
-                    </td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+
+<div class="tablesearch">
+    <input type="search" id="inputSearchTable" onkeyup="searchTable();" placeholder="Digite o que você procura">
 </div>
+
+<nav class="nav_tabs">
+    <ul>
+        <li>
+            <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+			<label for="tab1" class="tab_label">Doutorados</label>
+            <div class="tab-content tablepress">
+                <table id="tablepress-1" class="tablepress tablepress-id-1">
+                    <thead>
+                        <tr class="row-1 odd">
+                            <th class="column-1 noselect">Nome</th>
+                            <th class="column-3 noselect">Título</th>
+                            <th class="column-4 noselect">Palavra-chave</th>
+                            <th class="column-5 noselect">Instituição</th>
+                            <th class="column-6 noselect">Ano</th>
+                            <th class="column-7 noselect">Orientador</th>
+                            <th class="column-7 noselect" style="cursor:default;">Publicação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content" class="row-hover">
+                        {% for item in site.data.trabalhos.doutorados %}
+                            <tr>
+                                <td>
+                                    {{ item.nome }}
+                                </td>
+                                <td>
+                                    {{ item.titulo }}
+                                </td>
+                                <td>
+                                    {{ item.palavra-chave }}
+                                </td>
+                                <td>
+                                    {{ item.instituicao }}
+                                </td>
+                                <td>
+                                    {{ item.ano }}
+                                </td>
+                                <td>
+                                    {{ item.orientador }}
+                                </td>
+                                <td>
+                                    {% if item.link != "-" %}
+                                        <a target="_blank" rel="noopener noreferrer" href="{{ item.link }}">Link</a>
+                                    {% else %}
+                                        Link
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" id="tab2" class="rd_tab" name="tabs">
+			<label for="tab2" class="tab_label">Mestrados</label>
+            <div class="tab-content tablepress">
+                <table id="tablepress-2" class="tablepress tablepress-id-1">
+                    <thead>
+                        <tr class="row-1 odd">
+                            <th class="column-1 noselect">Nome</th>
+                            <th class="column-3 noselect">Título</th>
+                            <th class="column-4 noselect">Palavra-chave</th>
+                            <th class="column-5 noselect">Instituição</th>
+                            <th class="column-6 noselect">Ano</th>
+                            <th class="column-7 noselect">Orientador</th>
+                            <th class="column-7 noselect" style="cursor:default;">Publicação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content" class="row-hover">
+                        {% for item in site.data.trabalhos.mestrados %}
+                            <tr>
+                                <td>
+                                    {{ item.nome }}
+                                </td>
+                                <td>
+                                    {{ item.titulo }}
+                                </td>
+                                <td>
+                                    {{ item.palavra-chave }}
+                                </td>
+                                <td>
+                                    {{ item.instituicao }}
+                                </td>
+                                <td>
+                                    {{ item.ano }}
+                                </td>
+                                <td>
+                                    {{ item.orientador }}
+                                </td>
+                                <td>
+                                    {% if item.link != "-" %}
+                                        <a target="_blank" rel="noopener noreferrer" href="{{ item.link }}">Link</a>
+                                    {% else %}
+                                        Link
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" id="tab3" class="rd_tab" name="tabs">
+			<label for="tab3" class="tab_label">Artigos</label>
+            <div class="tab-content tablepress">
+                <table id="tablepress-3" class="tablepress tablepress-id-1">
+                    <thead>
+                        <tr class="row-1 odd">
+                            <th class="column-1 noselect">Nome</th>
+                            <th class="column-3 noselect">Título</th>
+                            <th class="column-4 noselect">Palavra-chave</th>
+                            <th class="column-5 noselect">Instituição</th>
+                            <th class="column-6 noselect">Ano</th>
+                            <th class="column-7 noselect">Revista</th>
+                            <th class="column-7 noselect" style="cursor:default;">Publicação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content" class="row-hover">
+                        {% for item in site.data.trabalhos.artigos %}
+                            <tr>
+                                <td>
+                                    {{ item.nome }}
+                                </td>
+                                <td>
+                                    {{ item.titulo }}
+                                </td>
+                                <td>
+                                    {{ item.palavra-chave }}
+                                </td>
+                                <td>
+                                    {{ item.instituicao }}
+                                </td>
+                                <td>
+                                    {{ item.ano }}
+                                </td>
+                                <td>
+                                    {{ item.publicacao }}
+                                </td>
+                                <td>
+                                    {% if item.link != "-" %}
+                                        <a target="_blank" rel="noopener noreferrer" href="{{ item.link }}">Link</a>
+                                    {% else %}
+                                        Link
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </li>
+    </ul>
+</nav>

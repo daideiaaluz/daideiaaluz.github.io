@@ -1432,7 +1432,7 @@ meta.foundation-mq-topbar {
 	.top-bar-section li:not(.has-form) a:not(.button):hover {
 		/* box-shadow: rgba(0, 0, 0, 0.3) 3px 2px 2px 0px; */
 		/* background-color: #f79552;*/
-		text-shadow: 1px 1px #fff;
+		/* text-shadow: 1px 1px #fff; */
 		color: #0c2444;
 	}
 	.top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -5506,7 +5506,7 @@ ul.off-canvas-list li a {
 table {
 	background: #fff;
 	/* margin-bottom: 1.25rem; */
-	border: solid 1px #ddd
+	/* border: solid 1px #ddd */
 }
 
 table thead,
@@ -5875,14 +5875,14 @@ select {
 	margin: 0 0 1rem 0
 }
 
-input[type="checkbox"]+label,
+/* input[type="checkbox"]+label,
 input[type="radio"]+label {
 	display: inline-block;
 	margin-left: 0.5rem;
 	margin-right: 1rem;
 	margin-bottom: 0;
 	vertical-align: baseline
-}
+} */
 
 input[type="file"] {
 	width: 100%

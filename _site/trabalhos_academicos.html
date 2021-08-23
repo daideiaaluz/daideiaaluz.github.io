@@ -55,17 +55,6 @@
     <!-- <script src="/assets/js/collapse.js"></script> -->
 
     <script>
-    var Tabela = {
-        titulo:"",
-        resumo:"",
-        autor:"",
-        orientador:"",
-        palavras_chave:"",
-        ano:0,
-        link:""
-    };
-    var tabela_content = Object.create(Tabela);
-
     window.onload = function(e) {
         var menu = document.getElementById("menu");
         var top_bar = document.getElementById("top-bar");
@@ -180,99 +169,3723 @@
         <div class="description">
     <p>Encontre trabalhos acadêmicos de diversos iluminadores brasileiros. Para buscas mais específicas, clique na área de maior interesse: palavras-chave, ano de publicação ou nome dos autotes, por exemplo.</p>
 </div>
-<div class="tablepress">
-    <div class="tablesearch">
-        <input type="search" id="inputSearchTable" onkeyup="searchTable();" placeholder="Pesquisar Trabalho">
-    </div>
-    <table id="tablepress-1" class="tablepress tablepress-id-1">
-        <thead>
-            <tr class="row-1 odd">
-                <th onclick="sortTable(0)" class="column-1 sorting">Título</th>
-                <th onclick="sortTable(1)" class="column-2 sorting">Resumo</th>
-                <th onclick="sortTable(2)" class="column-3 sorting">Autor(es)</th>
-                <th onclick="sortTable(3)" class="column-4 sorting">Orientador</th>
-                <th onclick="sortTable(4)" class="column-5 sorting">Palavras-chave</th>
-                <th onclick="sortTable(5)" class="column-6 sorting">Ano</th>
-                <th class="column-7 sorting" style="cursor:auto;">Publicação</th>
-            </tr>
-        </thead>
-        <tbody id="table-content" class="row-hover">
-            
-                <tr>
-                    <td>
-                        Desenho de luz: um estudo sobre o uso da iluminação no palco
-                    </td>
-                    <td style="text-align:justify;">
-                        Esta pesquisa tem como objetivo central valorizar um elemento do espetáculo ainda pouco contemplado pela academia no Brasil. A Iluminação foi coadjuvante do teatro, no momento da sua gênese, participou do seu desenvolvimento e ainda acompanha a arte da representação. O recorte da investigação evidencia os aspectos pertinentes à formação do Iluminador. Abordam-se os princípios que envolvem o desenvolvimento do Desenho de Luz para a cena, estabelecendo um diálogo entre aspectos da realidade brasileira e exemplos estrangeiros. Apresenta-se também a função do artista em questão (o iluminador) e seu ofício. O texto destaca a importância do processo histórico do teatro associado à evolução tecnológica. Esta ultima é valorizada a partir da sua origem, quando eram empregados princípios artesanais engenhosos para dominar e administrar a luz artificial. Por fim, o espetáculo Mestre Haroldo... e os meninos, é analisado. Para esta abordagem foram utilizados os tópicos escolhidos para compor esta dissertação, pautados na relação: unidade de cena e composição de luz.
-                    </td>
-                    <td>
-                        Benevides, Pedro Dultra
-                    </td>
-                    <td>
-                        Santos, Gláucio Machado
-                    </td>
-                    <td>
-                        Iluminação Cênica; Desenho de Luz; Iluminador
-                    </td>
-                    <td>
-                        2011
-                    </td>
-                    <td>
-                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufba.br/ri/handle/ri/9635">Link</a>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Por uma história do pensamento sobre o fazer da iluminação cênica moderna: a cena além do humano
-                    </td>
-                    <td style="text-align:justify;">
-                        O presente artigo, um dos resultados parciais de pesquisa de pós-doutoramento sobre uma história do fazer e do pensamento da iluminação cênica moderna, apresenta algumas questões relativas a tal proposição e estabelece algumas bases do pensamento da iluminação em cena entre finais do século XIX e início do XX. Para tal, articula, com base sobretudo em Adolphe Appia e Gordon Craig, a relação entre os avanços propiciados pela iluminação elétrica e reconfigurações das tradições do teatro de figuras (marionetes), como estudado por Cristina Grazioli, numa proposição de modernização da cena, considerando-se os modos de produção, tanto da iluminação quanto da cena, em seus contextos culturais.
-                    </td>
-                    <td>
-                        Nosella, Berilo Luigi Deiró
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        Teatro de formas animadas; Gordon Craig; Adolphe Appia; História e historiografia do teatro; Stage lighting history
-                    </td>
-                    <td>
-                        2018
-                    </td>
-                    <td>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.repositorio.ufop.br/handle/123456789/10148">Link</a>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Iluminação cênica: possibilidades de um sujeito em cena
-                    </td>
-                    <td style="text-align:justify;">
-                        Este artigo faz uma reflexão sobre a importância e as capacidades que a iluminação cênica tem no desenvolvimento da concepção de um espetáculo. Pensar em iluminação cênica é abrir um enorme leque de possibilidades para pesquisa e criação. O artigo aborda principalmente trabalhos nos quais esse recurso cênico é usado em cenas cômicas. Com base na experimentação prática realizada durante a pesquisa com alunos do Curso de Teatro da Universidade Federal de Uberlândia (MG), foi possível refletir sobre as capacidades que a iluminação tem ao se potencializar como sujeito de uma situação cômica, a partir da relação criada entre o(a) ator(atriz) e a luminotécnica.
-                    </td>
-                    <td>
-                        Felipe Braccialli
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        Iluminação cênica; Comicidade; Personagem
-                    </td>
-                    <td>
-                        2015
-                    </td>
-                    <td>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.usp.br/salapreta/article/view/102164">Link</a>
-                    </td>
-                </tr>
-            
-        </tbody>
-    </table>
+
+<div class="tablesearch">
+    <input type="search" id="inputSearchTable" onkeyup="searchTable();" placeholder="Digite o que você procura">
 </div>
+
+<nav class="nav_tabs">
+    <ul>
+        <li>
+            <input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+			<label for="tab1" class="tab_label">Doutorados</label>
+            <div class="tab-content tablepress">
+                <table id="tablepress-1" class="tablepress tablepress-id-1">
+                    <thead>
+                        <tr class="row-1 odd">
+                            <th class="column-1 noselect">Nome</th>
+                            <th class="column-3 noselect">Título</th>
+                            <th class="column-4 noselect">Palavra-chave</th>
+                            <th class="column-5 noselect">Instituição</th>
+                            <th class="column-6 noselect">Ano</th>
+                            <th class="column-7 noselect">Orientador</th>
+                            <th class="column-7 noselect" style="cursor:default;">Publicação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content" class="row-hover">
+                        
+                            <tr>
+                                <td>
+                                    Hamilton Figueiredo Saraiva - SARAIVA, Hamilton Figueiredo
+                                </td>
+                                <td>
+                                    Interações Físicas e Psíquicas Geradas Pelas Cores na Iluminação Teatral
+                                </td>
+                                <td>
+                                    Iluminação	Doutorado concluído	São Paulo-SP
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    1997 - 1999
+                                </td>
+                                <td>
+                                    Dilma de Melo Silva
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    José Sávio Oliveira de Araújo - ARAÚJO, José Sávio Oliveira
+                                </td>
+                                <td>
+                                    A Cena Ensina: uma proposta pedagógica para formação de professores de teatro
+                                </td>
+                                <td>
+                                    Formação de professores; Teatro; Encenação; Ensino de Teatro
+                                </td>
+                                <td>
+                                    UFRN - Universidade Federal do Rio Grande do Norte
+                                </td>
+                                <td>
+                                    2001 - 2005
+                                </td>
+                                <td>
+                                    Marta Maria Castanho Almeida Pernambuco
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Roberto Abdelnur Camargo - CAMARGO, Roberto Gill; CAMARGO, Roberto Abdelnur
+                                </td>
+                                <td>
+                                    Luz e cena: processos de comunicação co-evolutivos
+                                </td>
+                                <td>
+                                    Iluminação
+                                </td>
+                                <td>
+                                    PUC-SP Pontifícia Universidade Católica de São Paulo
+                                </td>
+                                <td>
+                                    2004 - 2006
+                                </td>
+                                <td>
+                                    Helena Tânia Katz
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://tede2.pucsp.br/handle/handle/4848 ">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Elizabeth Motta Jacob - JACOB, Elizabeth Motta
+                                </td>
+                                <td>
+                                    Espaço e visualidade: a construção da imagem em Luis Carlos Ripper
+                                </td>
+                                <td>
+                                    Espaço; Direção de arte; cinema; cenografia; imagem; audio-visual
+                                </td>
+                                <td>
+                                    UNIRIO - Universidade Federal do Estado do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2007 - 2009
+                                </td>
+                                <td>
+                                    Evelyn Furquim Werneck Lima
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Eduardo Augusto da Silva Tudella - TUDELLA, Eduardo Augusto da Silva
+                                </td>
+                                <td>
+                                    Práxis cênica como articulação de visualidade: a luz na gênese do espetáculo
+                                </td>
+                                <td>
+                                    Cenografia Design; Iluminação Design; Artes Cênicas
+                                </td>
+                                <td>
+                                    UFBA - Universidade Federal da Bahia
+                                </td>
+                                <td>
+                                    2009 - 2013
+                                </td>
+                                <td>
+                                    Ewald Hackler
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://repositorio.ufba.br/ri/handle/ri/27309">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cibele Forjaz Simões - SIMÕES, Sibele Forjaz
+                                </td>
+                                <td>
+                                    À luz da linguagem. A iluminação cênica: de instrumento da visibilidade à 'Scriptura do visível' & Outras poéticas da luz
+                                </td>
+                                <td>
+                                    Iluminação Cênica; Encenação teatral; Teatro; Bauhaus; Diretores de teatro - século 20 - Alemanha; Expressionismo; Iluminação teatral; Técnica teatral
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2009 - 2013
+                                </td>
+                                <td>
+                                    Jacó Guinsburg
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.11606/T.27.2013.tde-18112013-155400">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Letícia Mendes de Oliveira - OLIVEIRA, Letícia Mendes de
+                                </td>
+                                <td>
+                                    Estamos trabalhando para vocês: práticas e teorias da dramaturgia do espectador no Teatro Contemporâneo Brasileiro
+                                </td>
+                                <td>
+                                    Dramaturgia contemporânea; Processos Criativos; Estudos da recepção teatral; ESPECTADOR
+                                </td>
+                                <td>
+                                    UFMG - Universidade Federal de Minas Gerais
+                                </td>
+                                <td>
+                                    2010 - 2014
+                                </td>
+                                <td>
+                                    Antonio Hildebrando Barreto
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Juliana Pedreira de Freitas - FREITAS, Juliana Pedreira de
+                                </td>
+                                <td>
+                                    Um navio em rota: o operador como proponente da imagem cênica
+                                </td>
+                                <td>
+                                    Artes cenicas; tecnologia teatral; tecnologia da imagem; Shakespeare
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2011 - 2015
+                                </td>
+                                <td>
+                                    Felisberto Sabino da Costa
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.11606/T.27.2015.tde-26112015-120041">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Miriam Aby Cohen - COHEN, Miriam Aby
+                                </td>
+                                <td>
+                                    O desenho da cena como experiência: intersecções na prática artística contemporânea entre cenografia - instalação - expografia
+                                </td>
+                                <td>
+                                    Cenografia, Curadoria, Instalação, Museografia, Performance, Tecnologia Cênica
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2011 - 2015
+                                </td>
+                                <td>
+                                    Elisabeth Silva Lopes
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.teses.usp.br/teses/disponiveis/27/27156/tde-24112015-104914/publico/MiriamAbyCohenVC.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luiz Fernando Pereira - PEREIRA, Luiz Fernando
+                                </td>
+                                <td>
+                                    A Direção de Arte Servidora de dois Amos: O Teatro e o Cinema
+                                </td>
+                                <td>
+                                    Arte; Cenário; Cenografia; Direçao de Arte; Figurino
+                                </td>
+                                <td>
+                                    UDESC - Universidade do Estado de Santa Catarina
+                                </td>
+                                <td>
+                                    2012 - 2016
+                                </td>
+                                <td>
+                                    Edélcio Mostaço
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://sistemabu.udesc.br/pergamumweb/vinculos/000017/000017b3.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Iara Regina da Silva Souza - SOUZA, Iara Regina da Silva
+                                </td>
+                                <td>
+                                    Os Sonhadores das Sombras: Uma Cartografia Poética das Micropolíticas de Resistência da Dramaturgia da Luz Opus Lux
+                                </td>
+                                <td>
+                                    Cartografia; dramaturgia da luz; resistência, micropolítica; teatro
+                                </td>
+                                <td>
+                                    UA - Universidade de Aveiro
+                                </td>
+                                <td>
+                                    2012 - 2017
+                                </td>
+                                <td>
+                                    Wladilene de Sousa Lima
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://ria.ua.pt/bitstream/10773/21365/1/Iara%20Regina%20da%20Silva%20Souza.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Dodi Tavares Borges Leal - LEAL, Dodi Tavares Borges
+                                </td>
+                                <td>
+                                    Performatividade transgênera: equações poéticas de reconhecimento recíproco na recepção teatral
+                                </td>
+                                <td>
+                                    Performatividade; Reconhecimento recíproco; Recepção Teatral; Transgeneridades; Visualidades da cena; Iluminação cênica
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo (Sanduíche: Universidade de Coimbra)
+                                </td>
+                                <td>
+                                    2014 - 2018
+                                </td>
+                                <td>
+                                    Luis Guilherme Galeão da Silva
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.11606/T.47.2018.tde-13112018-144518">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luiz Renato Gomes Moura - MOURA, Luiz Renato Gomes
+                                </td>
+                                <td>
+                                    Os elementos visuais do espetáculo no processo criativo do ator
+                                </td>
+                                <td>
+                                    Elementos Visuais do Espetáculo; Processo Criativo de Ator; Artista multiperceptivo; Atuação Polifônica
+                                </td>
+                                <td>
+                                    UFMG - Universidade Federal de Minas Gerais
+                                </td>
+                                <td>
+                                    2015 - 2019
+                                </td>
+                                <td>
+                                    Ernani de Castro Maletta
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://hdl.handle.net/1843/LOMC-BDRMHA">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ana Paula Brasil de Matos Guedes - GUEDES, Ana Paula Brasil de Matos
+                                </td>
+                                <td>
+                                    Truques e traquitanas: a Mágica no Rio de Janeiro, um carnaval de luzes e formas animadas
+                                </td>
+                                <td>
+                                    Historia do Teatro; formas animadas; Espaco teatral; espaço urbano; Iluminação e maquinaria cênica
+                                </td>
+                                <td>
+                                    UNIRIO - Universidade Federal do Estado do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2015 - 2019
+                                </td>
+                                <td>
+                                    Evelyn Furquim Werneck Lima
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani - LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    Iluminação Cênica: a performatividade da luz como elo entre a cena e o espectador
+                                </td>
+                                <td>
+                                    Iluminacão Cênica; Artes Cênicas; Performatividade da Luz
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2016 - 2020
+                                </td>
+                                <td>
+                                    Cibele Forjaz Simões
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Claudia Pinto Ben - BEN, Claudia Pinto 
+                                </td>
+                                <td>
+                                    A luz e o performer: uma relação entre o teatral e o elemental
+                                </td>
+                                <td>
+                                    Artes cênicas; Iluminação; Pesquisa em artes; Performance
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2016 - 2020
+                                </td>
+                                <td>
+                                    Cibele Forjaz Simões
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" id="tab2" class="rd_tab" name="tabs">
+			<label for="tab2" class="tab_label">Mestrados</label>
+            <div class="tab-content tablepress">
+                <table id="tablepress-2" class="tablepress tablepress-id-1">
+                    <thead>
+                        <tr class="row-1 odd">
+                            <th class="column-1 noselect">Nome</th>
+                            <th class="column-3 noselect">Título</th>
+                            <th class="column-4 noselect">Palavra-chave</th>
+                            <th class="column-5 noselect">Instituição</th>
+                            <th class="column-6 noselect">Ano</th>
+                            <th class="column-7 noselect">Orientador</th>
+                            <th class="column-7 noselect" style="cursor:default;">Publicação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content" class="row-hover">
+                        
+                            <tr>
+                                <td>
+                                    Hamilton Figueiredo Saraiva- SARAIVA, Hamilton Figueiredo
+                                </td>
+                                <td>
+                                    Iluminação teatral: história, estética e técnica
+                                </td>
+                                <td>
+                                    Iluminação
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    1988 - 1990
+                                </td>
+                                <td>
+                                    José Eduardo Vendramini
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luciana Paula Castilho Barone - BARONE, Luciana Paula Castilho
+                                </td>
+                                <td>
+                                    O uso da imagem tecnológica na narrativa cênica contemporânea
+                                </td>
+                                <td>
+                                    Encenação; Tecnologia; Narrativa cênica; Teatro; Multimeios
+                                </td>
+                                <td>
+                                    UNICAMP - Universidade Estadual de Campinas
+                                </td>
+                                <td>
+                                    1999 - 2002
+                                </td>
+                                <td>
+                                    Antônio Fernando da Conceição Passos
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Paula El-Jaick De Barros Franco - FRANCO, Paula El-Jaick De Barros
+                                </td>
+                                <td>
+                                    O conforto visual e a iluminação de espetáculos teatrais: o espaço cênico como espaço de arquitetura
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    UFRJ - Universidade Federal do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2000
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Lara Muniz Martins Brotas - BROTAS, Lara Muniz Martins
+                                </td>
+                                <td>
+                                    Museu Picasso, Fundação Juan Miró e Fundação Antoni Tápies: Um estudo da relação luz-espaço
+                                </td>
+                                <td>
+                                    Museus; Arquitetura e artes; Linguagens visuais
+                                </td>
+                                <td>
+                                    UFRJ - Universidade Federal do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2001 - 2003
+                                </td>
+                                <td>
+                                    Aldo Carlos de Moura Gonçalves
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ludmila Gabriel Pereira - PEREIRA, Ludmila Gabriel
+                                </td>
+                                <td>
+                                    Iluminação cênica e residencial: trajetórias e estéticas
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    UFRJ - Universidade Federal do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2002 - 2004
+                                </td>
+                                <td>
+                                    Aldo Carlos de Moura Gonçalves
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Valmir Perez - PEREZ, Valmir
+                                </td>
+                                <td>
+                                    Desenho de Iluminação de palco: Pesquisa, Criação e Execução de Projetos
+                                </td>
+                                <td>
+                                    Iluminação cênica; Desenho de iluminação: Softwares de iluminação
+                                </td>
+                                <td>
+                                    UNICAMP - Universidade Estadual de Campinas
+                                </td>
+                                <td>
+                                    2003 - 2007
+                                </td>
+                                <td>
+                                    José Eduardo Ribeiro de Paiva
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://repositorio.unicamp.br/jspui/handle/REPOSIP/284318">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Barbara Suassuna Bent Valeixo Mont Serrat - SERRAT, Barbara Suassuna Bent Valeixo Mont
+                                </td>
+                                <td>
+                                    Iluminação cênica como elemento modificador dos espetáculos teatrais
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    UFRJ - Universidade Federal do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2004 - 2006
+                                </td>
+                                <td>
+                                    Aldo Carlos de Moura Gonçalves
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://hosting.iar.unicamp.br/lab/luz/ld/C%eanica/Pesquisa/ilumina%e7%e3o%20c%eanica%20espetaculos.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Laura Maria de Figueiredo - FIGUEIREDO, Laura Maria de
+                                </td>
+                                <td>
+                                    Luz: a matéria cênica pulsante. Apontamentos didáticos e estudos de caso
+                                </td>
+                                <td>
+                                    Iluminação cênica; Teatralidade; Fábula; Jogo teatral; Imagem
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2004 - 2007
+                                </td>
+                                <td>
+                                    Luiz Fernando Ramos
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.teses.usp.br/teses/disponiveis/27/27139/tde-05072009-205410/pt-br.php">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luciana Liege Bonfim Brito - BRITO, Luciana Liege Bonfim
+                                </td>
+                                <td>
+                                    A Iluminação Cênica no Teatro Contemporâneo. Um estudo de caso: InSônia, uma adaptação de Valsa N.6 de Nelson Rodrigues
+                                </td>
+                                <td>
+                                    Iluminação; Educação; Dissertação de mestrado; História; Estética; Teatro
+                                </td>
+                                <td>
+                                    UNIRIO - Universidade Federal do Estado do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2005 - 2007
+                                </td>
+                                <td>
+                                    Evelyn Furquin Weneck Lima
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cibele Forjaz Simões- SIMOES, Cibele Forjaz
+                                </td>
+                                <td>
+                                    À luz da linguagem : a iluminação cênica : de instrumento da visibilidade à 'Scriptura do visível' (Primeiro recorte : do fogo à revolução teatral)
+                                </td>
+                                <td>
+                                    Iluminação cênica; Encenação teatral; Teatro
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2005 - 2008
+                                </td>
+                                <td>
+                                    Jacó Guinsburg
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.teses.usp.br/teses/disponiveis/27/27156/tde-18112013-155400/">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godois - GODOIS, Ivo
+                                </td>
+                                <td>
+                                    Um Palco Iluminado: O Teatro Álvaro de Carvalho em Florianópolis SC - Década de 1980
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    UDESC - Universidade do Estado de Santa Catarina
+                                </td>
+                                <td>
+                                    2007 - 2011
+                                </td>
+                                <td>
+                                    Vera Regina Marins Collaço
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ronaldo Fernando Costa - COSTA, Ronaldo Fernando
+                                </td>
+                                <td>
+                                    A Oficina de Iluminação Cênica e a Construção do Espetáculo: uma Proposta Pedagógica
+                                </td>
+                                <td>
+                                    Iluminação cênica; Ação dialógica; Pedagogia; Ensino de Iluminação; Teatro
+                                </td>
+                                <td>
+                                    UFRN - Universidade Federal do Rio Grande do Norte
+                                </td>
+                                <td>
+                                    2008 - 2010
+                                </td>
+                                <td>
+                                    José Sávio Oliveira de Araújo
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Fernanda Carvalho Ferreira Villares- VILLARES, Fernanda Carvalho Ferreira
+                                </td>
+                                <td>
+                                    A construção do espaço através da luz. Uma leitura da obra de Dan Flavin sob o aspecto do design da iluminação
+                                </td>
+                                <td>
+                                    Design da luz; Iluminação; Light Art; Lighting design; luz
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2008 - 2011
+                                </td>
+                                <td>
+                                    Silvio Melcer Dworecki
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.teses.usp.br/teses/disponiveis/16/16134/tde-11012012-112335/en.php">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Iara Regina da Silva Souza - SOUZA, Iara Regina Da Silva
+                                </td>
+                                <td>
+                                    Gambiarra na Cena: uma poética de iluminação para ativação de obras de arte em Belém do Pará'
+                                </td>
+                                <td>
+                                    Iluminante; Iluminação; Invenção; Gambiarra; Artefatos; Imaginário; Exposição; Bricolage
+                                </td>
+                                <td>
+                                    UFPA - Universidade Federal do Pará
+                                </td>
+                                <td>
+                                    2009 - 2010
+                                </td>
+                                <td>
+                                    Orlando Franco Maneschy
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://repositorio.ufpa.br/jspui/handle/2011/7834">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Fabiana Lazzari de Oliveira - OLIVEIRA, Fabiana Lazzari de
+                                </td>
+                                <td>
+                                    Alumbramentos de um corpo em sombras: o ator da Companhia Teatro Lumbra de Animação
+                                </td>
+                                <td>
+                                    Ator sombrista; Teatro de Sombras; Sombra
+                                </td>
+                                <td>
+                                    UDESC - Universidade do Estado de Santa Catarina
+                                </td>
+                                <td>
+                                    2009 - 2011
+                                </td>
+                                <td>
+                                    Milton de Andrade Leal Júnior
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Pedro Dultra Benevides - BENEVIDES, Pedro Dultra
+                                </td>
+                                <td>
+                                    Desenho de luz: um estudo sobre o uso da iluminação no palco
+                                </td>
+                                <td>
+                                    Iluminação cênica; Light design; Desenho de luz; Teatro; Iluminador
+                                </td>
+                                <td>
+                                    UFBA - Universidade Federal da Bahia
+                                </td>
+                                <td>
+                                    2009 - 2011
+                                </td>
+                                <td>
+                                    Glaucio Machado Santos
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufba.br/ri/handle/ri/9635">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Renato Bandeira de Gouvêa Machado - MACHADO, Renato Bandeira de Gouvêa
+                                </td>
+                                <td>
+                                    A Luz Montagem
+                                </td>
+                                <td>
+                                    Teatro; Tecnologia; Imersão; Analogia, Iluminação Cênica, Montagem
+                                </td>
+                                <td>
+                                    UNIRIO - Universidade Federal do Estado do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2009 - 2011
+                                </td>
+                                <td>
+                                    Ricardo Kosovski
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.repositorio-bc.unirio.br:8080/xmlui/handle/unirio/11389">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Maurício Ferreira Cardoso - CARDOSO, Maurício Ferreira
+                                </td>
+                                <td>
+                                    Sob uma Luz Lunar: Uma Análise do Processo de Criação da Luz na Cena Teatral
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    UNIRIO - Universidade Federal do Estado do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2009 - 2012
+                                </td>
+                                <td>
+                                    José da Silva Dias
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Mariana Terra Moreira - MOREIRA, Mariana Terra
+                                </td>
+                                <td>
+                                    Pra ver pouquinho:(Re) considerações sobre o olhar e o universo da iluminação cênica
+                                </td>
+                                <td>
+                                    Performance cênica; Iluminação na performance; Performatividade do iluminador; Ver com a imaginação
+                                </td>
+                                <td>
+                                    UFBA - Universidade Federal da Bahia
+                                </td>
+                                <td>
+                                    2011 - 2013
+                                </td>
+                                <td>
+                                    Ciane Fernandes
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufba.br/ri/handle/ri/27155">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Claudia Pinto Ben - BEN, Claudia Pinto
+                                </td>
+                                <td>
+                                    A luz, o iluminador e o performer: uma experiência perceptiva
+                                </td>
+                                <td>
+                                    Artes cênicas; Criação de luz; Percepção Visual; Pesquisa em artes; Performance
+                                </td>
+                                <td>
+                                    UFRGS - Universidade Federal do Rio Grande do Sul
+                                </td>
+                                <td>
+                                    2012 - 2014
+                                </td>
+                                <td>
+                                    Marta Issacsson de Souza e Silva
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://lume.ufrgs.br/handle/10183/105096">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luiz Renato Gomes Moura - MOURA, Luiz Renato Gomes
+                                </td>
+                                <td>
+                                    A Iluminação Cênica no Trabalho do Ator de Teatro
+                                </td>
+                                <td>
+                                    Ator; Iluminador Teatral; Espetáculo teatral
+                                </td>
+                                <td>
+                                    UFRN - Universidade Federal do Rio Grande do Norte
+                                </td>
+                                <td>
+                                    2012 - 2014
+                                </td>
+                                <td>
+                                    José Sávio Oliveira de Araújo 
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufrn.br/jspui/handle/123456789/12465">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani- LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    ILUMINAÇÃO CÊNICA: uma experiência de ensino fundamentada nos princípios do design
+                                </td>
+                                <td>
+                                    Iluminação cênica; Design; Tecnologia teatral; Teatro
+                                </td>
+                                <td>
+                                    UDESC - Universidade do Estado de Santa Catarina
+                                </td>
+                                <td>
+                                    2012 - 2014
+                                </td>
+                                <td>
+                                    José Ronaldo Faleiro
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Gilmar Rocha de Oliveira Dias - DIAS, Gilmar Rocha De Oliveira
+                                </td>
+                                <td>
+                                    Controle de som e luz no teatro
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2012 - 2015
+                                </td>
+                                <td>
+                                    Marcelo Gomes de Queiróz
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Manoel João Ochoa - OCHOA, Manoel João
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    Iluminação cênica; Direção; Teatro; Iluminadores; Desenho de luz; Coletivos teatrais
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2012 - 2015
+                                </td>
+                                <td>
+                                    Maria Lúcia de Souza Barros Pupo
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://teses.usp.br/teses/disponiveis/27/27156/tde-21092015-155451/en.php">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Tarik Coelho Alves - ALVES, Tarik Coelho
+                                </td>
+                                <td>
+                                    ATMOSFERA IMANENTE: Poética de Luz da Companhia Moderno de Dança
+                                </td>
+                                <td>
+                                    Iluminação cênica; Dança; Processos criativos
+                                </td>
+                                <td>
+                                    UFPA - Universidade Federal do Pará
+                                </td>
+                                <td>
+                                    2013 - 2015
+                                </td>
+                                <td>
+                                    Ana Flávia Mendes Sapucahy
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://repositorio.ufpa.br/jspui/handle/2011/10025">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Felipe Braccialli - BRACCIALLI, Felipe
+                                </td>
+                                <td>
+                                    LUZ-PERSONAGEM: O jogo de manipulação da iluminação cênica em cenas cômicas
+                                </td>
+                                <td>
+                                    Iluminação cênica; Comicidade; Personagem
+                                </td>
+                                <td>
+                                    UFU - Universidade Federal de Uberlândia
+                                </td>
+                                <td>
+                                    2014 - 2016
+                                </td>
+                                <td>
+                                    Mario Ferreira Piragibe
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufu.br/handle/123456789/17807">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Natasha Kerolen Leite da Silva - SILVA, Natasha Kerolen Leite da
+                                </td>
+                                <td>
+                                    DIÁLOGOS DE LUZ: uma artista-iluminadora-pesquisadora em busca da visibilidade poética da luz
+                                </td>
+                                <td>
+                                    Luz; Iluminação cênica - Pará; Poéticas da luz; Diálogos de luz; Visibilidade
+                                </td>
+                                <td>
+                                    UFPA - Universidade Federal do Pará
+                                </td>
+                                <td>
+                                    2014 - 2016
+                                </td>
+                                <td>
+                                    Ana Flávia Mendes Sapucahy
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://repositorio.ufpa.br/jspui/handle/2011/8659">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Camila Barbosa Tiago- TIAGO, Camila Barbosa
+                                </td>
+                                <td>
+                                    Reflexões sobre possibilidades pedagógicas em iluminação cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica; Ensino/aprendizagem em iluminação; Pedagogia do teatro
+                                </td>
+                                <td>
+                                    UFRN - Universidade Federal do Rio Grande do Norte
+                                </td>
+                                <td>
+                                    2015 - 2017
+                                </td>
+                                <td>
+                                    José Sávio Oliveira de Araújo 
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufrn.br/jspui/handle/123456789/28285">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Leonardo Augusto Alves Inacio - INACIO, Leonardo Augusto Alves
+                                </td>
+                                <td>
+                                    Light Art: a luz como matéria na construção artística
+                                </td>
+                                <td>
+                                    Luz; Light art; Coisa; Formatividade
+                                </td>
+                                <td>
+                                    UNICAMP - Universidade Estadual de Campinas
+                                </td>
+                                <td>
+                                    2015 - 2019
+                                </td>
+                                <td>
+                                    José Eduardo Ribeiro de Paiva
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Fernanda Guimarães Mattos de Souza - SOUZA, Fernanda Guimaraes Mattos de
+                                </td>
+                                <td>
+                                    Gambiarras de luz: reflexões sobre a formação do iluminador cênico sob a ótica de três gerações cariocas
+                                </td>
+                                <td>
+                                    Iluminação cênica; Teatro; Formação; Processo criativo
+                                </td>
+                                <td>
+                                    UFRJ - Universidade Federal do Rio de Janeiro
+                                </td>
+                                <td>
+                                    2016 - 2018
+                                </td>
+                                <td>
+                                    Gilson Moraes Motta
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.ppgac-ecoufrj.com.br/uploads/f/s/disserta-fernanda-mattos_bpfr.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cristiano Diniz Aguiar - AGUIAR, Cristiano Diniz
+                                </td>
+                                <td>
+                                    Luz e criação cênica : inquietações de um ator-iluminador
+                                </td>
+                                <td>
+                                    Atores; Iluminação de cena; Artes cênicas; Visualização
+                                </td>
+                                <td>
+                                    UFOP - Universidade Federal de Ouro Preto
+                                </td>
+                                <td>
+                                    2016 - 2018
+                                </td>
+                                <td>
+                                    Ricardo Carlos Gomes
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.repositorio.ufop.br/handle/123456789/10808">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Marckson Davi de Moraes Lisboa - LISBOA, Marckson Davi De Moraes
+                                </td>
+                                <td>
+                                    DRAGÃO DE LUZ: uma poética sobre a experimentação de iluminação cênica do espetáculo santo anjo do senhor
+                                </td>
+                                <td>
+                                    Iluminação cênica; Fenomenologia; Processos criativos; Dispositivos luminosos
+                                </td>
+                                <td>
+                                    UFPA - Universidade Federal do Pará
+                                </td>
+                                <td>
+                                    2017 - 2019
+                                </td>
+                                <td>
+                                    Ana Flávia Mendes Sapucahy
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://repositorio.ufpa.br/jspui/handle/2011/11444">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Adriano Marinho dos Santos - SANTOS, Adriano Marinho dos
+                                </td>
+                                <td>
+                                    Investigação sobre processos de criação e execução da iluminação cênica no DEART - UFRN: a experiência acadêmica como formação de um professor de teatro-iluminador
+                                </td>
+                                <td>
+                                    Processo de criação; Iluminação cênica; Mapa de luz; Teatro
+                                </td>
+                                <td>
+                                    UFRN - Universidade Federal do Rio Grande do Norte
+                                </td>
+                                <td>
+                                    2017 - 2019
+                                </td>
+                                <td>
+                                    Nara Graça Salles
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufrn.br/jspui/handle/123456789/27818">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Lúcia Galvão Gomes dos Reis Ramos - RAMOS, Lúcia Galvão Gomes dos Reis
+                                </td>
+                                <td>
+                                    A performance da luz no contexto de intervenções urbanas
+                                </td>
+                                <td>
+                                    Iluminação; Intervenção urbana; Cor; Arte urbana
+                                </td>
+                                <td>
+                                    USP - Universidade de São Paulo
+                                </td>
+                                <td>
+                                    2017 - 2019
+                                </td>
+                                <td>
+                                    Cibele Forjaz Simões
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://teses.usp.br/teses/disponiveis/27/27156/tde-24012020-105347/pt-br.php">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </li>
+
+        <li>
+            <input type="radio" id="tab3" class="rd_tab" name="tabs">
+			<label for="tab3" class="tab_label">Artigos</label>
+            <div class="tab-content tablepress">
+                <table id="tablepress-3" class="tablepress tablepress-id-1">
+                    <thead>
+                        <tr class="row-1 odd">
+                            <th class="column-1 noselect">Nome</th>
+                            <th class="column-3 noselect">Título</th>
+                            <th class="column-4 noselect">Palavra-chave</th>
+                            <th class="column-5 noselect">Instituição</th>
+                            <th class="column-6 noselect">Ano</th>
+                            <th class="column-7 noselect">Revista</th>
+                            <th class="column-7 noselect" style="cursor:default;">Publicação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content" class="row-hover">
+                        
+                            <tr>
+                                <td>
+                                    Hamilton figueiredo Saraiva - SARAIVA, H F
+                                </td>
+                                <td>
+                                    Semânticas da iluminação
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP
+                                </td>
+                                <td>
+                                    2005
+                                </td>
+                                <td>
+                                    n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.seer.ufu.br/index.php/ouvirouver/article/view/32">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Thelma Lopes - LOPES, Thelma
+                                </td>
+                                <td>
+                                    Luz, arte, ciência... Ação!
+                                </td>
+                                <td>
+                                    Arte e ciência; Iluminação Cênica; Tecnologia cênica; Arte em museus de ciência
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    2005
+                                </td>
+                                <td>
+                                    v. 12
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.redalyc.org/articulo.oa?id=386137988021">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ronaldo Fernando Costa - COSTA, Ronaldo Fernando
+                                </td>
+                                <td>
+                                    Pesquisa-Ação e iluminação cênica
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2007
+                                </td>
+                                <td>
+                                    v. 1 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.ufrn.br/clincc/article/view/14865/9871">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godóis; Vera Collaço
+                                </td>
+                                <td>
+                                    A iluminação de um palco: o teatro Álvaro de Carvalho de 1950 à 1999
+                                </td>
+                                <td>
+                                    Iluminação Cênica, Casa de Espetáculo, Profissionais de Iluminação, Teatro Catarinense
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2007
+                                </td>
+                                <td>
+                                    v. 2 - n. 4
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.periodicos.udesc.br/index.php/dapesquisa/article/view/16087">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Valmir Perez; C. R. Martinez Filho
+                                </td>
+                                <td>
+                                    Lablux 1.01 - software para projetos de iluminação cênica
+                                </td>
+                                <td>
+                                    Livre; projetos de iluminação; iluminação cênica; software para projetos de iluminação cênica
+                                </td>
+                                <td>
+                                    Universidade Estadual de Campinas - UNICAMP
+                                </td>
+                                <td>
+                                    2008
+                                </td>
+                                <td>
+                                    n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://econtents.bc.unicamp.br/inpec/index.php/simtec/article/view/8484">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godóis; Vera Collaço
+                                </td>
+                                <td>
+                                    Vieux-Colombier uma luz para o teatro brasileiro
+                                </td>
+                                <td>
+                                    Iluminação Cênica, Luiz Jouvet, Teatro brasileiro
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2008
+                                </td>
+                                <td>
+                                    v. 3 - n. 5
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/dapesquisa/article/view/15655">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godóis; Vera Collaço
+                                </td>
+                                <td>
+                                    Jouvet e Ziembinski – As inovações na iluminação cênica brasileira
+                                </td>
+                                <td>
+                                    Iluminação; Modernidade; Inovações
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2008
+                                </td>
+                                <td>
+                                    V. 9 - N. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/1369/1480">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ronaldo Fernando Costa - COSTA, Ronaldo Fernando
+                                </td>
+                                <td>
+                                    Iluminação Cênica e uma construção do espetáculo: uma abordagem pedagógica
+                                </td>
+                                <td>
+                                    Iluminação; Ensino; Pedagogia; Dialogicidade
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2008
+                                </td>
+                                <td>
+                                    v. 9 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/1429">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Renato Machado - MACHADO, Renato
+                                </td>
+                                <td>
+                                    A luz montagem: uma análise comparativa dos mecanismos de edição utilizados no teatro e no cinema
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    Pontificia Universidade Católica - PUC Rio
+                                </td>
+                                <td>
+                                    2008
+                                </td>
+                                <td>
+                                    v. 1 - n. 5
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/moin/article/view/1059652595034701052008188">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Norton Dudeque - DUDEQUE, Norton
+                                </td>
+                                <td>
+                                    O drama Wagneriano e o papel de Adolphe Appia em suas transformações cênicas
+                                </td>
+                                <td>
+                                    Wagner e Appia; Gesamtkunstwerk; Cenografia na ópera
+                                </td>
+                                <td>
+                                    Universidade Federal do Paraná - UFPR
+                                </td>
+                                <td>
+                                    2009
+                                </td>
+                                <td>
+                                    V. 4 - N. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://periodicos.unespar.edu.br/index.php/revistacientifica/article/viewFile/1597/937">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Maurício Ferreira Cardoso - CARDOSO, Maurício Ferreira
+                                </td>
+                                <td>
+                                    Geografia e espacialidade no teatro grego: as relações da luz
+                                </td>
+                                <td>
+                                    Teatro grego; Iluminação; Edifício teatral; Arquitetura teatral
+                                </td>
+                                <td>
+                                    Universidade Federal do Estado do Rio de Janeiro - UNIRIO
+                                </td>
+                                <td>
+                                    2010
+                                </td>
+                                <td>
+                                    v. 11 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/3454">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Flaviana Xavier Antunes Sampaio - SAMPAIO, Flaviana Xavier Antunes
+                                </td>
+                                <td>
+                                    Ver/sentir luz na dança: idéias em ambiencia e percepção
+                                </td>
+                                <td>
+                                    Iluminação; dança; ambiencia; percepção
+                                </td>
+                                <td>
+                                    Universidade Estadual do Sudoeste da Bahia - UESB
+                                </td>
+                                <td>
+                                    2011
+                                </td>
+                                <td>
+                                    n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://ken.pucsp.br/tessituras/article/view/8020">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    José Sávio Oliveira de Araújo - ARAÚJO, José Sávio Oliveira de
+                                </td>
+                                <td>
+                                    O papel da tecnologia cênica e seus desdobramentos para uma economia da produção cultural no nordeste
+                                </td>
+                                <td>
+                                    Tecnologia; Artes cênicas; Ecnonomia da cultura
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2011
+                                </td>
+                                <td>
+                                    v. 2 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufrn.br/jspui/bitstream/123456789/18506/1/Jos%c3%a9%20S%c3%a1vio_%20O%20papel%20da%20tecnologia%20c%c3%aanica.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cristiane Ambrósio de Campos
+                                </td>
+                                <td>
+                                    Dramatizando a cidadania fiscal: uma oportunidade de exercício pratico de interpretação e iluminação para uma aluna de artes cênicas
+                                </td>
+                                <td>
+                                    Educação fiscal; Teatro; Iluminação
+                                </td>
+                                <td>
+                                    Universidade Estadual de Maringá - UEM
+                                </td>
+                                <td>
+                                    2012
+                                </td>
+                                <td>
+                                    v. 16 - n. 1/2/3
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://periodicos.uem.br/ojs/index.php/ArqMudi/article/view/20975">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani - LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    Sobre a performatividade da luz
+                                </td>
+                                <td>
+                                    Iluminação cênica; Performatividade; Expressão; Recepção
+                                </td>
+                                <td>
+                                    Universidade Estadual do Paraná - UNESPAR
+                                </td>
+                                <td>
+                                    2012
+                                </td>
+                                <td>
+                                    n. 8
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Niuxa Dias Drago - DRAGO, Niuxa Dias
+                                </td>
+                                <td>
+                                    O viés expressionista da cenografia de Santa Rosa: entre escadas e efeitos luminosos
+                                </td>
+                                <td>
+                                    Expressionismo; iluminação; cenografia moderna; Santa Rosa
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio de Janeiro - UFRJ
+                                </td>
+                                <td>
+                                    2012
+                                </td>
+                                <td>
+                                    v. 4 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://seer.unirio.br/index.php/opercevejoonline/article/view/2405">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Vanessa Paula Trigueiro MOURA; Bruno Sérgio Franklin de Farias GOMES
+                                </td>
+                                <td>
+                                    Análise da iluminação do filme O Palhaço
+                                </td>
+                                <td>
+                                    Audiovisual; Iluminação; O Palhaço; Adrian Teijido
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2012
+                                </td>
+                                <td>
+                                    35º Congresso
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://d1wqtxts1xzle7.cloudfront.net/32833791/Analise_da_iluminacao_do_filme_O_Palhaco.pdf?1390561652=&response-content-disposition=inline%3B+filename%3DAnalise_da_iluminacao_do_filme_O_Palhaco.pdf&Expires=1611321255&Signature=VlHX5jib8ZvxfeBhMUcJ6ayYcpg45Ic5VVwzUIJePGF7ldTSZt2iReG2alJUdoC6kEoVQT6USu0l2uZjRIDb6iLUD~d2iW9vdCu28AlEtaSf0iHwoZfeQzFcwHDclN4J1OjAo4VhQrZAdQIQgYiz~dU4Oz4aoiAwqLiIh2FSa9OyJNW9QiEmYjZRCdn~F6v2bhx-dIxmJ2LdTEiK65Rb4tXlYXQvXhjOvpAu40EUVgtD-YL2HO2bQu8GeG1UabwOFfyLw-HN43ORg8KRvMSGYus3EinLl6ocuQ5OyoFeMnjkJPLPoJrlGYFSef2XDtCtoNza4EzdWsdO-sayTckUlg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Gizella Cabral Gigliotti - GIGLIOTTI, Gizella Cabral
+                                </td>
+                                <td>
+                                    O uso da iluminação com estética expressionista em filmes da primeira metade do século XX
+                                </td>
+                                <td>
+                                    Iluminação; expressão; expressionismo alemão
+                                </td>
+                                <td>
+                                    Universidade Federal da Bahia - UFBA
+                                </td>
+                                <td>
+                                    2012
+                                </td>
+                                <td>
+                                    v. 2 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.unb.br/index.php/esteticaesemiotica/article/view/11861">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani - LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    A performatividade da luz em Otelo
+                                </td>
+                                <td>
+                                    Iluminação, recepção, performatividade
+                                </td>
+                                <td>
+                                    Universidade Estadual do Paraná - UNESPAR
+                                </td>
+                                <td>
+                                    2012
+                                </td>
+                                <td>
+                                    v. 13 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/2526">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Flaviana Xavier Antunes Sampaio - SAMPAIO, Flaviana Xavier Antunes
+                                </td>
+                                <td>
+                                    Relâmpagos de luz na dança: entre o sol e o set light
+                                </td>
+                                <td>
+                                    Iluminação; Dança; Sentidos
+                                </td>
+                                <td>
+                                    Universidade Estadual do Sudoeste da Bahia - UESB
+                                </td>
+                                <td>
+                                    2013
+                                </td>
+                                <td>
+                                    n. 21
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://cienciasmedicasbiologicas.ufba.br/index.php/revteatro/article/viewFile/12101/8644">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani - LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    Da luz performativa à performance da luz
+                                </td>
+                                <td>
+                                    Iluminação cênica; Performatividade; Instalação
+                                </td>
+                                <td>
+                                    Universidade Estadual do Paraná - UNESPAR
+                                </td>
+                                <td>
+                                    2013
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/viewFile/2841/2978">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Fabio Henrique Nunes Medeiros - MEDEIROS, Fabio Henrique Nunes
+                                </td>
+                                <td>
+                                    Fiat lux: a vida é um pisca-pisca - Sobre iluminação cênica à luz das animações
+                                </td>
+                                <td>
+                                    Luz-vida; Teatro de animação; Cinema de animação
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP
+                                </td>
+                                <td>
+                                    2014
+                                </td>
+                                <td>
+                                    v. 2 - n. 23
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573102232014031">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Flaviana Xavier Antunes Sampaio - SAMPAIO, Flaviana Xavier Antunes
+                                </td>
+                                <td>
+                                    Luz para além do clarão
+                                </td>
+                                <td>
+                                    Experimentação cênica; Sombra; Iluminação
+                                </td>
+                                <td>
+                                    Universidade Estadual do Sudoeste da Bahia - UESB
+                                </td>
+                                <td>
+                                    2014
+                                </td>
+                                <td>
+                                    v. 2 - n. 23
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573102232014051">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luiz Renato Gomes Moura - MOURA, Luiz Renato Gomes
+                                </td>
+                                <td>
+                                    A iluminação cênica no trabalho do ator de teatro
+                                </td>
+                                <td>
+                                    Sala de ensaio. Iluminação Cênica. Ator. Teatro Colaborativo;Rehearsal Room. Stage Light. Actor. Collaborative Theater
+                                </td>
+                                <td>
+                                    Universidade Regional do Cariri - URCA
+                                </td>
+                                <td>
+                                    2014
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufrn.br/jspui/handle/123456789/12465">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Alex de Souza - SOUZA, Alex de
+                                </td>
+                                <td>
+                                    Uma luz no teatro de sombras: relato de uma oficina de construção de equipamentos artesanais para iluminação cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica; teatro de sombras; equipamentos artesanais
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2014
+                                </td>
+                                <td>
+                                    v.2 - n. 23
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://revistas.udesc.br/index.php/urdimento/article/view/1414573102232014006">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Fabiana Lazzari de Oliveira; Valmor Níni Beltrame - OLIVEIRA, Fabiana Lazzari de; BELTRAME, Valmor
+                                </td>
+                                <td>
+                                    A luz - Elemento primordial no teatro de sombras
+                                </td>
+                                <td>
+                                    Teatro de sombras; luz; lâmpadas; foco luminoso
+                                </td>
+                                <td>
+                                    Universidade de Brasília - UnB; Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2014
+                                </td>
+                                <td>
+                                    v. 2 - n. 23
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://revistas.udesc.br/index.php/urdimento/article/view/1414573102232014017">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cézar Augusto Nunes Marques - MARQUES, Cézar Augusto Nunes
+                                </td>
+                                <td>
+                                    O hibridismo de estéticas na concepção da iluminação do espetáculo 'vem virar travesti'
+                                </td>
+                                <td>
+                                    Iluminação cênica; Estéticas teatrais; Hibridismo de linguagens
+                                </td>
+                                <td>
+                                    Universidade Federal de Minas Gerais - UFMG
+                                </td>
+                                <td>
+                                    2014
+                                </td>
+                                <td>
+                                    n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.eba.ufmg.br/cadernodeencenacao/index.php/revista/article/view/38">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Marcelo Ramos Lazzaratto - LAZZARATTO, Marcelo Ramos
+                                </td>
+                                <td>
+                                    Da sala preta ao jardim
+                                </td>
+                                <td>
+                                    Iluminação cênica; Direção teatral; Procedimentos estéticos
+                                </td>
+                                <td>
+                                    Universidade Estadual de Campinas - UNICAMP
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.revistas.usp.br/salapreta/article/view/101354">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Rodolfo Garcia Vázquez - VÁZQUEZ, Rodolfo Garcia
+                                </td>
+                                <td>
+                                    Luzes e sombras na trajetória dos Satyros
+                                </td>
+                                <td>
+                                    Os Satyros; Iluminação; Teatro expandido
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP/ SP Escola de Teatro
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.revistas.usp.br/salapreta/article/view/102684">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cibele Forjaz Simões - SIMÕES, Cibele Forjaz
+                                </td>
+                                <td>
+                                    À luz da linguagem – um olhar histórico sobre as funções da iluminação cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica, História da iluminação cênica, Estética da iluminação cênica, Encenação moderna
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v.15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.revistas.usp.br/salapreta/article/view/105752">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Roberto Gil Camargo - CAMARGO, Roberto Gil
+                                </td>
+                                <td>
+                                    Luz e cena: impactos e trocas
+                                </td>
+                                <td>
+                                    Teatro; luz; cena; coevolução
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP/ Universidade de Sorocaba - UNISO
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.revistas.usp.br/salapreta/article/view/107217">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Niuxa Dias Drago - DRAGO, Niuxa Dias
+                                </td>
+                                <td>
+                                    Cenografia e Luz: a modernização do teatro brasileiro por Ziembinski e Santa Rosa
+                                </td>
+                                <td>
+                                    Cenografia; Iluminação de cena; Santa Rosa, Ziembiski,Scenography, Stage lighting
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio de Janeiro - UFRJ
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://pantheon.ufrj.br/bitstream/11422/13493/1/DRAGO_santa-rosa-iluminacao.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Vagner de Souza Vargas - VARGAS, Vagner de Souza
+                                </td>
+                                <td>
+                                    Ensino de Iluminação Cênica em Instituição de Educação Tecnológica: uma Abordagem Teatral
+                                </td>
+                                <td>
+                                    Educação; Teatro; Iluminação; Ensino de teatro
+                                </td>
+                                <td>
+                                    Universidade Federal de Pelotas - UFPEL
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 16 - n. 3
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://revista.pgsskroton.com/index.php/ensino/article/view/3109">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Guilherme Bonfanti - BONFANTI, Guilherme
+                                </td>
+                                <td>
+                                    A luz no teatro da vertigem: processo de criação e pedagogia
+                                </td>
+                                <td>
+                                    Iluminação cênica; Teatro da vertigem; experimentação; equipamento não convencional
+                                </td>
+                                <td>
+                                    SP Escola de Teatro
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.usp.br/salapreta/article/view/102061">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Felipe Braccialli - BRACCIALLI, Felipe
+                                </td>
+                                <td>
+                                    Iluminação cênica: possibilidades de um sujeito em cena
+                                </td>
+                                <td>
+                                    iluminação cênica, comicidade, personagem
+                                </td>
+                                <td>
+                                    Universidade Estadual de Campinas - UNICAMP
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.usp.br/salapreta/article/view/102164">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Mirella Brandi - BRANDI, Mirella
+                                </td>
+                                <td>
+                                    A linguagem autônoma da luz como arte performativa: a alteração perceptiva através da luz e seu conteúdo narrativo
+                                </td>
+                                <td>
+                                    Luz; Artes visuais; Arte performativa; Narrativa; Percepção
+                                </td>
+                                <td>
+                                    Coletivo Phila7
+                                </td>
+                                <td>
+                                    2015
+                                </td>
+                                <td>
+                                    v. 15 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.usp.br/salapreta/article/view/102683">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Osvaldo A. Anzolin
+                                </td>
+                                <td>
+                                    Teatro e visualidade: proposta de aprendizagem em extensão
+                                </td>
+                                <td>
+                                    Visualidade teatral; extensão universitária; ensino de teatro
+                                </td>
+                                <td>
+                                    Universidade Federal do Paraná - UFPR
+                                </td>
+                                <td>
+                                    2016
+                                </td>
+                                <td>
+                                    v. 13 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://artefactum.rafrom.com.br/index.php/artefactum/article/view/1281">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Henrique Moreno Rocha; Nádia Moroz Luciani
+                                </td>
+                                <td>
+                                    Iluminação cênica: Criação com recursos alternativos disponíveis na escola pública
+                                </td>
+                                <td>
+                                    Iluminação Cênica; Teatro; Espaço Escolar; Tecnologia Teatral
+                                </td>
+                                <td>
+                                    Universidade Estadual do Paraná - UNESPAR
+                                </td>
+                                <td>
+                                    2016
+                                </td>
+                                <td>
+                                    n. 13
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://periodicos.unespar.edu.br/index.php/mosaico/article/view/1688">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luiz Renato Gomes Moura - MOURA, Luiz Renato Gomes
+                                </td>
+                                <td>
+                                    CENA E VISUALIDADE: DIÁLOGOS ENTRE A ILUMINAÇÃO CÊNICA E O PROCESSO CRIATIVO DO ATOR
+                                </td>
+                                <td>
+                                    Cena; Visualidade; Iluminação Cênica; Ator
+                                </td>
+                                <td>
+                                    Universidade Regional do Cariri - URCA
+                                </td>
+                                <td>
+                                    2016
+                                </td>
+                                <td>
+                                    v. 17 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/1815">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Flaviana Xavier Antunes Sampaio - SAMPAIO, Flaviana Xavier Antunes
+                                </td>
+                                <td>
+                                    Narrativas do breu: escuridão e sombra no cinema e na dança
+                                </td>
+                                <td>
+                                    Cinema; Dança; Iluminação
+                                </td>
+                                <td>
+                                    Universidade Estadual do Sudoeste da Bahia - UESB
+                                </td>
+                                <td>
+                                    2016
+                                </td>
+                                <td>
+                                    v. 14 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.ufg.br/VISUAL/article/view/35568">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    José de Oliveira Júnior
+                                </td>
+                                <td>
+                                    Iluminação e espacialidade em Addolphe Appia
+                                </td>
+                                <td>
+                                    Appia; iluminação; espacialidade; ginástica rítmica; obra de arte total
+                                </td>
+                                <td>
+                                    Universidade Federal de Goiás - UFG
+                                </td>
+                                <td>
+                                    2016
+                                </td>
+                                <td>
+                                    v.2 - n. 3
+                                </td>
+                                <td>
+                                    
+                                        Link
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Yuri Simon da Silveira; Marcelina das Graças Almeida; Luiz Henrique Ozanam
+                                </td>
+                                <td>
+                                    Espaço cênico como cultura material e sua transformação no decorrer da história
+                                </td>
+                                <td>
+                                    Espaço cênico; História do teatro; Cultura material
+                                </td>
+                                <td>
+                                    Universidade Estadual de Minas Gerais - UEMG
+                                </td>
+                                <td>
+                                    2017
+                                </td>
+                                <td>
+                                    n. 10
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://periodicos.estacio.br/index.php/historiabh/article/view/4372/1954">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Camila Barbosa Tiago - TIAGO, Camila Barbosa
+                                </td>
+                                <td>
+                                    Reflexões sobre possibilidades pedagógicas em iluminação cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica;Ensino/aprendizagem em iluminação;Pedagogia do teatro
+                                </td>
+                                <td>
+                                    Universidade Federal de Uberlândia - UFU
+                                </td>
+                                <td>
+                                    2017
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://repositorio.ufrn.br/jspui/handle/123456789/28285">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Adriano Marinhos dos Santos - SANTOS, Adriano Marinho
+                                </td>
+                                <td>
+                                    Investigação sobre os processos de criação e execução da iluminação cênica nos grupos de teatro e dança do departamento de artes da UFRN
+                                </td>
+                                <td>
+                                    Processo de criação; iluminação cênica; teatro
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2017
+                                </td>
+                                <td>
+                                    v. 18 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/1027">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Flaviana Xavier Antunes Sampaio - SAMPAIO, Flaviana Xavier Antunes
+                                </td>
+                                <td>
+                                    Imbricações entre corpo e sombra
+                                </td>
+                                <td>
+                                    Dançarino; Sombra; Experimento
+                                </td>
+                                <td>
+                                    Universidade Estadual do Sudoeste da Bahia - UESB
+                                </td>
+                                <td>
+                                    2017
+                                </td>
+                                <td>
+                                    v. 1 - n. 28
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101282017065">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella - NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    Por uma história do pensamento sobre o fazer da iluminação cênica moderna: a cena além do humano
+                                </td>
+                                <td>
+                                    Teatro de formas animadas; Gordon Craig; Adolphe Appia; História e historiografia do teatro; Stage lighting history
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.repositorio.ufop.br/handle/123456789/10148">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Alberto Luiz Morgado; Paulo César Balardim Borges - MORGADO, Alberto Luiz; BORGES, Paulo César Balardim
+                                </td>
+                                <td>
+                                    A luz cênica como visão espiritual: Gordon Craig e o Design por símbolos
+                                </td>
+                                <td>
+                                    Gordon Craig; design; iluminação cênica
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://200.19.105.203/index.php/urdimento/article/view/1414573101312018007">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cibele Forjaz Simões - SIMÕES, Sibele Forjaz
+                                </td>
+                                <td>
+                                    A eletricidade entra em cena
+                                </td>
+                                <td>
+                                    Iluminação cênica; história e estética da iluminação cênica; linguagem da iluminação cênica
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018063">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Felipe Braccialli; Mario Ferreira Piragibe - BRACCIALLI, Felipe; PIRAGIBE, Mario Ferreira
+                                </td>
+                                <td>
+                                    Luz-personagem: duas possibilidades cômicas de relação entre atuação e iluminação
+                                </td>
+                                <td>
+                                    Iluminação cênica; Comicidade; Dupla cômica; Luz personagem; Atuação
+                                </td>
+                                <td>
+                                    Universidade Estadual de Campinas - UNICAMP
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018113">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Jose Jackson Silva - SILVA, José Jackson
+                                </td>
+                                <td>
+                                    De como iluminar no projeto Palco Giratório: um relato errante sobre a aprendizagem em iluminação cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica; Arte-educação; Pedagogia; Teatro
+                                </td>
+                                <td>
+                                    Universidade Regional do Cariri - URCA
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018140">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Pedro Dultra Benevides - BENEVIDES, Pedro Dutra
+                                </td>
+                                <td>
+                                    A iluminação cênica em contextos de formação: Apps e equipamentos digitais na era da indústria 4.0
+                                </td>
+                                <td>
+                                    Ensino; Iluminação cênica; ferramentas digitais
+                                </td>
+                                <td>
+                                    Universidade Federal da Bahia - UFBA
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018197">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godóis; Priscila Costa
+                                </td>
+                                <td>
+                                    Mestres da iluminação cênica moderna nos palcos brasileiros
+                                </td>
+                                <td>
+                                    Iluminadores cênicos; Modernidade da cena brasileira; aspéctos biográficos
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018323/8100">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Roberto Gil Camargo - CAMARGO, Roberto Gil
+                                </td>
+                                <td>
+                                    A escrita e não escreita da luz
+                                </td>
+                                <td>
+                                    Luz; Iluminação; Escrita; Não escrita
+                                </td>
+                                <td>
+                                    Universidade de São Paulo - USP/  Universidade de Sorocaba - UNISO
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://revistas.udesc.br/index.php/urdimento/article/view/1414573101312018216">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Iara Regina da Silva Souza - SOUZA, Iara Regina da Silva
+                                </td>
+                                <td>
+                                    Dispositivos de Assombramento para uma dramaturgia da luz
+                                </td>
+                                <td>
+                                    Iluminação; Desmontagem; Apropriação; Experimentação, Conexão
+                                </td>
+                                <td>
+                                    Universidade Federal do Pará - UFPA
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.cocen.unicamp.br/revistadigital/index.php/simposiorfc/article/view/587">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Tarik Coelho Alves - ALVES, Tarik Coelho
+                                </td>
+                                <td>
+                                    Assinatura Visual – um estilo de iluminar ou Procedimentos da Criação em Iluminação Cênica dentro da Companhia Moderno de Dança
+                                </td>
+                                <td>
+                                    iluminação cênica, dança, processo criativo
+                                </td>
+                                <td>
+                                    Universidade Federal do Pará - UFPA/ Cia Moderno de Dança
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.cocen.unicamp.br/revistadigital/index.php/simposiorfc/article/view/602">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Eduardo Augusto da Silva Tudella - TUDELLA, Eduardo Augusto da Silva
+                                </td>
+                                <td>
+                                    Iluminação cênica e estudos acadêmicos: teoria, praxis e imagem
+                                </td>
+                                <td>
+                                    Iluminação cênica; teoria; imagem; praxis; unidade
+                                </td>
+                                <td>
+                                    Universidade Federal da Bahia - UFBA
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018078">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Laura Maria de Figueiredo - FIGUEIREDO, Laura Mamria de
+                                </td>
+                                <td>
+                                    Iluminação cênica: espaço, luz e corpos em foco
+                                </td>
+                                <td>
+                                    Iluminação cênica; Espaço; Corpo
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018152">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani - LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    Notas sobre a luz performativa em Darwin
+                                </td>
+                                <td>
+                                    Iluminação cênica; Performatividade; Criação; Sensorialidades cênicas
+                                </td>
+                                <td>
+                                    Universidade Estadual do Paraná - UNESPAR
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018162">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godóis; Vera Collaço
+                                </td>
+                                <td>
+                                    A luz em cena: um encontro iluminado
+                                </td>
+                                <td>
+                                    Iluminação; A LUZ em cena; Pedagogia da iluminação
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 3 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.periodicos.udesc.br/index.php/urdimento/article/view/1414573101312018272">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella - NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    A Dramaturgia como Fonte para uma História da Iluminação Cênica, questões e resultados de uma pesquisa
+                                </td>
+                                <td>
+                                    História e historiografia do teatro. Fontes documentais. Iluminação cênica. Micro-história. Teatro moderno
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 19 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/3813">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Cassia Maria Fernandes Monteiro - MONTEIRO, C M F
+                                </td>
+                                <td>
+                                    A experiência da cor-luz: um ambiente cênico de Hélio Oiticica para um show de Gilberto Gil
+                                </td>
+                                <td>
+                                    Hélio Oiticica; Cor-luz; Ambientação cênica
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio de Janeiro - UFRJ
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101312018038">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Jociel Carvalho Teixeira; Fernando Lira Xímenes - TEIXEIRA, J C; XÍMENES, F L
+                                </td>
+                                <td>
+                                    O percurso criativo contínuo da luz
+                                </td>
+                                <td>
+                                    Iluminação cênica; Processo criativo; Gesto inacabado; Operação de luz
+                                </td>
+                                <td>
+                                    Instituto Federal do Ceará - IFCE
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101312018130">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Natasha Kerolen Leite da Silva - SILVA, Natasha Kerolen Leite da
+                                </td>
+                                <td>
+                                    Diálogos de luz: A performance do iluminador e a performatividade da luz
+                                </td>
+                                <td>
+                                    Diálogos de luz; visibilidade poética da luz; performance do iluminador; performatividade da luz
+                                </td>
+                                <td>
+                                    Universidade Federal do Pará - UFPA
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101312018178">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godois
+                                </td>
+                                <td>
+                                    O iluminador do Teatro Álvaro de Carvalho e do Teatro Ilhéu
+                                </td>
+                                <td>
+                                    Iluminador; Catarinense; Aprendizado da iluminação
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    V 1 - n. 31
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101312018311">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella - NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    Apontamentos sobre a história da iluminação moderna
+                                </td>
+                                <td>
+                                    Iluminação cênica; cena moderna; Naturalismo; Simbolismo; Tecnologia cênica
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v.4 - n. 2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.ufg.br/artce/article/view/54795/32608">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Dodi Tavares Borges Leal - LEAL, Dodi Tavares Borges
+                                </td>
+                                <td>
+                                    Iluminação cênica e desobediência de gênero
+                                </td>
+                                <td>
+                                    Iluminação cênica; Transgeneridades; Contrassexualidade; Performance de gênero; Recepção teatral
+                                </td>
+                                <td>
+                                    Universidade Federal do Sul da Bahia - UFSB
+                                </td>
+                                <td>
+                                    2018
+                                </td>
+                                <td>
+                                    v. 8
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.usp.br/aspas/article/view/148625">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Dodi Tavares Borges Leal - LEAL, Dodi Tavares Borges
+                                </td>
+                                <td>
+                                    CORPO EM VISUALIDADES DIASPÓRICAS: Dimensões políticas e estéticas da luz cênica
+                                </td>
+                                <td>
+                                    iluminação cênica, poéticas do corpo, visualidades diaspóricas
+                                </td>
+                                <td>
+                                    Universidade Federal do Sul da Bahia - UFSB
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    v. 6 - n.2
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.seer.ufu.br/index.php/rascunhos/article/view/46094">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Dodi Tavares Borges Leal - LEAL, Dodi Tavares Borges
+                                </td>
+                                <td>
+                                    Tochas e coralidades na experiência visual de gênero em cena: dispositivos pedagógicos na da luz na percepção teatral
+                                </td>
+                                <td>
+                                    Iluminação cênica; Pedagogia das artes cênicas; recepção teatral; visualidades de gênero
+                                </td>
+                                <td>
+                                    Universidade Federal do Sul da Bahia - UFSB
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    v. 1 - n. 34
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://200.19.105.203/index.php/urdimento/article/view/1414573101342019256">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Otávio José Correia Neto
+                                </td>
+                                <td>
+                                    A luz além das ondas: a interferência da iluminação cênica na cena cinética
+                                </td>
+                                <td>
+                                    Luz; iluminação cênica; cinética; temperatura de cor; cena
+                                </td>
+                                <td>
+                                    Universidade Federal da Bahia - UFBA
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    n. 43
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://cienciasmedicasbiologicas.ufba.br/index.php/gipe-cit/article/view/35359">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Nadia Moroz Luciani - LUCIANI, Nadia Moroz
+                                </td>
+                                <td>
+                                    A atuação performativa da luz na peça Huis Clos, Revisitando Sartre
+                                </td>
+                                <td>
+                                    Iluminação cênica; Performatividade; Processo de criação; Sensorialidades cênicas
+                                </td>
+                                <td>
+                                    Universidade Estadual do Paraná - UNESPAR
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    v. 2 - n. 35
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573102352019404">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Michely Ascari MANGUEIRA; Rafael de ALMEIDA
+                                </td>
+                                <td>
+                                    A luz como ferramenta da mise-en-scène
+                                </td>
+                                <td>
+                                    Luz ativa; luz cinematográfica; dramaturgia; mise-en-scène; cinema
+                                </td>
+                                <td>
+                                    Universidade Estadual de Goiás - UEG/ ECAM
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://portalintercom.org.br/anais/centrooeste2019/resumos/R66-0540-1.pdf">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Michely Ascari MANGUEIRA; Rafael de ALMEIDA
+                                </td>
+                                <td>
+                                    Iluminação Cênica: Princípios Práticos da Iluminação Teatral
+                                </td>
+                                <td>
+                                    Teatro; Ensino; Iluminação
+                                </td>
+                                <td>
+                                    Universidade Estadual de Goiás - UEG/ ECAM
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.atenaeditora.com.br/post-artigo/17519">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella - NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    A dramaturgia como fonte para a história da iluminação cênica, questões de abordagem para uma pesquisa em andamento
+                                </td>
+                                <td>
+                                    História e historigrafia do teatro; Fontes documentais; Iluminação cênica; Micro-história; Teatro moderno
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.atenaeditora.com.br/wp-content/uploads/2019/04/e-book-A-transversalidade-da-Pratica-do-profissional-de-Historia.pdf#page=8">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Roseany Karimme Silva Fonseca; Enoque Paulino de Souza Júnior
+                                </td>
+                                <td>
+                                    Dramaturgias da memória: a palavra e a luz enquanto elementos de indução cênica
+                                </td>
+                                <td>
+                                    Teatro; Dramaturgia pessoal do ator; Iluminação cênica; Escrita de si; Memória
+                                </td>
+                                <td>
+                                    Universidade Federal do Pará - UFPA
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    v. 20 - n 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/4454">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella - NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    Laboratórios de investigação e criação artística, história e iluminação cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica. História e historiografia do teatro. Laboratórios pedagógicos em iluminação cênica
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    v. 20 - n. 1
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.publionline.iar.unicamp.br/index.php/abrace/article/view/4504/4563">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella - NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    A Dramaturgia como Fonte para uma História da Iluminação Cênica: Pirandello capocomico iluminador
+                                </td>
+                                <td>
+                                    História e Historiografia do Teatro; Fontes Documentais; Iluminação Cênica; Micro-História; Teatro Moderno
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2019
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.scielo.br/scielo.php?pid=S2237-26602019000400302&script=sci_arttext">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Ivo Godois
+                                </td>
+                                <td>
+                                    Os caminhos de Wagner da Conceição Pinto na luz cênica
+                                </td>
+                                <td>
+                                    Iluminador; Aprendizado da luz cênica; Iluminação cênica
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://200.19.105.203/index.php/urdimento/article/view/1414573101372020404">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Marina Souza Lobo Guzzo; Dolores Galindo; Daniele Milioli - - MSL Guzzo, D Galindo, D Milioli
+                                </td>
+                                <td>
+                                    A iluminação cênica como dispositivo da experiência cinestésica
+                                </td>
+                                <td>
+                                    Luz; sinestesia; dispositivo; percepção
+                                </td>
+                                <td>
+                                    Universidade Federal de São Paulo - UNIFESP; Universidade Federal do Mato Grosso - UFMT
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.udesc.br/index.php/urdimento/article/view/1414573101372020182/11355">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Berilo Luigi Deiró Nosella; Laura de Paula Resende - NOSELLA, Berilo Luigi Deiró; RESENDE, Laura de Paula
+                                </td>
+                                <td>
+                                    Iluminação e Composição Cênica: o espetáculo 'Soft Porn' à luz de Artaud
+                                </td>
+                                <td>
+                                    Iluminação cênica; Processos criativos; Linguagens da cena; Antonin Artaud
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 3 - n. 4
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://periodicos.ufop.br:8082/pp/index.php/ephemera/article/view/4182/3246">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Dodi Tavares Borges Leal - LEAL, Dodi Tavares Borges
+                                </td>
+                                <td>
+                                    ILUMILUTAS: tecnopolíticas da iluminação cênica, pedagogia crítica da luz e visualidades de corpos não-hegemônicos
+                                </td>
+                                <td>
+                                    Pedagogia crítica da iluminação; luz e lutas sociais; corporalidades não-hegemônicas; visualidades da cena
+                                </td>
+                                <td>
+                                    Universidade Federal do Sul da Bahia - UFSB
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v.1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://revistas.udesc.br/index.php/urdimento/article/view/1414573101372020116/11351">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Pedro Dultra Benevides - BENEVIDES, Pedro Dutra
+                                </td>
+                                <td>
+                                    Tecnologia na iluminação cênica e a capacitação profissional: autonomia/procedimentos automatizados
+                                </td>
+                                <td>
+                                    Tecnologia; Iluminação cênica; Capacitação profissional; autonomia; Procedimentos automatizados
+                                </td>
+                                <td>
+                                    Universidade Federal da Bahia - UFBA
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v.1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://revistas.udesc.br/index.php/urdimento/article/view/1414573101372020196/11356">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Carina Maria Guimarães Moreira; Berilo Luigi Deiro Nosella - MOREIRA, Carina Maria Guimarães; NOSELLA, Berilo Luigi Deiró
+                                </td>
+                                <td>
+                                    Práticas laboratoriais e a história na cena: técnologia e iluminação na cena épica de Piscator
+                                </td>
+                                <td>
+                                    História da iluminação cênica; direção teatral; teatro épico; Erwin Piscator; laboratórios teatrais
+                                </td>
+                                <td>
+                                    Universidade Federal de São João del-Rei - UFSJ
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.periodicos.udesc.br/index.php/urdimento/article/view/1414573101372020035">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Gabriela Pereira Fregoneis - FREGONEIS, Gabriela Pereira
+                                </td>
+                                <td>
+                                    Diálogos entre iluminação cênica e o exercício da docência
+                                </td>
+                                <td>
+                                    Iluminação de cena, Teatros-Efeitos especiais, Arte-Estudo e ensino, Formação profissional
+                                </td>
+                                <td>
+                                    Universidade Estadual de Maringá - UEM
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 15 - n. 25
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/dapesquisa/article/view/16343/11988">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Laura Maria de Figueiredo - FIGUEIREDO, Laura Maria de
+                                </td>
+                                <td>
+                                    Iluminação teatral em contextos escolares: uma proposta didática
+                                </td>
+                                <td>
+                                    Iluminação teatral; Ensino de teatro; Pedagogia do espectador
+                                </td>
+                                <td>
+                                    Universidade Federal do Rio Grande do Norte - UFRN
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v.1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020155">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Luiz Renato Gomes Moura - MOURA, Luiz Renato Gomes
+                                </td>
+                                <td>
+                                    A iluminação cênica no processo criativo da atuação: princípios e práticas na companhia de teatro engenharia cênica
+                                </td>
+                                <td>
+                                    Iluminação cênica; atuação polifônica; visualidade; processo criativo
+                                </td>
+                                <td>
+                                    Universidade Regional do Cariri - URCA
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v.1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020169">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Regilan Deusamar Barbosa Pereira - PEREIRA, Regilan Deusamar Barbosa
+                                </td>
+                                <td>
+                                    Vagalume urbano: veste iluminada que acende o teatro nas ruas das cidades
+                                </td>
+                                <td>
+                                    Veste refletiva; urbanidade; confecção artesanal
+                                </td>
+                                <td>
+                                    Universidade Federal do Estado do Rio de Janeiro - UNIRIO
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020228">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Saulo Germano Sales Dallago; Wesley Martins da Silva; Francisco Guilherme Oliveira Júnior
+                                </td>
+                                <td>
+                                    Entre luz e sombras: o processo de criação do espetáculo segredos e sombras
+                                </td>
+                                <td>
+                                    Teatro; teatro de sombras; iluminação cênica; audiovisual
+                                </td>
+                                <td>
+                                    Universidade Federal de Goiás - UFG
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020247">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Walter Façanha Freitas; Francimara Nogueira Teixeira; Gilson Brandão Costa - WF Freitas, FN Teixeira, GB Costa
+                                </td>
+                                <td>
+                                    Estudo das possibilidades de iluminação cênica no Theatro José de Alencar
+                                </td>
+                                <td>
+                                    iluminação cênica; teatro; possibilidades luminotécnicas
+                                </td>
+                                <td>
+                                    Instituto Federal do Ceará - IFCE
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020290/11365">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Daniele Rocha Viola - VIOLA, Daniele Rocha
+                                </td>
+                                <td>
+                                    Quando as flores caem: O teatro lambe-lambe e a iluminação cênica como modelos de criação desierárquica
+                                </td>
+                                <td>
+                                    Iluminação cênica; Teatro lambe-lambe; Teatro de sombras; Desierarquização
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v.1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020312">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    Christine Richier - Tradução: Priscila Costa
+                                </td>
+                                <td>
+                                    Pequeno mostruário do olho do espectador: da percepção do visual cênico
+                                </td>
+                                <td>
+                                    Iluminação cênica; Percepção da luz cênica; recepção do espectador; relação luz, cena e espectador
+                                </td>
+                                <td>
+                                    Universidade do Estado de Santa Catarina - UDESC
+                                </td>
+                                <td>
+                                    2020
+                                </td>
+                                <td>
+                                    v. 1 - n. 37
+                                </td>
+                                <td>
+                                    
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.revistas.udesc.br/index.php/urdimento/article/view/1414573101372020377">Link</a>
+                                    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </li>
+    </ul>
+</nav>
 
     </div>
 </div>
