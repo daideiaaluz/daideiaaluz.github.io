@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>
         
-            Área de Admin
+            
+                Camilo Bonfanti
+            
         
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -164,142 +166,52 @@
             <!-- colocar caminho das páginas anteriores -->
         </div>
 
-        <h2>Área de Admin</h2>
+        <h2></h2>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
-<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-<script src="/assets/js/fileSaver.js"></script>
-
-<div class="container-contact">
-    <div style="width:100%;">
-        <h4 style="margin-bottom:10px;margin-top:10px;">Formulário para cria arquivo de inserção de profissionais no portal</h4>
-        <div class="form">
-            <p><b>Obs: Onde for nome de arquivo, trocar o espaço por underline. -Exemplo: avner_maximiliano)</b></p>
-            <br>
-            <p>Arquivo</p>
-            <input class="field" type="text" id="filename" placeholder="Nome do arquivo que será baixado (somente o nome, sem extensão.)">
-            <br>
-            <p>Dados principais</p>
-            <input class="field" type="text" id="alias" placeholder="Nome do profissional">
-            <!-- <input class="field" type="text" id="state" placeholder=""> -->
-            <input class="field" type="text" id="area" placeholder="Área de atuação">
-            <input class="field" type="text" id="email" placeholder="E-mail do profissional">
-            <input class="field" type="text" id="img" value="default.jpg" placeholder="Nome do arquivo da foto (Incluir a extensão. -Exemplo: avner_maximiliano.png)">
-            <p>Estado onde o profissional trabalha:</p>
-            <select class="field" id="state">
-                <option value="Acre">Acre</option>
-                <option value="Alagoas">Alagoas</option>
-                <option value="Amapá">Amapá</option>
-                <option value="Amazonas">Amazonas</option>
-                <option value="Bahia">Bahia</option>
-                <option value="Ceará">Ceará</option>
-                <option value="Distrito Federal">Distrito Federal</option>
-                <option value="Espírito Santo">Espírito Santo</option>
-                <option value="Goiás">Goiás</option>
-                <option value="Maranhão">Maranhão</option>
-                <option value="Mato Grosso">Mato Grosso</option>
-                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                <option value="Minas Gerais">Minas Gerais</option>
-                <option value="Pará">Pará</option>
-                <option value="Paraíba">Paraíba</option>
-                <option value="Paraná">Paraná</option>
-                <option value="Pernambuco">Pernambuco</option>
-                <option value="Piauí">Piauí</option>
-                <option value="Rio de Janeiro">Rio de Janeiro</option>
-                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                <option value="Rondônia">Rondônia</option>
-                <option value="Roraima">Roraima</option>
-                <option value="Santa Catarina">Santa Catarina</option>
-                <option value="São Paulo">São Paulo</option>
-                <option value="Sergipe">Sergipe</option>
-                <option value="Tocantins">Tocantins</option>
-            </select>
-            <br>
-            <p>Redes Sociais</p>
-            <input class="field" type="text" id="instagram" value="https://instagram.com/" placeholder="Instagram do profisional">
-            <input class="field" type="text" id="facebook" placeholder="Facebook do profisional">
-            <input class="field" type="text" id="youtube" placeholder="YouTube do profisional">
-            <input class="field" type="text" id="linkedin" placeholder="LinkedIn do profisional">
-            <br>
-            <p>Localização no mapa</p>
-            <input class="field" type="text" id="latitude" placeholder="Latitude para exibir no mapa">
-            <input class="field" type="text" id="longitude" placeholder="Longitude para exibir no mapa">
-            <br>
-            <p>Escrever o sobre:</p>
-            <textarea id="mdEditor"></textarea>
-          <button type="submit" onclick="saveDynamicDataToFile();">Baixar</button>
+        <div class="grid-profile">
+    <div class="card">
+        <img src="/assets/img/perfis/default.jpg">
+        <p class="nome">Camilo Bonfanti</p>
+        <p class="title">Iluminador Cênico</p>
+        <div class="socialmedia">
+            
+            
+                <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/" style="font-size: 22px;"><i class="fa fa-instagram"></i></a>
+            
+            
+            
+            
         </div>
     </div>
+    <div class="content-profile">
+        <h5 id="trabalhos-realizados"><strong>TRABALHOS REALIZADOS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=2u9DsX10Fo4">Peça Gota d’Água {Preta} diretor e dramaturgo Jé Oliveira</a></li>
+</ul>
+
+<h5 id="material-de-pesquisa"><strong>MATERIAL DE PESQUISA</strong></h5>
+
+<ul>
+  <li>
+    <p><a href="https://anchor.fm/lightingstudio/episodes/Camilo-Bonfanti-ed5pp3">https://anchor.fm/lightingstudio/episodes/Camilo-Bonfanti-ed5pp3</a></p>
+  </li>
+  <li>
+    <p><a href="https://enciclopedia.itaucultural.org.br/pessoa553228/camilo-bonfanti">https://enciclopedia.itaucultural.org.br/pessoa553228/camilo-bonfanti</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.teatrodavertigem.com.br/o-livro-de-jo">https://www.teatrodavertigem.com.br/o-livro-de-jo</a></p>
+  </li>
+</ul>
+
+<h5 id="entrevistas"><strong>ENTREVISTAS</strong></h5>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=lNRvVQh-6R4">Canal Lighting Studio</a></li>
+</ul>
+
+    </div>
 </div>
-
-<script>
-    var simplemde = new SimpleMDE({
-        element: document.getElementById("mdEditor"),
-        toolbar: ["bold", "italic", "heading", "|", "quote", "unordered-list", "ordered-list", "|", "link", "image", "horizontal-rule", "|", "preview", "|", "guide"],
-    });
-
-    function saveDynamicDataToFile() {
-
-        // Construir o MD de acordo com os dados preenchidos.
-        var inifim = "---\n";
-        var layout = "layout: perfil\n";
-
-        var filename = document.getElementById("filename").value;
-        var permalink = "permalink: /perfis/" + filename + "\n";
-
-        var alias = document.getElementById("alias").value;
-        alias = "alias: " + alias + "\n";
-        var state = document.getElementById("state").value;
-        state = "state: " + state + "\n";
-        var img = document.getElementById("img").value;
-        img = "img: /assets/img/perfis/" + img + "\n";
-        var area = document.getElementById("area").value;
-        area = "area: " + area + "\n";
-
-        var userInput = inifim + layout + permalink + alias + state + img + area;
-
-        if(document.getElementById("email").value){
-            var email = document.getElementById("email").value;
-            email = "email: " + email + "\n";
-            var userInput = userInput + email;
-        }
-        if(document.getElementById("instagram").value){
-            var instagram = document.getElementById("instagram").value;
-            instagram = "instagram: " + instagram + "\n";
-            var userInput = userInput + instagram;
-        }
-        if(document.getElementById("facebook").value){
-            var facebook = document.getElementById("facebook").value;
-            facebook = "facebook: " + facebook + "\n";
-            var userInput = userInput + facebook;
-        }
-        if(document.getElementById("youtube").value){
-            var youtube = document.getElementById("youtube").value;
-            youtube = "youtube: " + youtube + "\n";
-            var userInput = userInput + youtube;
-        }
-        if(document.getElementById("linkedin").value){
-            var linkedin = document.getElementById("linkedin").value;
-            linkedin = "linkedin: " + linkedin + "\n";
-            var userInput = userInput + linkedin;
-        }
-
-        var latitude = document.getElementById("latitude").value;
-        latitude = "latitude: " + latitude + "\n";
-        var longitude = document.getElementById("longitude").value;
-        longitude = "longitude: " + longitude + "\n";
-
-        var userInput = userInput + latitude + longitude + inifim + "\n";
-
-        var sobre = simplemde.value();
-
-        var userInput = userInput + sobre;
-
-        var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
-        saveAs(blob, filename + ".md");
-    }
-</script>
 
     </div>
 </div>
